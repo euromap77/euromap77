@@ -14,12 +14,15 @@
         <Alias Alias="HasSubtype">i=45</Alias>
         <Alias Alias="HasProperty">i=46</Alias>
         <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="Argument">i=296</Alias>
+        <Alias Alias="EnumValueType">i=7594</Alias>
         <Alias Alias="MachineModeEnum">ns=1;i=3002</Alias>
         <Alias Alias="ProductionStatusEnum">ns=1;i=3003</Alias>
+        <Alias Alias="MessageClassificationEnumType">ns=1;i=3004</Alias>
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="dXTdlRC7mq98pf2utNbliQ==" Version="1.5.0"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="Dtz/q+Bl8LQULAPiY0d7Pg==" Version="1.5.0"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3002" BrowseName="1:MachineModeEnum">
@@ -71,6 +74,552 @@
             </uax:ListOfLocalizedText>
         </Value>
     </UAVariable>
+    <UADataType NodeId="ns=1;i=3004" BrowseName="1:MessageClassificationEnumType">
+        <DisplayName>MessageClassificationEnumType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6049</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+        </References>
+        <Definition Name="1:MessageClassificationEnumType">
+            <Field Name="INJECTION_UNIT" Value="100"/>
+            <Field Name="CLAMPING_UNIT" Value="101"/>
+            <Field Name="HARDWARE" Value="102"/>
+            <Field Name="COMPRESSED_AIR_CONTROL" Value="103"/>
+            <Field Name="MACHINE_MONITORING" Value="104"/>
+            <Field Name="MOULD" Value="105"/>
+            <Field Name="EJECTOR" Value="106"/>
+            <Field Name="CORE_PULL" Value="107"/>
+            <Field Name="TABLE" Value="108"/>
+            <Field Name="INJECTION_PROGRAM" Value="109"/>
+            <Field Name="HYDRAULIC_TEMPERATURE_CONTROL" Value="110"/>
+            <Field Name="CYLINDER_TEMPERATURE_CONTROL" Value="111"/>
+            <Field Name="MOULD_TEMPERATURE_CONTROL" Value="112"/>
+            <Field Name="HOT_RUNNER" Value="113"/>
+            <Field Name="INTERFACES" Value="114"/>
+            <Field Name="ROBOTIC_SYSTEM_INTERFACE" Value="115"/>
+            <Field Name="SPECIAL_PURPOSE_SIGNAL" Value="116"/>
+            <Field Name="REALTIME_ETHERNET_SYSTEM" Value="117"/>
+            <Field Name="SOFTWARE_MONITORING" Value="118"/>
+            <Field Name="EXTERNAL_DEVICE_INTERFACE" Value="200"/>
+            <Field Name="TEMPERATURE_CONTROL_UNIT" Value="201"/>
+            <Field Name="ROBOTICS_SYSTEM" Value="202"/>
+            <Field Name="LIQUID_SILICONE_RUBBER" Value="203"/>
+            <Field Name="STRIPPER_UNIT" Value="204"/>
+            <Field Name="DRYER" Value="205"/>
+            <Field Name="CONVEYOR_BELT" Value="206"/>
+            <Field Name="SORTER_UNIT" Value="207"/>
+            <Field Name="COLOURING_UNIT" Value="208"/>
+            <Field Name="INJESTER_UNIT" Value="209"/>
+            <Field Name="EXTERNAL_ALARM" Value="210"/>
+            <Field Name="VACUUM_CONTROL" Value="211"/>
+            <Field Name="PRINTER_INTERFACE" Value="212"/>
+            <Field Name="QUALITY_MONITORING" Value="300"/>
+            <Field Name="MANUAL_OPERATION" Value="301"/>
+            <Field Name="EMERGENCY_STOP" Value="302"/>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="EnumValueType" ParentNodeId="ns=1;i=3004" ValueRank="1" NodeId="ns=1;i=6049" ArrayDimensions="35" BrowseName="EnumValues">
+        <DisplayName>EnumValues</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3004</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>100</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>INJECTION_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>101</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CLAMPING_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>102</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>HARDWARE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>103</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>COMPRESSED_AIR_CONTROL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>104</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MACHINE_MONITORING</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>105</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MOULD</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>106</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>EJECTOR</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>107</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CORE_PULL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>108</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>TABLE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>109</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>INJECTION_PROGRAM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>110</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>HYDRAULIC_TEMPERATURE_CONTROL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>111</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CYLINDER_TEMPERATURE_CONTROL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>112</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MOULD_TEMPERATURE_CONTROL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>113</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>HOT_RUNNER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>114</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>INTERFACES</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>115</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ROBOTIC_SYSTEM_INTERFACE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>116</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>SPECIAL_PURPOSE_SIGNAL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>117</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>REALTIME_ETHERNET_SYSTEM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>118</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>SOFTWARE_MONITORING</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>200</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>EXTERNAL_DEVICE_INTERFACE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>201</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>TEMPERATURE_CONTROL_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>202</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ROBOTICS_SYSTEM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>203</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>LIQUID_SILICONE_RUBBER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>204</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>STRIPPER_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>205</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>DRYER</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>206</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CONVEYOR_BELT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>207</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>SORTER_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>208</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>COLOURING_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>209</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>INJESTER_UNIT</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>210</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>EXTERNAL_ALARM</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>211</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>VACUUM_CONTROL</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>212</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>PRINTER_INTERFACE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>300</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>QUALITY_MONITORING</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>301</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>MANUAL_OPERATION</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>302</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>EMERGENCY_STOP</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
     <UADataType NodeId="ns=1;i=3003" BrowseName="1:ProductionStatusEnum">
         <DisplayName>ProductionStatusEnum</DisplayName>
         <References>
@@ -112,21 +661,36 @@
             </uax:ListOfLocalizedText>
         </Value>
     </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1015" BrowseName="1:MessageType">
+        <DisplayName>MessageType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6048</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6047</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=2915</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="MessageClassificationEnumType" ParentNodeId="ns=1;i=1015" NodeId="ns=1;i=6048" BrowseName="1:Classification" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Classification</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1015</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1015" NodeId="ns=1;i=6047" BrowseName="1:Id" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Id</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1015</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
     <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:LogbookEventType">
         <DisplayName>LogbookEventType</DisplayName>
         <References>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6035</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1008" NodeId="ns=1;i=6035" BrowseName="1:Message" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>Message</DisplayName>
-        <References>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1008</Reference>
-        </References>
-    </UAVariable>
     <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:DatasetInputLogType">
         <DisplayName>DatasetInputLogType</DisplayName>
         <References>
@@ -145,16 +709,25 @@
     <UAObjectType NodeId="ns=1;i=1012" BrowseName="1:MachineModeChangeLogType">
         <DisplayName>MachineModeChangeLogType</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6039</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1008</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6046</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6039</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="MachineModeEnum" ParentNodeId="ns=1;i=1012" NodeId="ns=1;i=6039" BrowseName="1:MachineMode" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>MachineMode</DisplayName>
+    <UAVariable DataType="MachineModeEnum" ParentNodeId="ns=1;i=1012" NodeId="ns=1;i=6046" BrowseName="1:NewMachineMode" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>NewMachineMode</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="MachineModeEnum" ParentNodeId="ns=1;i=1012" NodeId="ns=1;i=6039" BrowseName="1:OldMachineMode" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>OldMachineMode</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
         </References>
     </UAVariable>
     <UAObjectType NodeId="ns=1;i=1009" BrowseName="1:ParameterChangeLogType">
@@ -302,6 +875,7 @@
             <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6044</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6042</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7001</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6043</Reference>
         </References>
     </UAObjectType>
@@ -328,6 +902,42 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1014</Reference>
         </References>
+    </UAVariable>
+    <UAMethod ParentNodeId="ns=1;i=1014" NodeId="ns=1;i=7001" BrowseName="1:SetMesMessage">
+        <DisplayName>SetMesMessage</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6045</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1014</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable DataType="Argument" ParentNodeId="ns=1;i=7001" ValueRank="1" NodeId="ns=1;i=6045" ArrayDimensions="1" BrowseName="InputArguments">
+        <DisplayName>InputArguments</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7001</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>message</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions></uax:ArrayDimensions>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1014" NodeId="ns=1;i=6043" BrowseName="1:StandstillReasonId" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>StandstillReasonId</DisplayName>
