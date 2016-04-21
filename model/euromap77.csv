@@ -9,7 +9,7 @@ ParameterChangeLogType,1009,ObjectType
 UserLogType,1010,ObjectType
 DatasetInputLogType,1011,ObjectType
 MachineModeChangeLogType,1012,ObjectType
-StandstillLogType,1013,ObjectType
+StandstilReasonlLogType,1013,ObjectType
 MachineStatusType,1014,ObjectType
 MessageType,1015,ObjectType
 MachineModeEnum,3002,DataType
@@ -57,6 +57,7 @@ MachineType_MachineConfiguration_PageDirectory_Title,6031,Variable
 MachineType_MachineConfiguration_StandstillReasonLockedByClient,6032,Variable
 MachineType_MachineConfiguration_TimeZoneOffset,6033,Variable
 MachineType_MachineConfiguration_UserMachineName,6034,Variable
+StandstilReasonlLogType_StandstillReasonId,6035,Variable
 UserLogType_UserChange,6036,Variable
 DatasetInputLogType_DatasetName,6037,Variable
 MachineModeEnum_EnumStrings,6038,Variable
@@ -66,9 +67,9 @@ MachineStatusType_MachineMode,6041,Variable
 MachineStatusType_ProductionStatus,6042,Variable
 MachineStatusType_StandstillReasonId,6043,Variable
 MachineStatusType_MesMessage,6044,Variable
-MachineStatusType_SetMesMessage_InputArguments,6045,Variable
+MachineStatusType_ChangeMesMessage_InputArguments,6045,Variable
 MachineModeChangeLogType_NewMachineMode,6046,Variable
 MessageType_Id,6047,Variable
 MessageType_Classification,6048,Variable
 MessageClassificationEnumType_EnumValues,6049,Variable
-MachineStatusType_SetMesMessage,7001,Method
+MachineStatusType_ChangeMesMessage,7001,Method
