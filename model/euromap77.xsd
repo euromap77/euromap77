@@ -1,0 +1,37 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://www.euromap.org/euromap77/Types.xsd" xmlns:tns="http://www.euromap.org/euromap77/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="MachineModeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AUTOMATIC_0"/>
+            <xs:enumeration value="SEMI_AUTOMATIC_1"/>
+            <xs:enumeration value="MANUAL_2"/>
+            <xs:enumeration value="SETUP_3"/>
+            <xs:enumeration value="TOOL_CHANGE_4"/>
+            <xs:enumeration value="ENERGY_SAVING_5"/>
+            <xs:enumeration value="OTHER_6"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MachineModeEnum" name="MachineModeEnum"/>
+    <xs:complexType name="ListOfMachineModeEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MachineModeEnum" name="MachineModeEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMachineModeEnum" name="ListOfMachineModeEnum" nillable="true"/>
+    <xs:simpleType name="ProductionStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NO_PRODUCTION_0"/>
+            <xs:enumeration value="STARTUP_1"/>
+            <xs:enumeration value="DRY_CYCLE_2"/>
+            <xs:enumeration value="READY_FOR_PRODUCTION_3"/>
+            <xs:enumeration value="PRODUCTION_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ProductionStatusEnum" name="ProductionStatusEnum"/>
+    <xs:complexType name="ListOfProductionStatusEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProductionStatusEnum" name="ProductionStatusEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProductionStatusEnum" name="ListOfProductionStatusEnum" nillable="true"/>
+</xs:schema>
