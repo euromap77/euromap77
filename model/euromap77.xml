@@ -22,7 +22,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="rsu5uSYZNlEMt5f7h8G2Ag==" Version="1.5.0"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="dttesDE1asEYLs8TlzPiig==" Version="1.5.0"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3002" BrowseName="1:MachineModeEnum">
@@ -1038,10 +1038,10 @@
     <UAObject ParentNodeId="ns=1;i=1007" NodeId="ns=1;i=5003" BrowseName="1:MachineInformation">
         <DisplayName>MachineInformation</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6017</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6017</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6021</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6018</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6018</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1002</Reference>
@@ -1057,9 +1057,9 @@
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6017" BrowseName="1:ControllerType" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>ControllerType</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6021" BrowseName="2:DeviceManual">
@@ -1083,9 +1083,9 @@
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6018" BrowseName="1:EuromapSizeIndication" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>EuromapSizeIndication</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6023" BrowseName="2:HardwareRevision">
@@ -1219,8 +1219,8 @@
     <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:MachineInformationType">
         <DisplayName>MachineInformationType</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6001</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6002</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6002</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">ns=2;i=1002</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
         </References>
@@ -1228,17 +1228,17 @@
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6001" BrowseName="1:ControllerType" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>ControllerType</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6002" BrowseName="1:EuromapSizeIndication" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>EuromapSizeIndication</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
     <UAObject ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=5001" BrowseName="1:SupportedEuromapProfiles">
