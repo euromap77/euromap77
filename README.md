@@ -12,6 +12,3 @@ Euromap 77 is based on OPC/UA.
 * N. Birkeland, Netstal-Maschinen AG, Switzerland, http://www.netstal.com
 * A. Kern, ENGEL AUSTRIA GmbH, Austria, https://www.engelglobal.com
 * M. Damm, Ascolab, Germany, http://ascolab.com
-
-
-
