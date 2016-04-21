@@ -8,9 +8,10 @@ Euromap 77 is about data interchange between Injection Moulding Machines (IMM) a
 Euromap 77 is based on OPC/UA.
 
 # Maintainers
-* Dr. H. Weber (http://www.vdma.org/ VDMA), Germany
-* N. Birkeland, (http://www.netstal.com Netstal-Maschinen AG), Switzerland
-* A. Kern, (https://www.engelglobal.com/ ENGEL AUSTRIA GmbH), Austria
-* M. Damm, (http://ascolab.com Ascolab), Germany
+* Dr. H. Weber, VDMA, Germany, http://www.vdma.org/
+* N. Birkeland, Netstal-Maschinen AG, Switzerland, http://www.netstal.com
+* A. Kern, ENGEL AUSTRIA GmbH, Austria, https://www.engelglobal.com
+* M. Damm, Ascolab, Germany, http://ascolab.com
+
 
 
