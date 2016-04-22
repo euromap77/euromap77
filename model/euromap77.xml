@@ -8,6 +8,7 @@
         <Alias Alias="UInt16">i=5</Alias>
         <Alias Alias="Int32">i=6</Alias>
         <Alias Alias="UInt32">i=7</Alias>
+        <Alias Alias="UInt64">i=9</Alias>
         <Alias Alias="Double">i=11</Alias>
         <Alias Alias="String">i=12</Alias>
         <Alias Alias="DateTime">i=13</Alias>
@@ -33,12 +34,43 @@
         <Alias Alias="PageEntryDataType">ns=1;i=3005</Alias>
         <Alias Alias="UserType">ns=1;i=3006</Alias>
         <Alias Alias="JobStatusEnum">ns=1;i=3007</Alias>
+        <Alias Alias="TemperatureConfigEnum">ns=1;i=3009</Alias>
+        <Alias Alias="DatasetComponentEnumType">ns=1;i=3010</Alias>
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="yVGXSzVKVR9Vzr1GMU81ow==" Version="1.4.0"/>
+            <ModelInfo Tool="UaModeler" Hash="rJ4+YEjdxqSyd3mSGJOGZg==" Version="1.4.0"/>
         </Extension>
     </Extensions>
+    <UADataType NodeId="ns=1;i=3010" BrowseName="1:DatasetComponentEnumType">
+        <DisplayName>DatasetComponentEnumType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6138</Reference>
+        </References>
+        <Definition Name="1:DatasetComponentEnumType">
+            <Field Name="IMM" Value="0"/>
+            <Field Name="ROBOT" Value="1"/>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=3010" ValueRank="1" NodeId="ns=1;i=6138" ArrayDimensions="2" BrowseName="EnumStrings">
+        <DisplayName>EnumStrings</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3010</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>IMM</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>ROBOT</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </Value>
+    </UAVariable>
     <UADataType NodeId="ns=1;i=3007" BrowseName="1:JobStatusEnum">
         <DisplayName>JobStatusEnum</DisplayName>
         <References>
@@ -744,12 +776,88 @@
             </uax:ListOfLocalizedText>
         </Value>
     </UAVariable>
+    <UADataType NodeId="ns=1;i=3009" BrowseName="1:TemperatureConfigEnum">
+        <DisplayName>TemperatureConfigEnum</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6136</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+        </References>
+        <Definition Name="1:TemperatureConfigEnum">
+            <Field Name="OFF" Value="0"/>
+            <Field Name="AUTO" Value="1"/>
+            <Field Name="TUNING" Value="2"/>
+            <Field Name="STANDBY" Value="3"/>
+            <Field Name="OPEN_LOOP" Value="4"/>
+            <Field Name="NOT_SUPPORTED" Value="5"/>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=3009" ValueRank="1" NodeId="ns=1;i=6136" ArrayDimensions="6" BrowseName="EnumStrings">
+        <DisplayName>EnumStrings</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3009</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>OFF</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>AUTO</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>TUNING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>STANDBY</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>OPEN_LOOP</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>NOT_SUPPORTED</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </Value>
+    </UAVariable>
+    <UADataType IsAbstract="true" NodeId="ns=1;i=3008" BrowseName="1:EuromapStructureType">
+        <DisplayName>EuromapStructureType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5015</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5016</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+        </References>
+        <Definition Name="1:EuromapStructureType"/>
+    </UADataType>
+    <UAVariable DataType="String" Historizing="true" ParentNodeId="ns=1;i=6012" NodeId="ns=1;i=6134" BrowseName="1:EuromapStructureType">
+        <DisplayName>EuromapStructureType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5015</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6012</Reference>
+        </References>
+        <Value>
+            <uax:String>EuromapStructureType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" Historizing="true" ParentNodeId="ns=1;i=6050" NodeId="ns=1;i=6135" BrowseName="1:EuromapStructureType">
+        <DisplayName>EuromapStructureType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5016</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6050</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='EuromapStructureType']</uax:String>
+        </Value>
+    </UAVariable>
     <UADataType NodeId="ns=1;i=3005" BrowseName="1:PageEntryDataType">
         <DisplayName>PageEntryDataType</DisplayName>
         <References>
             <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
             <Reference ReferenceType="HasEncoding">ns=1;i=5006</Reference>
-            <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3008</Reference>
         </References>
         <Definition Name="1:PageEntryDataType">
             <Field DataType="String" Name="Id"/>
@@ -783,7 +891,7 @@
         <References>
             <Reference ReferenceType="HasEncoding">ns=1;i=5010</Reference>
             <Reference ReferenceType="HasEncoding">ns=1;i=5011</Reference>
-            <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3008</Reference>
         </References>
         <Definition Name="1:UserType">
             <Field DataType="Double" Name="Id"/>
@@ -821,6 +929,7 @@
         <Description>Collects the data type descriptions of http://www.euromap.org/euromap77</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6134</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6052</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
@@ -834,88 +943,101 @@
         m91bmRhdGlvbi5vcmcvVUEvIiBUYXJnZXROYW1lc3BhY2U9Imh0dHA6Ly93d3cuZXVyb21hc
         C5vcmcvZXVyb21hcDc3Ij4KIDxvcGM6SW1wb3J0IE5hbWVzcGFjZT0iaHR0cDovL29wY2Zvd
         W5kYXRpb24ub3JnL1VBLyIvPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6R
-        Xh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJQYWdlRW50cnlEYXRhVHlwZSI+CiAgPG9wYzpGaWVsZ
-        CBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iSWQiLz4KICA8b3BjOkZpZWxkIFR5c
-        GVOYW1lPSJ1YTpMb2NhbGl6ZWRUZXh0IiBOYW1lPSJUaXRsZSIvPgogPC9vcGM6U3RydWN0d
-        XJlZFR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PY
-        mplY3QiIE5hbWU9IlVzZXJUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RG91Y
-        mxlIiBOYW1lPSJJZCIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpEb3VibGUiIE5hb
-        WU9Ik5hbWUiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RG91YmxlIiBOYW1lPSJDY
-        XJkVWlkIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iVmVuZ
-        G9yTGV2ZWwiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RG91YmxlIiBOYW1lPSJWZ
-        W5kb3JSb2xlIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iT
-        GFuZ3VhZ2UiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZ
-        SBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJKb2JTdGF0dXNFbnVtIj4KICA8b3BjOkVudW1lc
-        mF0ZWRWYWx1ZSBOYW1lPSJPVEhFUiIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWY
-        Wx1ZSBOYW1lPSJUUkFOU0ZFUlJFRF9BU1NJR05FRCIgVmFsdWU9IjEiLz4KICA8b3BjOkVud
-        W1lcmF0ZWRWYWx1ZSBOYW1lPSJTRVRVUF9BQ1RJVkUiIFZhbHVlPSIyIi8+CiAgPG9wYzpFb
-        nVtZXJhdGVkVmFsdWUgTmFtZT0iU0VUVVBfSU5URVJSVVBURUQiIFZhbHVlPSIzIi8+CiAgP
-        G9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU0VUVVBfRklOSVNIRUQiIFZhbHVlPSI0Ii8+C
-        iAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU1RBUlRVUF9BQ1RJVkUiIFZhbHVlPSI1I
-        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSk9CX0lOX1BST0RVQ1RJT04iIFZhb
-        HVlPSI2Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSk9CX0lOVEVSUlVQVEVEI
-        iBWYWx1ZT0iNyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkpPQl9GSU5JU0hFR
-        CIgVmFsdWU9IjgiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJURUFSX0RPV05fQ
-        UNUSVZFIiBWYWx1ZT0iOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlRFQVJfR
-        E9XTl9JTlRFUlJVUFRFRCIgVmFsdWU9IjEwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgT
-        mFtZT0iVEVBUl9ET1dOX0ZJTklTSEVEIiBWYWx1ZT0iMTEiLz4KIDwvb3BjOkVudW1lcmF0Z
-        WRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJNY
-        WNoaW5lTW9kZUVudW0iPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkFVVE9NQVRJQ
-        yIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTRU1JX0FVVE9NQ
-        VRJQyIgVmFsdWU9IjEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNQU5VQUwiI
-        FZhbHVlPSIyIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU0VUVVAiIFZhbHVlP
-        SIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVE9PTF9DSEFOR0UiIFZhbHVlP
-        SI0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRU5FUkdZX1NBVklORyIgVmFsd
-        WU9IjUiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJPVEhFUiIgVmFsdWU9IjYiL
-        z4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJb
-        kJpdHM9IjMyIiBOYW1lPSJNZXNzYWdlQ2xhc3NpZmljYXRpb25FbnVtVHlwZSI+CiAgPG9wY
-        zpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU5KRUNUSU9OX1VOSVQiIFZhbHVlPSIxMDAiLz4KI
-        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDTEFNUElOR19VTklUIiBWYWx1ZT0iMTAxI
-        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSEFSRFdBUkUiIFZhbHVlPSIxMDIiL
-        z4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDT01QUkVTU0VEX0FJUl9DT05UUk9MI
-        iBWYWx1ZT0iMTAzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTUFDSElORV9NT
-        05JVE9SSU5HIiBWYWx1ZT0iMTA0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iT
-        U9VTEQiIFZhbHVlPSIxMDUiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJFSkVDV
-        E9SIiBWYWx1ZT0iMTA2Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ09SRV9QV
-        UxMIiBWYWx1ZT0iMTA3Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVEFCTEUiI
-        FZhbHVlPSIxMDgiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTkpFQ1RJT05fU
-        FJPR1JBTSIgVmFsdWU9IjEwOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkhZR
-        FJBVUxJQ19URU1QRVJBVFVSRV9DT05UUk9MIiBWYWx1ZT0iMTEwIi8+CiAgPG9wYzpFbnVtZ
-        XJhdGVkVmFsdWUgTmFtZT0iQ1lMSU5ERVJfVEVNUEVSQVRVUkVfQ09OVFJPTCIgVmFsdWU9I
-        jExMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1PVUxEX1RFTVBFUkFUVVJFX
-        0NPTlRST0wiIFZhbHVlPSIxMTIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJIT
-        1RfUlVOTkVSIiBWYWx1ZT0iMTEzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iS
-        U5URVJGQUNFUyIgVmFsdWU9IjExNCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
-        lJPQk9USUNfU1lTVEVNX0lOVEVSRkFDRSIgVmFsdWU9IjExNSIvPgogIDxvcGM6RW51bWVyY
-        XRlZFZhbHVlIE5hbWU9IlNQRUNJQUxfUFVSUE9TRV9TSUdOQUwiIFZhbHVlPSIxMTYiLz4KI
-        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSRUFMVElNRV9FVEhFUk5FVF9TWVNURU0iI
-        FZhbHVlPSIxMTciLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTT0ZUV0FSRV9NT
-        05JVE9SSU5HIiBWYWx1ZT0iMTE4Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iR
-        VhURVJOQUxfREVWSUNFX0lOVEVSRkFDRSIgVmFsdWU9IjIwMCIvPgogIDxvcGM6RW51bWVyY
-        XRlZFZhbHVlIE5hbWU9IlRFTVBFUkFUVVJFX0NPTlRST0xfVU5JVCIgVmFsdWU9IjIwMSIvP
-        gogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlJPQk9USUNTX1NZU1RFTSIgVmFsdWU9I
-        jIwMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkxJUVVJRF9TSUxJQ09ORV9SV
-        UJCRVIiIFZhbHVlPSIyMDMiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTVFJJU
-        FBFUl9VTklUIiBWYWx1ZT0iMjA0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iR
-        FJZRVIiIFZhbHVlPSIyMDUiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDT05WR
-        VlPUl9CRUxUIiBWYWx1ZT0iMjA2Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU
-        09SVEVSX1VOSVQiIFZhbHVlPSIyMDciLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
-        SJDT0xPVVJJTkdfVU5JVCIgVmFsdWU9IjIwOCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
-        E5hbWU9IklOSkVTVEVSX1VOSVQiIFZhbHVlPSIyMDkiLz4KICA8b3BjOkVudW1lcmF0ZWRWY
-        Wx1ZSBOYW1lPSJFWFRFUk5BTF9BTEFSTSIgVmFsdWU9IjIxMCIvPgogIDxvcGM6RW51bWVyY
-        XRlZFZhbHVlIE5hbWU9IlZBQ1VVTV9DT05UUk9MIiBWYWx1ZT0iMjExIi8+CiAgPG9wYzpFb
-        nVtZXJhdGVkVmFsdWUgTmFtZT0iUFJJTlRFUl9JTlRFUkZBQ0UiIFZhbHVlPSIyMTIiLz4KI
-        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJRVUFMSVRZX01PTklUT1JJTkciIFZhbHVlP
-        SIzMDAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNQU5VQUxfT1BFUkFUSU9OI
-        iBWYWx1ZT0iMzAxIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRU1FUkdFTkNZX
-        1NUT1AiIFZhbHVlPSIzMDIiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZ
-        XJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJQcm9kdWN0aW9uU3RhdHVzRW51b
-        SI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTk9fUFJPRFVDVElPTiIgVmFsdWU9I
-        jAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTVEFSVFVQIiBWYWx1ZT0iMSIvP
-        gogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkRSWV9DWUNMRSIgVmFsdWU9IjIiLz4KI
-        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSRUFEWV9GT1JfUFJPRFVDVElPTiIgVmFsd
-        WU9IjMiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQUk9EVUNUSU9OIiBWYWx1Z
-        T0iNCIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+Cjwvb3BjOlR5cGVEaWN0aW9uYXJ5Pgo=</uax:ByteString>
+        Xh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJFdXJvbWFwU3RydWN0dXJlVHlwZSIvPgogPG9wYzpTd
+        HJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idG5zOkV1cm9tYXBTdHJ1Y3R1cmVUeXBlIiBOYW1lP
+        SJQYWdlRW50cnlEYXRhVHlwZSI+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkNoYXJBc
+        nJheSIgTmFtZT0iSWQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJ1YTpMb2NhbGl6ZWRUZ
+        Xh0IiBOYW1lPSJUaXRsZSIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+CiA8b3BjOlN0cnVjd
+        HVyZWRUeXBlIEJhc2VUeXBlPSJ0bnM6RXVyb21hcFN0cnVjdHVyZVR5cGUiIE5hbWU9IlVzZ
+        XJUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RG91YmxlIiBOYW1lPSJJZCIvP
+        gogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpEb3VibGUiIE5hbWU9Ik5hbWUiLz4KICA8b
+        3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RG91YmxlIiBOYW1lPSJDYXJkVWlkIi8+CiAgPG9wY
+        zpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iVmVuZG9yTGV2ZWwiLz4KICA8b
+        3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6RG91YmxlIiBOYW1lPSJWZW5kb3JSb2xlIi8+CiAgP
+        G9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOkRvdWJsZSIgTmFtZT0iTGFuZ3VhZ2UiLz4KIDwvb
+        3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9I
+        jMyIiBOYW1lPSJEYXRhc2V0Q29tcG9uZW50RW51bVR5cGUiPgogIDxvcGM6RW51bWVyYXRlZ
+        FZhbHVlIE5hbWU9IklNTSIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOY
+        W1lPSJST0JPVCIgVmFsdWU9IjEiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFb
+        nVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJKb2JTdGF0dXNFbnVtIj4KI
+        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJPVEhFUiIgVmFsdWU9IjAiLz4KICA8b3BjO
+        kVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJUUkFOU0ZFUlJFRF9BU1NJR05FRCIgVmFsdWU9IjEiL
+        z4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTRVRVUF9BQ1RJVkUiIFZhbHVlPSIyI
+        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU0VUVVBfSU5URVJSVVBURUQiIFZhb
+        HVlPSIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU0VUVVBfRklOSVNIRUQiI
+        FZhbHVlPSI0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU1RBUlRVUF9BQ1RJV
+        kUiIFZhbHVlPSI1Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSk9CX0lOX1BST
+        0RVQ1RJT04iIFZhbHVlPSI2Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSk9CX
+        0lOVEVSUlVQVEVEIiBWYWx1ZT0iNyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
+        kpPQl9GSU5JU0hFRCIgVmFsdWU9IjgiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
+        SJURUFSX0RPV05fQUNUSVZFIiBWYWx1ZT0iOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9IlRFQVJfRE9XTl9JTlRFUlJVUFRFRCIgVmFsdWU9IjEwIi8+CiAgPG9wYzpFbnVtZ
+        XJhdGVkVmFsdWUgTmFtZT0iVEVBUl9ET1dOX0ZJTklTSEVEIiBWYWx1ZT0iMTEiLz4KIDwvb
+        3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9I
+        jMyIiBOYW1lPSJNYWNoaW5lTW9kZUVudW0iPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hb
+        WU9IkFVVE9NQVRJQyIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
+        SJTRU1JX0FVVE9NQVRJQyIgVmFsdWU9IjEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOY
+        W1lPSJNQU5VQUwiIFZhbHVlPSIyIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU
+        0VUVVAiIFZhbHVlPSIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVE9PTF9DS
+        EFOR0UiIFZhbHVlPSI0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iRU5FUkdZX
+        1NBVklORyIgVmFsdWU9IjUiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJPVEhFU
+        iIgVmFsdWU9IjYiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkV
+        HlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJNZXNzYWdlQ2xhc3NpZmljYXRpb25FbnVtV
+        HlwZSI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU5KRUNUSU9OX1VOSVQiIFZhb
+        HVlPSIxMDAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDTEFNUElOR19VTklUI
+        iBWYWx1ZT0iMTAxIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSEFSRFdBUkUiI
+        FZhbHVlPSIxMDIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDT01QUkVTU0VEX
+        0FJUl9DT05UUk9MIiBWYWx1ZT0iMTAzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZ
+        T0iTUFDSElORV9NT05JVE9SSU5HIiBWYWx1ZT0iMTA0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0iTU9VTEQiIFZhbHVlPSIxMDUiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1Z
+        SBOYW1lPSJFSkVDVE9SIiBWYWx1ZT0iMTA2Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgT
+        mFtZT0iQ09SRV9QVUxMIiBWYWx1ZT0iMTA3Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgT
+        mFtZT0iVEFCTEUiIFZhbHVlPSIxMDgiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
+        SJJTkpFQ1RJT05fUFJPR1JBTSIgVmFsdWU9IjEwOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhb
+        HVlIE5hbWU9IkhZRFJBVUxJQ19URU1QRVJBVFVSRV9DT05UUk9MIiBWYWx1ZT0iMTEwIi8+C
+        iAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ1lMSU5ERVJfVEVNUEVSQVRVUkVfQ09OV
+        FJPTCIgVmFsdWU9IjExMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik1PVUxEX
+        1RFTVBFUkFUVVJFX0NPTlRST0wiIFZhbHVlPSIxMTIiLz4KICA8b3BjOkVudW1lcmF0ZWRWY
+        Wx1ZSBOYW1lPSJIT1RfUlVOTkVSIiBWYWx1ZT0iMTEzIi8+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0iSU5URVJGQUNFUyIgVmFsdWU9IjExNCIvPgogIDxvcGM6RW51bWVyYXRlZ
+        FZhbHVlIE5hbWU9IlJPQk9USUNfU1lTVEVNX0lOVEVSRkFDRSIgVmFsdWU9IjExNSIvPgogI
+        DxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlNQRUNJQUxfUFVSUE9TRV9TSUdOQUwiIFZhb
+        HVlPSIxMTYiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSRUFMVElNRV9FVEhFU
+        k5FVF9TWVNURU0iIFZhbHVlPSIxMTciLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
+        SJTT0ZUV0FSRV9NT05JVE9SSU5HIiBWYWx1ZT0iMTE4Ii8+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0iRVhURVJOQUxfREVWSUNFX0lOVEVSRkFDRSIgVmFsdWU9IjIwMCIvPgogI
+        DxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlRFTVBFUkFUVVJFX0NPTlRST0xfVU5JVCIgV
+        mFsdWU9IjIwMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlJPQk9USUNTX1NZU
+        1RFTSIgVmFsdWU9IjIwMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkxJUVVJR
+        F9TSUxJQ09ORV9SVUJCRVIiIFZhbHVlPSIyMDMiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1Z
+        SBOYW1lPSJTVFJJUFBFUl9VTklUIiBWYWx1ZT0iMjA0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0iRFJZRVIiIFZhbHVlPSIyMDUiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1Z
+        SBOYW1lPSJDT05WRVlPUl9CRUxUIiBWYWx1ZT0iMjA2Ii8+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0iU09SVEVSX1VOSVQiIFZhbHVlPSIyMDciLz4KICA8b3BjOkVudW1lcmF0Z
+        WRWYWx1ZSBOYW1lPSJDT0xPVVJJTkdfVU5JVCIgVmFsdWU9IjIwOCIvPgogIDxvcGM6RW51b
+        WVyYXRlZFZhbHVlIE5hbWU9IklOSkVTVEVSX1VOSVQiIFZhbHVlPSIyMDkiLz4KICA8b3BjO
+        kVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJFWFRFUk5BTF9BTEFSTSIgVmFsdWU9IjIxMCIvPgogI
+        DxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlZBQ1VVTV9DT05UUk9MIiBWYWx1ZT0iMjExI
+        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUFJJTlRFUl9JTlRFUkZBQ0UiIFZhb
+        HVlPSIyMTIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJRVUFMSVRZX01PTklUT
+        1JJTkciIFZhbHVlPSIzMDAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJNQU5VQ
+        UxfT1BFUkFUSU9OIiBWYWx1ZT0iMzAxIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZ
+        T0iRU1FUkdFTkNZX1NUT1AiIFZhbHVlPSIzMDIiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlP
+        gogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJQcm9kdWN0a
+        W9uU3RhdHVzRW51bSI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTk9fUFJPRFVDV
+        ElPTiIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTVEFSVFVQI
+        iBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkRSWV9DWUNMRSIgV
+        mFsdWU9IjIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSRUFEWV9GT1JfUFJPR
+        FVDVElPTiIgVmFsdWU9IjMiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQUk9EV
+        UNUSU9OIiBWYWx1ZT0iNCIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+CiA8b3BjOkVudW1lc
+        mF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9IlRlbXBlcmF0dXJlQ29uZmlnRW51b
+        SI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iT0ZGIiBWYWx1ZT0iMCIvPgogIDxvc
+        GM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkFVVE8iIFZhbHVlPSIxIi8+CiAgPG9wYzpFbnVtZ
+        XJhdGVkVmFsdWUgTmFtZT0iVFVOSU5HIiBWYWx1ZT0iMiIvPgogIDxvcGM6RW51bWVyYXRlZ
+        FZhbHVlIE5hbWU9IlNUQU5EQlkiIFZhbHVlPSIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsd
+        WUgTmFtZT0iT1BFTl9MT09QIiBWYWx1ZT0iNCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9Ik5PVF9TVVBQT1JURUQiIFZhbHVlPSI1Ii8+CiA8L29wYzpFbnVtZXJhdGVkVHlwZ
+        T4KPC9vcGM6VHlwZURpY3Rpb25hcnk+Cg==</uax:ByteString>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6012" NodeId="ns=1;i=6013" BrowseName="NamespaceUri">
@@ -933,6 +1055,7 @@
         <Description>Collects the data type descriptions of http://www.euromap.org/euromap77</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6135</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6051</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6053</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
@@ -945,126 +1068,166 @@
         HR0cDovL29wY2ZvdW5kYXRpb24ub3JnL1VBLzIwMDgvMDIvVHlwZXMueHNkIiB4bWxuczp4c
         z0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPgogPHhzOmltcG9ydCBuYW1lc
         3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzLnhzZCIvP
-        gogPHhzOnNpbXBsZVR5cGUgbmFtZT0iSm9iU3RhdHVzRW51bSI+CiAgPHhzOnJlc3RyaWN0a
-        W9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iT1RIRVJfM
-        CIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlRSQU5TRkVSUkVEX0FTU0lHTkVEXzEiL
-        z4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJTRVRVUF9BQ1RJVkVfMiIvPgogICA8eHM6Z
-        W51bWVyYXRpb24gdmFsdWU9IlNFVFVQX0lOVEVSUlVQVEVEXzMiLz4KICAgPHhzOmVudW1lc
-        mF0aW9uIHZhbHVlPSJTRVRVUF9GSU5JU0hFRF80Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2Y
-        Wx1ZT0iU1RBUlRVUF9BQ1RJVkVfNSIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkpPQ
-        l9JTl9QUk9EVUNUSU9OXzYiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJKT0JfSU5UR
-        VJSVVBURURfNyIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkpPQl9GSU5JU0hFRF84I
-        i8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVEVBUl9ET1dOX0FDVElWRV85Ii8+CiAgI
-        Dx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVEVBUl9ET1dOX0lOVEVSUlVQVEVEXzEwIi8+CiAgI
-        Dx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVEVBUl9ET1dOX0ZJTklTSEVEXzExIi8+CiAgPC94c
-        zpyZXN0cmljdGlvbj4KIDwveHM6c2ltcGxlVHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuc
-        zpKb2JTdGF0dXNFbnVtIiBuYW1lPSJKb2JTdGF0dXNFbnVtIi8+CiA8eHM6Y29tcGxleFR5c
-        GUgbmFtZT0iTGlzdE9mSm9iU3RhdHVzRW51bSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6Z
-        WxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6S
-        m9iU3RhdHVzRW51bSIgbmFtZT0iSm9iU3RhdHVzRW51bSIgbmlsbGFibGU9InRydWUiLz4KI
-        CA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9I
-        nRuczpMaXN0T2ZKb2JTdGF0dXNFbnVtIiBuYW1lPSJMaXN0T2ZKb2JTdGF0dXNFbnVtIiBua
-        WxsYWJsZT0idHJ1ZSIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iTWFjaGluZU1vZGVFbnVtI
-        j4KICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4KICAgPHhzOmVudW1lcmF0a
-        W9uIHZhbHVlPSJBVVRPTUFUSUNfMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlNFT
-        UlfQVVUT01BVElDXzEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNQU5VQUxfMiIvP
-        gogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlNFVFVQXzMiLz4KICAgPHhzOmVudW1lcmF0a
-        W9uIHZhbHVlPSJUT09MX0NIQU5HRV80Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iR
-        U5FUkdZX1NBVklOR181Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iT1RIRVJfNiIvP
-        gogIDwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpbXBsZVR5cGU+CiA8eHM6ZWxlbWVudCB0e
-        XBlPSJ0bnM6TWFjaGluZU1vZGVFbnVtIiBuYW1lPSJNYWNoaW5lTW9kZUVudW0iLz4KIDx4c
-        zpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZNYWNoaW5lTW9kZUVudW0iPgogIDx4czpzZXF1Z
-        W5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZ
-        CIgdHlwZT0idG5zOk1hY2hpbmVNb2RlRW51bSIgbmFtZT0iTWFjaGluZU1vZGVFbnVtIiBua
-        WxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogP
-        HhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZk1hY2hpbmVNb2RlRW51bSIgbmFtZT0iTGlzd
-        E9mTWFjaGluZU1vZGVFbnVtIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOnNpbXBsZVR5cGUgb
-        mFtZT0iTWVzc2FnZUNsYXNzaWZpY2F0aW9uRW51bVR5cGUiPgogIDx4czpyZXN0cmljdGlvb
-        iBiYXNlPSJ4czpzdHJpbmciPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IklOSkVDVElPT
-        l9VTklUXzEwMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkNMQU1QSU5HX1VOSVRfM
-        TAxIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSEFSRFdBUkVfMTAyIi8+CiAgIDx4c
-        zplbnVtZXJhdGlvbiB2YWx1ZT0iQ09NUFJFU1NFRF9BSVJfQ09OVFJPTF8xMDMiLz4KICAgP
-        HhzOmVudW1lcmF0aW9uIHZhbHVlPSJNQUNISU5FX01PTklUT1JJTkdfMTA0Ii8+CiAgIDx4c
-        zplbnVtZXJhdGlvbiB2YWx1ZT0iTU9VTERfMTA1Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2Y
-        Wx1ZT0iRUpFQ1RPUl8xMDYiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJDT1JFX1BVT
-        ExfMTA3Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVEFCTEVfMTA4Ii8+CiAgIDx4c
-        zplbnVtZXJhdGlvbiB2YWx1ZT0iSU5KRUNUSU9OX1BST0dSQU1fMTA5Ii8+CiAgIDx4czplb
-        nVtZXJhdGlvbiB2YWx1ZT0iSFlEUkFVTElDX1RFTVBFUkFUVVJFX0NPTlRST0xfMTEwIi8+C
-        iAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ1lMSU5ERVJfVEVNUEVSQVRVUkVfQ09OVFJPT
-        F8xMTEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJNT1VMRF9URU1QRVJBVFVSRV9DT
-        05UUk9MXzExMiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkhPVF9SVU5ORVJfMTEzI
-        i8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU5URVJGQUNFU18xMTQiLz4KICAgPHhzO
-        mVudW1lcmF0aW9uIHZhbHVlPSJST0JPVElDX1NZU1RFTV9JTlRFUkZBQ0VfMTE1Ii8+CiAgI
-        Dx4czplbnVtZXJhdGlvbiB2YWx1ZT0iU1BFQ0lBTF9QVVJQT1NFX1NJR05BTF8xMTYiLz4KI
-        CAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJSRUFMVElNRV9FVEhFUk5FVF9TWVNURU1fMTE3I
-        i8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iU09GVFdBUkVfTU9OSVRPUklOR18xMTgiL
-        z4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJFWFRFUk5BTF9ERVZJQ0VfSU5URVJGQUNFX
-        zIwMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlRFTVBFUkFUVVJFX0NPTlRST0xfV
-        U5JVF8yMDEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJST0JPVElDU19TWVNURU1fM
-        jAyIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTElRVUlEX1NJTElDT05FX1JVQkJFU
-        l8yMDMiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJTVFJJUFBFUl9VTklUXzIwNCIvP
-        gogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkRSWUVSXzIwNSIvPgogICA8eHM6ZW51bWVyY
-        XRpb24gdmFsdWU9IkNPTlZFWU9SX0JFTFRfMjA2Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2Y
-        Wx1ZT0iU09SVEVSX1VOSVRfMjA3Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ09MT
-        1VSSU5HX1VOSVRfMjA4Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU5KRVNURVJfV
-        U5JVF8yMDkiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJFWFRFUk5BTF9BTEFSTV8yM
-        TAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJWQUNVVU1fQ09OVFJPTF8yMTEiLz4KI
-        CAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQUklOVEVSX0lOVEVSRkFDRV8yMTIiLz4KICAgP
-        HhzOmVudW1lcmF0aW9uIHZhbHVlPSJRVUFMSVRZX01PTklUT1JJTkdfMzAwIi8+CiAgIDx4c
-        zplbnVtZXJhdGlvbiB2YWx1ZT0iTUFOVUFMX09QRVJBVElPTl8zMDEiLz4KICAgPHhzOmVud
-        W1lcmF0aW9uIHZhbHVlPSJFTUVSR0VOQ1lfU1RPUF8zMDIiLz4KICA8L3hzOnJlc3RyaWN0a
-        W9uPgogPC94czpzaW1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOk1lc3NhZ2VDb
-        GFzc2lmaWNhdGlvbkVudW1UeXBlIiBuYW1lPSJNZXNzYWdlQ2xhc3NpZmljYXRpb25FbnVtV
-        HlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZk1lc3NhZ2VDbGFzc2lmaWNhd
-        GlvbkVudW1UeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vyc
-        z0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpNZXNzYWdlQ2xhc3NpZmljY
-        XRpb25FbnVtVHlwZSIgbmFtZT0iTWVzc2FnZUNsYXNzaWZpY2F0aW9uRW51bVR5cGUiIG5pb
-        GxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8e
-        HM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mTWVzc2FnZUNsYXNzaWZpY2F0aW9uRW51bVR5c
-        GUiIG5hbWU9Ikxpc3RPZk1lc3NhZ2VDbGFzc2lmaWNhdGlvbkVudW1UeXBlIiBuaWxsYWJsZ
-        T0idHJ1ZSIvPgogPHhzOnNpbXBsZVR5cGUgbmFtZT0iUHJvZHVjdGlvblN0YXR1c0VudW0iP
-        gogIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPgogICA8eHM6ZW51bWVyYXRpb
-        24gdmFsdWU9Ik5PX1BST0RVQ1RJT05fMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9I
-        lNUQVJUVVBfMSIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkRSWV9DWUNMRV8yIi8+C
-        iAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iUkVBRFlfRk9SX1BST0RVQ1RJT05fMyIvPgogI
-        CA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlBST0RVQ1RJT05fNCIvPgogIDwveHM6cmVzdHJpY
-        3Rpb24+CiA8L3hzOnNpbXBsZVR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6UHJvZHVjd
-        GlvblN0YXR1c0VudW0iIG5hbWU9IlByb2R1Y3Rpb25TdGF0dXNFbnVtIi8+CiA8eHM6Y29tc
-        GxleFR5cGUgbmFtZT0iTGlzdE9mUHJvZHVjdGlvblN0YXR1c0VudW0iPgogIDx4czpzZXF1Z
-        W5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZ
-        CIgdHlwZT0idG5zOlByb2R1Y3Rpb25TdGF0dXNFbnVtIiBuYW1lPSJQcm9kdWN0aW9uU3Rhd
-        HVzRW51bSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wb
-        GV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZQcm9kdWN0aW9uU3RhdHVzR
-        W51bSIgbmFtZT0iTGlzdE9mUHJvZHVjdGlvblN0YXR1c0VudW0iIG5pbGxhYmxlPSJ0cnVlI
-        i8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUGFnZUVudHJ5RGF0YVR5cGUiPgogIDx4czpzZ
-        XF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5c
-        GU9InhzOnN0cmluZyIgbmFtZT0iSWQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwI
-        iBtYXhPY2N1cnM9IjEiIHR5cGU9InVhOkxvY2FsaXplZFRleHQiIG5hbWU9IlRpdGxlIi8+C
-        iAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlP
-        SJ0bnM6UGFnZUVudHJ5RGF0YVR5cGUiIG5hbWU9IlBhZ2VFbnRyeURhdGFUeXBlIi8+CiA8e
-        HM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mUGFnZUVudHJ5RGF0YVR5cGUiPgogIDx4czpzZ
-        XF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91b
-        mRlZCIgdHlwZT0idG5zOlBhZ2VFbnRyeURhdGFUeXBlIiBuYW1lPSJQYWdlRW50cnlEYXRhV
-        HlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4V
-        HlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZQYWdlRW50cnlEYXRhVHlwZSIgb
-        mFtZT0iTGlzdE9mUGFnZUVudHJ5RGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y
-        29tcGxleFR5cGUgbmFtZT0iVXNlclR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZ
-        W1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmRvdWJsZSIgbmFtZ
-        T0iSWQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5c
-        GU9InhzOmRvdWJsZSIgbmFtZT0iTmFtZSIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9I
-        jAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6ZG91YmxlIiBuYW1lPSJDYXJkVWlkIi8+CiAgI
+        gogPHhzOnNpbXBsZVR5cGUgbmFtZT0iRGF0YXNldENvbXBvbmVudEVudW1UeXBlIj4KICA8e
+        HM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4KICAgPHhzOmVudW1lcmF0aW9uIHZhb
+        HVlPSJJTU1fMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlJPQk9UXzEiLz4KICA8L
+        3hzOnJlc3RyaWN0aW9uPgogPC94czpzaW1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0id
+        G5zOkRhdGFzZXRDb21wb25lbnRFbnVtVHlwZSIgbmFtZT0iRGF0YXNldENvbXBvbmVudEVud
+        W1UeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mRGF0YXNldENvbXBvbmVud
+        EVudW1UeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iM
+        CIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpEYXRhc2V0Q29tcG9uZW50RW51b
+        VR5cGUiIG5hbWU9IkRhdGFzZXRDb21wb25lbnRFbnVtVHlwZSIgbmlsbGFibGU9InRydWUiL
+        z4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5c
+        GU9InRuczpMaXN0T2ZEYXRhc2V0Q29tcG9uZW50RW51bVR5cGUiIG5hbWU9Ikxpc3RPZkRhd
+        GFzZXRDb21wb25lbnRFbnVtVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpzaW1wbGVUe
+        XBlIG5hbWU9IkpvYlN0YXR1c0VudW0iPgogIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzd
+        HJpbmciPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik9USEVSXzAiLz4KICAgPHhzOmVud
+        W1lcmF0aW9uIHZhbHVlPSJUUkFOU0ZFUlJFRF9BU1NJR05FRF8xIi8+CiAgIDx4czplbnVtZ
+        XJhdGlvbiB2YWx1ZT0iU0VUVVBfQUNUSVZFXzIiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhb
+        HVlPSJTRVRVUF9JTlRFUlJVUFRFRF8zIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iU
+        0VUVVBfRklOSVNIRURfNCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlNUQVJUVVBfQ
+        UNUSVZFXzUiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJKT0JfSU5fUFJPRFVDVElPT
+        l82Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSk9CX0lOVEVSUlVQVEVEXzciLz4KI
+        CAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJKT0JfRklOSVNIRURfOCIvPgogICA8eHM6ZW51b
+        WVyYXRpb24gdmFsdWU9IlRFQVJfRE9XTl9BQ1RJVkVfOSIvPgogICA8eHM6ZW51bWVyYXRpb
+        24gdmFsdWU9IlRFQVJfRE9XTl9JTlRFUlJVUFRFRF8xMCIvPgogICA8eHM6ZW51bWVyYXRpb
+        24gdmFsdWU9IlRFQVJfRE9XTl9GSU5JU0hFRF8xMSIvPgogIDwveHM6cmVzdHJpY3Rpb24+C
+        iA8L3hzOnNpbXBsZVR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6Sm9iU3RhdHVzRW51b
+        SIgbmFtZT0iSm9iU3RhdHVzRW51bSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZ
+        kpvYlN0YXR1c0VudW0iPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2Njd
+        XJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOkpvYlN0YXR1c0VudW0iI
+        G5hbWU9IkpvYlN0YXR1c0VudW0iIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZ
+        T4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mSm9iU
+        3RhdHVzRW51bSIgbmFtZT0iTGlzdE9mSm9iU3RhdHVzRW51bSIgbmlsbGFibGU9InRydWUiL
+        z4KIDx4czpzaW1wbGVUeXBlIG5hbWU9Ik1hY2hpbmVNb2RlRW51bSI+CiAgPHhzOnJlc3Rya
+        WN0aW9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQVVUT
+        01BVElDXzAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJTRU1JX0FVVE9NQVRJQ18xI
+        i8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iTUFOVUFMXzIiLz4KICAgPHhzOmVudW1lc
+        mF0aW9uIHZhbHVlPSJTRVRVUF8zIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iVE9PT
+        F9DSEFOR0VfNCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkVORVJHWV9TQVZJTkdfN
+        SIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik9USEVSXzYiLz4KICA8L3hzOnJlc3Rya
+        WN0aW9uPgogPC94czpzaW1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOk1hY2hpb
+        mVNb2RlRW51bSIgbmFtZT0iTWFjaGluZU1vZGVFbnVtIi8+CiA8eHM6Y29tcGxleFR5cGUgb
+        mFtZT0iTGlzdE9mTWFjaGluZU1vZGVFbnVtIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplb
+        GVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpNY
+        WNoaW5lTW9kZUVudW0iIG5hbWU9Ik1hY2hpbmVNb2RlRW51bSIgbmlsbGFibGU9InRydWUiL
+        z4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5c
+        GU9InRuczpMaXN0T2ZNYWNoaW5lTW9kZUVudW0iIG5hbWU9Ikxpc3RPZk1hY2hpbmVNb2RlR
+        W51bSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpzaW1wbGVUeXBlIG5hbWU9Ik1lc3NhZ2VDb
+        GFzc2lmaWNhdGlvbkVudW1UeXBlIj4KICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0ieHM6c3Rya
+        W5nIj4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTkpFQ1RJT05fVU5JVF8xMDAiLz4KI
+        CAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJDTEFNUElOR19VTklUXzEwMSIvPgogICA8eHM6Z
+        W51bWVyYXRpb24gdmFsdWU9IkhBUkRXQVJFXzEwMiIvPgogICA8eHM6ZW51bWVyYXRpb24gd
+        mFsdWU9IkNPTVBSRVNTRURfQUlSX0NPTlRST0xfMTAzIi8+CiAgIDx4czplbnVtZXJhdGlvb
+        iB2YWx1ZT0iTUFDSElORV9NT05JVE9SSU5HXzEwNCIvPgogICA8eHM6ZW51bWVyYXRpb24gd
+        mFsdWU9Ik1PVUxEXzEwNSIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkVKRUNUT1JfM
+        TA2Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ09SRV9QVUxMXzEwNyIvPgogICA8e
+        HM6ZW51bWVyYXRpb24gdmFsdWU9IlRBQkxFXzEwOCIvPgogICA8eHM6ZW51bWVyYXRpb24gd
+        mFsdWU9IklOSkVDVElPTl9QUk9HUkFNXzEwOSIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsd
+        WU9IkhZRFJBVUxJQ19URU1QRVJBVFVSRV9DT05UUk9MXzExMCIvPgogICA8eHM6ZW51bWVyY
+        XRpb24gdmFsdWU9IkNZTElOREVSX1RFTVBFUkFUVVJFX0NPTlRST0xfMTExIi8+CiAgIDx4c
+        zplbnVtZXJhdGlvbiB2YWx1ZT0iTU9VTERfVEVNUEVSQVRVUkVfQ09OVFJPTF8xMTIiLz4KI
+        CAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJIT1RfUlVOTkVSXzExMyIvPgogICA8eHM6ZW51b
+        WVyYXRpb24gdmFsdWU9IklOVEVSRkFDRVNfMTE0Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2Y
+        Wx1ZT0iUk9CT1RJQ19TWVNURU1fSU5URVJGQUNFXzExNSIvPgogICA8eHM6ZW51bWVyYXRpb
+        24gdmFsdWU9IlNQRUNJQUxfUFVSUE9TRV9TSUdOQUxfMTE2Ii8+CiAgIDx4czplbnVtZXJhd
+        GlvbiB2YWx1ZT0iUkVBTFRJTUVfRVRIRVJORVRfU1lTVEVNXzExNyIvPgogICA8eHM6ZW51b
+        WVyYXRpb24gdmFsdWU9IlNPRlRXQVJFX01PTklUT1JJTkdfMTE4Ii8+CiAgIDx4czplbnVtZ
+        XJhdGlvbiB2YWx1ZT0iRVhURVJOQUxfREVWSUNFX0lOVEVSRkFDRV8yMDAiLz4KICAgPHhzO
+        mVudW1lcmF0aW9uIHZhbHVlPSJURU1QRVJBVFVSRV9DT05UUk9MX1VOSVRfMjAxIi8+CiAgI
+        Dx4czplbnVtZXJhdGlvbiB2YWx1ZT0iUk9CT1RJQ1NfU1lTVEVNXzIwMiIvPgogICA8eHM6Z
+        W51bWVyYXRpb24gdmFsdWU9IkxJUVVJRF9TSUxJQ09ORV9SVUJCRVJfMjAzIi8+CiAgIDx4c
+        zplbnVtZXJhdGlvbiB2YWx1ZT0iU1RSSVBQRVJfVU5JVF8yMDQiLz4KICAgPHhzOmVudW1lc
+        mF0aW9uIHZhbHVlPSJEUllFUl8yMDUiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJDT
+        05WRVlPUl9CRUxUXzIwNiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlNPUlRFUl9VT
+        klUXzIwNyIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkNPTE9VUklOR19VTklUXzIwO
+        CIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IklOSkVTVEVSX1VOSVRfMjA5Ii8+CiAgI
+        Dx4czplbnVtZXJhdGlvbiB2YWx1ZT0iRVhURVJOQUxfQUxBUk1fMjEwIi8+CiAgIDx4czplb
+        nVtZXJhdGlvbiB2YWx1ZT0iVkFDVVVNX0NPTlRST0xfMjExIi8+CiAgIDx4czplbnVtZXJhd
+        GlvbiB2YWx1ZT0iUFJJTlRFUl9JTlRFUkZBQ0VfMjEyIi8+CiAgIDx4czplbnVtZXJhdGlvb
+        iB2YWx1ZT0iUVVBTElUWV9NT05JVE9SSU5HXzMwMCIvPgogICA8eHM6ZW51bWVyYXRpb24gd
+        mFsdWU9Ik1BTlVBTF9PUEVSQVRJT05fMzAxIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1Z
+        T0iRU1FUkdFTkNZX1NUT1BfMzAyIi8+CiAgPC94czpyZXN0cmljdGlvbj4KIDwveHM6c2ltc
+        GxlVHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpNZXNzYWdlQ2xhc3NpZmljYXRpb25Fb
+        nVtVHlwZSIgbmFtZT0iTWVzc2FnZUNsYXNzaWZpY2F0aW9uRW51bVR5cGUiLz4KIDx4czpjb
+        21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZNZXNzYWdlQ2xhc3NpZmljYXRpb25FbnVtVHlwZSI+C
+        iAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vyc
+        z0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6TWVzc2FnZUNsYXNzaWZpY2F0aW9uRW51bVR5cGUiI
+        G5hbWU9Ik1lc3NhZ2VDbGFzc2lmaWNhdGlvbkVudW1UeXBlIiBuaWxsYWJsZT0idHJ1ZSIvP
+        gogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZ
+        T0idG5zOkxpc3RPZk1lc3NhZ2VDbGFzc2lmaWNhdGlvbkVudW1UeXBlIiBuYW1lPSJMaXN0T
+        2ZNZXNzYWdlQ2xhc3NpZmljYXRpb25FbnVtVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4c
+        zpzaW1wbGVUeXBlIG5hbWU9IlByb2R1Y3Rpb25TdGF0dXNFbnVtIj4KICA8eHM6cmVzdHJpY
+        3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJOT19QU
+        k9EVUNUSU9OXzAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJTVEFSVFVQXzEiLz4KI
+        CAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJEUllfQ1lDTEVfMiIvPgogICA8eHM6ZW51bWVyY
+        XRpb24gdmFsdWU9IlJFQURZX0ZPUl9QUk9EVUNUSU9OXzMiLz4KICAgPHhzOmVudW1lcmF0a
+        W9uIHZhbHVlPSJQUk9EVUNUSU9OXzQiLz4KICA8L3hzOnJlc3RyaWN0aW9uPgogPC94czpza
+        W1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlByb2R1Y3Rpb25TdGF0dXNFbnVtI
+        iBuYW1lPSJQcm9kdWN0aW9uU3RhdHVzRW51bSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9I
+        kxpc3RPZlByb2R1Y3Rpb25TdGF0dXNFbnVtIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplb
+        GVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpQc
+        m9kdWN0aW9uU3RhdHVzRW51bSIgbmFtZT0iUHJvZHVjdGlvblN0YXR1c0VudW0iIG5pbGxhY
+        mxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6Z
+        WxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mUHJvZHVjdGlvblN0YXR1c0VudW0iIG5hbWU9Ikxpc
+        3RPZlByb2R1Y3Rpb25TdGF0dXNFbnVtIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOnNpbXBsZ
+        VR5cGUgbmFtZT0iVGVtcGVyYXR1cmVDb25maWdFbnVtIj4KICA8eHM6cmVzdHJpY3Rpb24gY
+        mFzZT0ieHM6c3RyaW5nIj4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJPRkZfMCIvPgogI
+        CA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkFVVE9fMSIvPgogICA8eHM6ZW51bWVyYXRpb24gd
+        mFsdWU9IlRVTklOR18yIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iU1RBTkRCWV8zI
+        i8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iT1BFTl9MT09QXzQiLz4KICAgPHhzOmVud
+        W1lcmF0aW9uIHZhbHVlPSJOT1RfU1VQUE9SVEVEXzUiLz4KICA8L3hzOnJlc3RyaWN0aW9uP
+        gogPC94czpzaW1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlRlbXBlcmF0dXJlQ
+        29uZmlnRW51bSIgbmFtZT0iVGVtcGVyYXR1cmVDb25maWdFbnVtIi8+CiA8eHM6Y29tcGxle
+        FR5cGUgbmFtZT0iTGlzdE9mVGVtcGVyYXR1cmVDb25maWdFbnVtIj4KICA8eHM6c2VxdWVuY
+        2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiI
+        HR5cGU9InRuczpUZW1wZXJhdHVyZUNvbmZpZ0VudW0iIG5hbWU9IlRlbXBlcmF0dXJlQ29uZ
+        mlnRW51bSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wb
+        GV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZUZW1wZXJhdHVyZUNvbmZpZ
+        0VudW0iIG5hbWU9Ikxpc3RPZlRlbXBlcmF0dXJlQ29uZmlnRW51bSIgbmlsbGFibGU9InRyd
+        WUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJFdXJvbWFwU3RydWN0dXJlVHlwZSI+CiAgP
+        HhzOnNlcXVlbmNlLz4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0b
+        nM6RXVyb21hcFN0cnVjdHVyZVR5cGUiIG5hbWU9IkV1cm9tYXBTdHJ1Y3R1cmVUeXBlIi8+C
+        iA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mRXVyb21hcFN0cnVjdHVyZVR5cGUiPgogI
+        Dx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9I
+        nVuYm91bmRlZCIgdHlwZT0idG5zOkV1cm9tYXBTdHJ1Y3R1cmVUeXBlIiBuYW1lPSJFdXJvb
+        WFwU3RydWN0dXJlVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogP
+        C94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZFdXJvbWFwU
+        3RydWN0dXJlVHlwZSIgbmFtZT0iTGlzdE9mRXVyb21hcFN0cnVjdHVyZVR5cGUiIG5pbGxhY
+        mxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUGFnZUVudHJ5RGF0YVR5cGUiP
+        gogIDx4czpjb21wbGV4Q29udGVudCBtaXhlZD0iZmFsc2UiPgogICA8eHM6ZXh0ZW5zaW9uI
+        GJhc2U9InRuczpFdXJvbWFwU3RydWN0dXJlVHlwZSI+CiAgICA8eHM6c2VxdWVuY2U+CiAgI
+        CAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0c
+        mluZyIgbmFtZT0iSWQiLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY
+        3Vycz0iMSIgdHlwZT0idWE6TG9jYWxpemVkVGV4dCIgbmFtZT0iVGl0bGUiLz4KICAgIDwve
+        HM6c2VxdWVuY2U+CiAgIDwveHM6ZXh0ZW5zaW9uPgogIDwveHM6Y29tcGxleENvbnRlbnQ+C
+        iA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlBhZ2VFbnRyeURhd
+        GFUeXBlIiBuYW1lPSJQYWdlRW50cnlEYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hb
+        WU9Ikxpc3RPZlBhZ2VFbnRyeURhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplb
+        GVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpQY
+        WdlRW50cnlEYXRhVHlwZSIgbmFtZT0iUGFnZUVudHJ5RGF0YVR5cGUiIG5pbGxhYmxlPSJ0c
+        nVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVud
+        CB0eXBlPSJ0bnM6TGlzdE9mUGFnZUVudHJ5RGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlBhZ2VFb
+        nRyeURhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9I
+        lVzZXJUeXBlIj4KICA8eHM6Y29tcGxleENvbnRlbnQgbWl4ZWQ9ImZhbHNlIj4KICAgPHhzO
+        mV4dGVuc2lvbiBiYXNlPSJ0bnM6RXVyb21hcFN0cnVjdHVyZVR5cGUiPgogICAgPHhzOnNlc
+        XVlbmNlPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0e
+        XBlPSJ4czpkb3VibGUiIG5hbWU9IklkIi8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzP
+        SIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmRvdWJsZSIgbmFtZT0iTmFtZSIvPgogICAgI
         Dx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpkb3Vib
-        GUiIG5hbWU9IlZlbmRvckxldmVsIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgb
-        WF4T2NjdXJzPSIxIiB0eXBlPSJ4czpkb3VibGUiIG5hbWU9IlZlbmRvclJvbGUiLz4KICAgP
-        HhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOmRvdWJsZ
-        SIgbmFtZT0iTGFuZ3VhZ2UiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZ
-        T4KIDx4czplbGVtZW50IHR5cGU9InRuczpVc2VyVHlwZSIgbmFtZT0iVXNlclR5cGUiLz4KI
-        Dx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZVc2VyVHlwZSI+CiAgPHhzOnNlcXVlbmNlP
-        gogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0e
-        XBlPSJ0bnM6VXNlclR5cGUiIG5hbWU9IlVzZXJUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogI
-        DwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0id
-        G5zOkxpc3RPZlVzZXJUeXBlIiBuYW1lPSJMaXN0T2ZVc2VyVHlwZSIgbmlsbGFibGU9InRyd
-        WUiLz4KPC94czpzY2hlbWE+Cg==</uax:ByteString>
+        GUiIG5hbWU9IkNhcmRVaWQiLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1he
+        E9jY3Vycz0iMSIgdHlwZT0ieHM6ZG91YmxlIiBuYW1lPSJWZW5kb3JMZXZlbCIvPgogICAgI
+        Dx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpkb3Vib
+        GUiIG5hbWU9IlZlbmRvclJvbGUiLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiI
+        G1heE9jY3Vycz0iMSIgdHlwZT0ieHM6ZG91YmxlIiBuYW1lPSJMYW5ndWFnZSIvPgogICAgP
+        C94czpzZXF1ZW5jZT4KICAgPC94czpleHRlbnNpb24+CiAgPC94czpjb21wbGV4Q29udGVud
+        D4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6VXNlclR5cGUiI
+        G5hbWU9IlVzZXJUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mVXNlclR5c
+        GUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY
+        2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOlVzZXJUeXBlIiBuYW1lPSJVc2VyVHlwZSIgb
+        mlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KI
+        Dx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZVc2VyVHlwZSIgbmFtZT0iTGlzdE9mVXNlc
+        lR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CjwveHM6c2NoZW1hPgo=</uax:ByteString>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6050" NodeId="ns=1;i=6051" BrowseName="NamespaceUri">
@@ -1142,7 +1305,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6091</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6054" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6054" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -1159,7 +1322,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6056" BrowseName="1:BadPartsCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6056" BrowseName="1:BadPartsCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>BadPartsCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5012</Reference>
@@ -1175,7 +1338,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6058" BrowseName="1:CycleCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6058" BrowseName="1:CycleCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>CycleCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5012</Reference>
@@ -1201,7 +1364,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6059" BrowseName="1:GoodPartsCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6059" BrowseName="1:GoodPartsCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>GoodPartsCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5012</Reference>
@@ -1225,7 +1388,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6062" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6062" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>LastCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -1251,7 +1414,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6080" BrowseName="1:MachineCycleCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6080" BrowseName="1:MachineCycleCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>MachineCycleCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5012</Reference>
@@ -1268,7 +1431,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6081" BrowseName="1:PartsCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6081" BrowseName="1:PartsCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>PartsCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1346,7 +1509,7 @@
             <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1026</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6078" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6078" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -1363,7 +1526,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6067" BrowseName="1:BadPartsCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6067" BrowseName="1:BadPartsCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>BadPartsCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1017</Reference>
@@ -1379,7 +1542,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6069" BrowseName="1:CycleCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6069" BrowseName="1:CycleCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>CycleCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1017</Reference>
@@ -1387,7 +1550,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6070" BrowseName="1:GoodPartsCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6070" BrowseName="1:GoodPartsCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>GoodPartsCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1017</Reference>
@@ -1411,7 +1574,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6076" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6076" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>LastCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -1428,7 +1591,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6073" BrowseName="1:MachineCycleCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6073" BrowseName="1:MachineCycleCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>MachineCycleCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1017</Reference>
@@ -1436,7 +1599,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6074" BrowseName="1:PartsCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6074" BrowseName="1:PartsCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>PartsCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1585,6 +1748,111 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1028" BrowseName="1:InjectionUnitType">
+        <DisplayName>InjectionUnitType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6097</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6107</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1025</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6099</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6098</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6102</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6100</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6106</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6104</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1028" NodeId="ns=1;i=6097" BrowseName="1:BarrelId" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>BarrelId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1028</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1028" NodeId="ns=1;i=6107" BrowseName="1:EuromapSize" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>EuromapSize</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1028</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1028" NodeId="ns=1;i=6099" BrowseName="1:InProduction" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>InProduction</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1028</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1028" NodeId="ns=1;i=6098" BrowseName="1:IsPresent" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>IsPresent</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1028</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1028" NodeId="ns=1;i=6102" BrowseName="1:MaxScrewStroke" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>MaxScrewStroke</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6103</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1028</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6102" NodeId="ns=1;i=6103" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6102</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1028" NodeId="ns=1;i=6100" BrowseName="1:ScrewDiameter" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ScrewDiameter</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6101</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1028</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6100" NodeId="ns=1;i=6101" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6100</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1028" NodeId="ns=1;i=6106" BrowseName="1:ScrewId" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ScrewId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1028</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1028" NodeId="ns=1;i=6104" BrowseName="1:ScrewVolume" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ScrewVolume</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6105</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1028</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6104" NodeId="ns=1;i=6105" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6104</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
     <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:MachineConfigurationType">
@@ -1938,6 +2206,39 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5004</Reference>
         </References>
     </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1029" BrowseName="1:MouldType">
+        <DisplayName>MouldType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6116</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6108</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1025</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6115</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1029" NodeId="ns=1;i=6116" BrowseName="1:IsPresent" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>IsPresent</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1029</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1029" NodeId="ns=1;i=6108" BrowseName="1:MouldId" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>MouldId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1029</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1029" NodeId="ns=1;i=6115" BrowseName="1:MouldType" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>MouldType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1029</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
     <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:StandstillReasonType">
         <DisplayName>StandstillReasonType</DisplayName>
         <References>
@@ -1962,15 +2263,200 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
     </UAVariable>
-    <UAObjectType NodeId="ns=1;i=1027" BrowseName="1:Euromap77DatasetFile">
-        <DisplayName>Euromap77DatasetFile</DisplayName>
+    <UAObjectType NodeId="ns=1;i=1031" BrowseName="1:ValueSettingType">
+        <DisplayName>ValueSettingType</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty">ns=1;i=6095</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6094</Reference>
-            <Reference ReferenceType="HasSubtype" IsForward="false">i=11575</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6096</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6120</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6124</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6122</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6126</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6118</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1025</Reference>
         </References>
     </UAObjectType>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1031" NodeId="ns=1;i=6120" BrowseName="1:HighDeviation" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HighDeviation</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6121</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1031</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6120" NodeId="ns=1;i=6121" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6120</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1031" NodeId="ns=1;i=6124" BrowseName="1:HighLimit" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HighLimit</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6125</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1031</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6124" NodeId="ns=1;i=6125" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6124</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1031" NodeId="ns=1;i=6122" BrowseName="1:LowDeviation" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>LowDeviation</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6123</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1031</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6122" NodeId="ns=1;i=6123" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6122</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1031" NodeId="ns=1;i=6126" BrowseName="1:LowLimit" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>LowLimit</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6127</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1031</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6126" NodeId="ns=1;i=6127" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6126</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1031" NodeId="ns=1;i=6118" BrowseName="1:Nominal" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Nominal</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6119</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1031</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6118" NodeId="ns=1;i=6119" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6118</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1030" BrowseName="1:ZoneType">
+        <DisplayName>ZoneType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6128</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6130</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6132</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6117</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1025</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1030" NodeId="ns=1;i=6128" BrowseName="1:ActualTemperature" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ActualTemperature</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1030</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6129</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6128" NodeId="ns=1;i=6129" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6128</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1030" NodeId="ns=1;i=6130" BrowseName="1:StandbyTemperature" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>StandbyTemperature</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6131</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1030</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6130" NodeId="ns=1;i=6131" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6130</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="TemperatureConfigEnum" ParentNodeId="ns=1;i=1030" NodeId="ns=1;i=6132" BrowseName="1:TemperatureConfiguration" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>TemperatureConfiguration</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1030</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1030" NodeId="ns=1;i=6117" BrowseName="1:ZoneId" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ZoneId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1030</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1027" BrowseName="1:EuromapDatasetFile">
+        <DisplayName>EuromapDatasetFile</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6111</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6143</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6095</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6110</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6137</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6109</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6094</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=11575</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6133</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6140</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6142</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6112</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6113</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6139</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6141</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6096</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6114</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable SymbolicName="ProductName" DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6111" BrowseName="1:&lt;ProductName>" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>&lt;ProductName></DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11510</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6143" BrowseName="1:ControllerType" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ControllerType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6095" BrowseName="1:CreationTimestamp" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>CreationTimestamp</DisplayName>
         <References>
@@ -1979,20 +2465,108 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6094" BrowseName="1:Description" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>Description</DisplayName>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6110" BrowseName="1:CreationTimestamp_2" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>CreationTimestamp_2</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6096" BrowseName="1:Filename" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>Filename</DisplayName>
+    <UAVariable DataType="DatasetComponentEnumType" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6137" BrowseName="1:DatasetComponent" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DatasetComponent</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11510</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6109" BrowseName="1:DatasetDescription" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DatasetDescription</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6094" BrowseName="1:DatasetName" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DatasetName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6133" BrowseName="1:LocationName" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>LocationName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6140" BrowseName="1:Manufacturer" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Manufacturer</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6142" BrowseName="1:Model" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Model</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6112" BrowseName="1:MouldId" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>MouldId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Integer" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6113" BrowseName="1:NumCavities" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>NumCavities</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6139" BrowseName="1:Property" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Property</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6141" BrowseName="1:SerialNumber" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SerialNumber</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6096" BrowseName="1:UserMachineName" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>UserMachineName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1027" NodeId="ns=1;i=6114" BrowseName="1:UserName" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>UserName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
         </References>
     </UAVariable>
     <UAObjectType NodeId="ns=1;i=1018" BrowseName="1:DatasetTransferStateMachineType">
@@ -2154,6 +2728,22 @@
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
             <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3006</Reference>
             <Reference ReferenceType="HasDescription">ns=1;i=6064</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=5015" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3008</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6134</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5016" BrowseName="Default XML">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3008</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6135</Reference>
         </References>
     </UAObject>
 </UANodeSet>
