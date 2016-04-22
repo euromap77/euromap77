@@ -8,12 +8,12 @@ and exchange data.
 ## Who supports Euromap 77
 * [ARBURG GmbH + Co KG](https://www.arburg.com), Germany
 * [ENGEL AUSTRIA GmbH](https://www.engelglobal.com), Austria 
+* [FERROMATIK MILACRON GmbH](http://www.milacron.com/our-brands/ferromatik/), Germany
 * [KraussMaffei Technologies GmbH](http://www.kraussmaffei.de/), Germany 
 * [NEGRI BOSSI S.P.A.](http://www.negribossi.com/), Italy 
 * [Netstal-Maschinen AG](http://www.netstal.com), Switzerland 
 * [Sumitomo (SHI) Demag Plastics Machinery GmbH](http://www.sumitomo-shi-demag.eu), Germany
 * [WITTMANN BATTENFELD GmbH](http://www.wittmann-group.com/), Austria
-
 
 ## Used Technology
 Euromap 77 is based on [OPC/UA](https://opcfoundation.org/).
@@ -27,3 +27,4 @@ Euromap 77 is based on [OPC/UA](https://opcfoundation.org/).
 * N. Birkeland, [Netstal-Maschinen AG](http://www.netstal.com), Switzerland
 * A. Kern, [ENGEL AUSTRIA GmbH](https://www.engelglobal.com), Austria
 * M. Damm, [Ascolab](http://ascolab.com), Germany
+* T. Wichert, [KraussMaffei Technologies GmbH](http://www.kraussmaffei.de/), Germany
