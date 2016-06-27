@@ -1,0 +1,265 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://www.euromap.org/euromap77/Types.xsd" xmlns:tns="http://www.euromap.org/euromap77/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="CavityCycleQualityEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NoPart_0"/>
+            <xs:enumeration value="GoodPart_1"/>
+            <xs:enumeration value="BadPart_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:CavityCycleQualityEnum" name="CavityCycleQualityEnum"/>
+    <xs:complexType name="ListOfCavityCycleQualityEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavityCycleQualityEnum" name="CavityCycleQualityEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCavityCycleQualityEnum" name="ListOfCavityCycleQualityEnum" nillable="true"/>
+    <xs:simpleType name="CycleQualityEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Good_0"/>
+            <xs:enumeration value="Bad_1"/>
+            <xs:enumeration value="TestSampleCycle_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:CycleQualityEnum" name="CycleQualityEnum"/>
+    <xs:complexType name="ListOfCycleQualityEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CycleQualityEnum" name="CycleQualityEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCycleQualityEnum" name="ListOfCycleQualityEnum" nillable="true"/>
+    <xs:simpleType name="DatasetComponentEnumType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="IMM_0"/>
+            <xs:enumeration value="ROBOT_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:DatasetComponentEnumType" name="DatasetComponentEnumType"/>
+    <xs:complexType name="ListOfDatasetComponentEnumType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DatasetComponentEnumType" name="DatasetComponentEnumType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfDatasetComponentEnumType" name="ListOfDatasetComponentEnumType" nillable="true"/>
+    <xs:simpleType name="JobStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="TRANSFERRED_ASSIGNED_1"/>
+            <xs:enumeration value="SETUP_ACTIVE_2"/>
+            <xs:enumeration value="SETUP_INTERRUPTED_3"/>
+            <xs:enumeration value="SETUP_FINISHED_4"/>
+            <xs:enumeration value="STARTUP_ACTIVE_5"/>
+            <xs:enumeration value="JOB_IN_PRODUCTION_6"/>
+            <xs:enumeration value="JOB_INTERRUPTED_7"/>
+            <xs:enumeration value="JOB_FINISHED_8"/>
+            <xs:enumeration value="TEAR_DOWN_ACTIVE_9"/>
+            <xs:enumeration value="TEAR_DOWN_INTERRUPTED_10"/>
+            <xs:enumeration value="TEAR_DOWN_FINISHED_11"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:JobStatusEnum" name="JobStatusEnum"/>
+    <xs:complexType name="ListOfJobStatusEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:JobStatusEnum" name="JobStatusEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfJobStatusEnum" name="ListOfJobStatusEnum" nillable="true"/>
+    <xs:simpleType name="MachineModeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AUTOMATIC_0"/>
+            <xs:enumeration value="SEMI_AUTOMATIC_1"/>
+            <xs:enumeration value="MANUAL_2"/>
+            <xs:enumeration value="SETUP_3"/>
+            <xs:enumeration value="TOOL_CHANGE_4"/>
+            <xs:enumeration value="ENERGY_SAVING_5"/>
+            <xs:enumeration value="OTHER_6"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MachineModeEnum" name="MachineModeEnum"/>
+    <xs:complexType name="ListOfMachineModeEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MachineModeEnum" name="MachineModeEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMachineModeEnum" name="ListOfMachineModeEnum" nillable="true"/>
+    <xs:simpleType name="MessageClassificationEnumType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="INJECTION_UNIT_100"/>
+            <xs:enumeration value="CLAMPING_UNIT_101"/>
+            <xs:enumeration value="HARDWARE_102"/>
+            <xs:enumeration value="COMPRESSED_AIR_CONTROL_103"/>
+            <xs:enumeration value="MACHINE_MONITORING_104"/>
+            <xs:enumeration value="MOULD_105"/>
+            <xs:enumeration value="EJECTOR_106"/>
+            <xs:enumeration value="CORE_PULL_107"/>
+            <xs:enumeration value="TABLE_108"/>
+            <xs:enumeration value="INJECTION_PROGRAM_109"/>
+            <xs:enumeration value="HYDRAULIC_TEMPERATURE_CONTROL_110"/>
+            <xs:enumeration value="CYLINDER_TEMPERATURE_CONTROL_111"/>
+            <xs:enumeration value="MOULD_TEMPERATURE_CONTROL_112"/>
+            <xs:enumeration value="HOT_RUNNER_113"/>
+            <xs:enumeration value="INTERFACES_114"/>
+            <xs:enumeration value="ROBOTIC_SYSTEM_INTERFACE_115"/>
+            <xs:enumeration value="SPECIAL_PURPOSE_SIGNAL_116"/>
+            <xs:enumeration value="REALTIME_ETHERNET_SYSTEM_117"/>
+            <xs:enumeration value="SOFTWARE_MONITORING_118"/>
+            <xs:enumeration value="EXTERNAL_DEVICE_INTERFACE_200"/>
+            <xs:enumeration value="TEMPERATURE_CONTROL_UNIT_201"/>
+            <xs:enumeration value="ROBOTICS_SYSTEM_202"/>
+            <xs:enumeration value="LIQUID_SILICONE_RUBBER_203"/>
+            <xs:enumeration value="STRIPPER_UNIT_204"/>
+            <xs:enumeration value="DRYER_205"/>
+            <xs:enumeration value="CONVEYOR_BELT_206"/>
+            <xs:enumeration value="SORTER_UNIT_207"/>
+            <xs:enumeration value="COLOURING_UNIT_208"/>
+            <xs:enumeration value="INJESTER_UNIT_209"/>
+            <xs:enumeration value="EXTERNAL_ALARM_210"/>
+            <xs:enumeration value="VACUUM_CONTROL_211"/>
+            <xs:enumeration value="PRINTER_INTERFACE_212"/>
+            <xs:enumeration value="QUALITY_MONITORING_300"/>
+            <xs:enumeration value="MANUAL_OPERATION_301"/>
+            <xs:enumeration value="EMERGENCY_STOP_302"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MessageClassificationEnumType" name="MessageClassificationEnumType"/>
+    <xs:complexType name="ListOfMessageClassificationEnumType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MessageClassificationEnumType" name="MessageClassificationEnumType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMessageClassificationEnumType" name="ListOfMessageClassificationEnumType" nillable="true"/>
+    <xs:simpleType name="ProductionStatusEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NO_PRODUCTION_0"/>
+            <xs:enumeration value="STARTUP_1"/>
+            <xs:enumeration value="DRY_CYCLE_2"/>
+            <xs:enumeration value="READY_FOR_PRODUCTION_3"/>
+            <xs:enumeration value="PRODUCTION_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ProductionStatusEnum" name="ProductionStatusEnum"/>
+    <xs:complexType name="ListOfProductionStatusEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProductionStatusEnum" name="ProductionStatusEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProductionStatusEnum" name="ListOfProductionStatusEnum" nillable="true"/>
+    <xs:simpleType name="TemperatureConfigEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OFF_0"/>
+            <xs:enumeration value="AUTO_1"/>
+            <xs:enumeration value="TUNING_2"/>
+            <xs:enumeration value="STANDBY_3"/>
+            <xs:enumeration value="OPEN_LOOP_4"/>
+            <xs:enumeration value="NOT_SUPPORTED_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:TemperatureConfigEnum" name="TemperatureConfigEnum"/>
+    <xs:complexType name="ListOfTemperatureConfigEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TemperatureConfigEnum" name="TemperatureConfigEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTemperatureConfigEnum" name="ListOfTemperatureConfigEnum" nillable="true"/>
+    <xs:complexType name="EuromapStructureType">
+        <xs:sequence/>
+    </xs:complexType>
+    <xs:element type="tns:EuromapStructureType" name="EuromapStructureType"/>
+    <xs:complexType name="ListOfEuromapStructureType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EuromapStructureType" name="EuromapStructureType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEuromapStructureType" name="ListOfEuromapStructureType" nillable="true"/>
+    <xs:complexType name="EuromapProfileType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:EuromapStructureType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="EuromapProfile"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Version"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:EuromapProfileType" name="EuromapProfileType"/>
+    <xs:complexType name="ListOfEuromapProfileType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EuromapProfileType" name="EuromapProfileType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEuromapProfileType" name="ListOfEuromapProfileType" nillable="true"/>
+    <xs:complexType name="Message1Type">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:EuromapStructureType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="tns:MessageClassificationEnumType" name="Classification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="StandstillAlarm"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:Message1Type" name="Message1Type"/>
+    <xs:complexType name="ListOfMessage1Type">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:Message1Type" name="Message1Type" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMessage1Type" name="ListOfMessage1Type" nillable="true"/>
+    <xs:complexType name="PageEntryDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:EuromapStructureType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Title"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PageEntryDataType" name="PageEntryDataType"/>
+    <xs:complexType name="ListOfPageEntryDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PageEntryDataType" name="PageEntryDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPageEntryDataType" name="ListOfPageEntryDataType" nillable="true"/>
+    <xs:complexType name="StandstillReasonType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:EuromapStructureType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Text"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="LockedbyClient"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:StandstillReasonType" name="StandstillReasonType"/>
+    <xs:complexType name="ListOfStandstillReasonType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:StandstillReasonType" name="StandstillReasonType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfStandstillReasonType" name="ListOfStandstillReasonType" nillable="true"/>
+    <xs:complexType name="UserType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:EuromapStructureType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Name"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="CardUid"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="VendorLevel"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="VendorRole"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Language"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:UserType" name="UserType"/>
+    <xs:complexType name="ListOfUserType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:UserType" name="UserType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfUserType" name="ListOfUserType" nillable="true"/>
+</xs:schema>
