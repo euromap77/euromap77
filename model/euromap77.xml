@@ -47,7 +47,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="gE3y/CWzp7AeaM2yQSEuOA==" Version="1.4.3"/>
+            <ModelInfo Tool="UaModeler" Hash="XE48yu/7RojzgNsV9bc5gA==" Version="1.4.3"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3016" BrowseName="1:CavityCycleQualityEnum">
@@ -5992,9 +5992,9 @@
     <UAObject SymbolicName="PowerUnit" ParentNodeId="ns=1;i=1007" NodeId="ns=1;i=5018" BrowseName="1:PowerUnit_&lt;Nr>">
         <DisplayName>PowerUnit_&lt;Nr></DisplayName>
         <References>
+            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6212</Reference>
-            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6209</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6207</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1033</Reference>
@@ -7190,8 +7190,8 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1007" NodeId="ns=1;i=6548" BrowseName="1:Version" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>Version</DisplayName>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1007" NodeId="ns=1;i=6548" BrowseName="NodeVersion" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>NodeVersion</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
