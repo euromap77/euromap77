@@ -256,25 +256,4 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfStandstillReasonType" name="ListOfStandstillReasonType" nillable="true"/>
-    <xs:complexType name="UserType">
-        <xs:complexContent mixed="false">
-            <xs:extension base="tns:EuromapStructureType">
-                <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Name"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="CardUid"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="VendorLevel"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="VendorRole"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Language"/>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-    <xs:element type="tns:UserType" name="UserType"/>
-    <xs:complexType name="ListOfUserType">
-        <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:UserType" name="UserType" nillable="true"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element type="tns:ListOfUserType" name="ListOfUserType" nillable="true"/>
 </xs:schema>

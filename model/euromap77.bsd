@@ -19,14 +19,6 @@
         <opc:Field TypeName="ua:LocalizedText" Name="Text"/>
         <opc:Field TypeName="opc:Boolean" Name="LockedbyClient"/>
     </opc:StructuredType>
-    <opc:StructuredType BaseType="tns:EuromapStructureType" Name="UserType">
-        <opc:Field TypeName="opc:CharArray" Name="Id"/>
-        <opc:Field TypeName="opc:CharArray" Name="Name"/>
-        <opc:Field TypeName="opc:CharArray" Name="CardUid"/>
-        <opc:Field TypeName="opc:CharArray" Name="VendorLevel"/>
-        <opc:Field TypeName="opc:CharArray" Name="VendorRole"/>
-        <opc:Field TypeName="opc:CharArray" Name="Language"/>
-    </opc:StructuredType>
     <opc:EnumeratedType LengthInBits="32" Name="CavityCycleQualityEnum">
         <opc:EnumeratedValue Name="NoPart" Value="0"/>
         <opc:EnumeratedValue Name="GoodPart" Value="1"/>
