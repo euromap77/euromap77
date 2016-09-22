@@ -1,6 +1,6 @@
 ###########################
 # UaModeler Project File  #
-# Generated at 21.04.2016 #
+# Generated at 22.09.2016 #
 ###########################
 
 PROJECTNAME = euromap77
@@ -17,7 +17,7 @@ COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
     ($MODELS)/Opc.Ua.PLCopen.NodeSet.ua: #0000ff\
     euromap77.ua: #008000
 
-OUTPUTPATH = source/xml
+OUTPUTPATH = 
 
 GENERATE += euromap77.ua
 
