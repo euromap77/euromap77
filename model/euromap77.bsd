@@ -56,13 +56,12 @@
         <opc:EnumeratedValue Name="TEAR_DOWN_FINISHED" Value="11"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="MachineModeEnum">
-        <opc:EnumeratedValue Name="AUTOMATIC" Value="0"/>
-        <opc:EnumeratedValue Name="SEMI_AUTOMATIC" Value="1"/>
-        <opc:EnumeratedValue Name="MANUAL" Value="2"/>
-        <opc:EnumeratedValue Name="SETUP" Value="3"/>
-        <opc:EnumeratedValue Name="TOOL_CHANGE" Value="4"/>
-        <opc:EnumeratedValue Name="ENERGY_SAVING" Value="5"/>
-        <opc:EnumeratedValue Name="OTHER" Value="6"/>
+        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
+        <opc:EnumeratedValue Name="AUTOMATIC_1" Value="1"/>
+        <opc:EnumeratedValue Name="SEMI_AUTOMATIC_2" Value="2"/>
+        <opc:EnumeratedValue Name="MANUAL_3" Value="3"/>
+        <opc:EnumeratedValue Name="SETUP_4" Value="4"/>
+        <opc:EnumeratedValue Name="SLEEP_5" Value="5"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="MessageClassificationEnumType">
         <opc:EnumeratedValue Name="INJECTION_UNIT" Value="100"/>
@@ -102,11 +101,12 @@
         <opc:EnumeratedValue Name="EMERGENCY_STOP" Value="302"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="ProductionStatusEnum">
-        <opc:EnumeratedValue Name="NO_PRODUCTION" Value="0"/>
-        <opc:EnumeratedValue Name="STARTUP" Value="1"/>
-        <opc:EnumeratedValue Name="DRY_CYCLE" Value="2"/>
-        <opc:EnumeratedValue Name="READY_FOR_PRODUCTION" Value="3"/>
-        <opc:EnumeratedValue Name="PRODUCTION" Value="4"/>
+        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
+        <opc:EnumeratedValue Name="NO_PRODUCTION_1" Value="1"/>
+        <opc:EnumeratedValue Name="START_UP_2" Value="2"/>
+        <opc:EnumeratedValue Name="READY_FOR_PRODUCTION_3" Value="3"/>
+        <opc:EnumeratedValue Name="PRODUCTION_4" Value="4"/>
+        <opc:EnumeratedValue Name="DRY_CYCLE_5" Value="5"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="TemperatureConfigEnum">
         <opc:EnumeratedValue Name="OFF" Value="0"/>

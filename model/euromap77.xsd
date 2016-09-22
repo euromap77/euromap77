@@ -66,13 +66,12 @@
     <xs:element type="tns:ListOfJobStatusEnum" name="ListOfJobStatusEnum" nillable="true"/>
     <xs:simpleType name="MachineModeEnum">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="AUTOMATIC_0"/>
-            <xs:enumeration value="SEMI_AUTOMATIC_1"/>
-            <xs:enumeration value="MANUAL_2"/>
-            <xs:enumeration value="SETUP_3"/>
-            <xs:enumeration value="TOOL_CHANGE_4"/>
-            <xs:enumeration value="ENERGY_SAVING_5"/>
-            <xs:enumeration value="OTHER_6"/>
+            <xs:enumeration value="OTHER_0_0"/>
+            <xs:enumeration value="AUTOMATIC_1_1"/>
+            <xs:enumeration value="SEMI_AUTOMATIC_2_2"/>
+            <xs:enumeration value="MANUAL_3_3"/>
+            <xs:enumeration value="SETUP_4_4"/>
+            <xs:enumeration value="SLEEP_5_5"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:MachineModeEnum" name="MachineModeEnum"/>
@@ -130,11 +129,12 @@
     <xs:element type="tns:ListOfMessageClassificationEnumType" name="ListOfMessageClassificationEnumType" nillable="true"/>
     <xs:simpleType name="ProductionStatusEnum">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="NO_PRODUCTION_0"/>
-            <xs:enumeration value="STARTUP_1"/>
-            <xs:enumeration value="DRY_CYCLE_2"/>
-            <xs:enumeration value="READY_FOR_PRODUCTION_3"/>
-            <xs:enumeration value="PRODUCTION_4"/>
+            <xs:enumeration value="OTHER_0_0"/>
+            <xs:enumeration value="NO_PRODUCTION_1_1"/>
+            <xs:enumeration value="START_UP_2_2"/>
+            <xs:enumeration value="READY_FOR_PRODUCTION_3_3"/>
+            <xs:enumeration value="PRODUCTION_4_4"/>
+            <xs:enumeration value="DRY_CYCLE_5_5"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:ProductionStatusEnum" name="ProductionStatusEnum"/>
