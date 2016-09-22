@@ -127,6 +127,21 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfMessageClassificationEnumType" name="ListOfMessageClassificationEnumType" nillable="true"/>
+    <xs:simpleType name="MouldStateEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0_0"/>
+            <xs:enumeration value="NO_MOULD_1_1"/>
+            <xs:enumeration value="MOULD_CHANGE_2_2"/>
+            <xs:enumeration value="MOULD_INSTALLED_3_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MouldStateEnum" name="MouldStateEnum"/>
+    <xs:complexType name="ListOfMouldStateEnum">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MouldStateEnum" name="MouldStateEnum" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMouldStateEnum" name="ListOfMouldStateEnum" nillable="true"/>
     <xs:simpleType name="ProductionStatusEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>

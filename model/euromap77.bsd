@@ -100,6 +100,12 @@
         <opc:EnumeratedValue Name="MANUAL_OPERATION" Value="301"/>
         <opc:EnumeratedValue Name="EMERGENCY_STOP" Value="302"/>
     </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="MouldStateEnum">
+        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
+        <opc:EnumeratedValue Name="NO_MOULD_1" Value="1"/>
+        <opc:EnumeratedValue Name="MOULD_CHANGE_2" Value="2"/>
+        <opc:EnumeratedValue Name="MOULD_INSTALLED_3" Value="3"/>
+    </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="ProductionStatusEnum">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
         <opc:EnumeratedValue Name="NO_PRODUCTION_1" Value="1"/>
