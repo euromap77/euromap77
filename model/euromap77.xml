@@ -18,6 +18,7 @@
         <Alias Alias="NodeId">i=17</Alias>
         <Alias Alias="StatusCode">i=19</Alias>
         <Alias Alias="LocalizedText">i=21</Alias>
+        <Alias Alias="Number">i=26</Alias>
         <Alias Alias="HasModellingRule">i=37</Alias>
         <Alias Alias="HasEncoding">i=38</Alias>
         <Alias Alias="HasDescription">i=39</Alias>
@@ -47,7 +48,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="kXFWApNnhy1KtI2KxEIlnw==" Version="1.4.3"/>
+            <ModelInfo Tool="UaModeler" Hash="Y4SsANRaf+xIfukLowF8Ng==" Version="1.4.3"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3016" BrowseName="1:CavityCycleQualityEnum">
@@ -1645,35 +1646,50 @@
     <UAObjectType NodeId="ns=1;i=1039" BrowseName="1:InjectionUnitCycleParametersEventType">
         <DisplayName>InjectionUnitCycleParametersEventType</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=5047</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5011</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6440</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6597</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6590</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6441</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6579</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6064</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6599</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6587</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6586</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6589</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6588</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6595</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6580</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6598</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6592</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6591</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6594</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6593</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6583</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6582</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6063</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6596</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6581</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6585</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6584</Reference>
         </References>
     </UAObjectType>
-    <UAObject SymbolicName="BarrelZone" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=5047" BrowseName="1:&lt;BarrelZone>">
+    <UAObject SymbolicName="BarrelZone" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=5011" BrowseName="1:&lt;BarrelZone>">
         <DisplayName>&lt;BarrelZone></DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1039</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6463</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6466</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6467</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6468</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6469</Reference>
-            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6470</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6471</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6472</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6473</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6474</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1041</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6465</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1047</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1039</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6466</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="Float" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6463" BrowseName="1:ActualTemperature" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Number" ParentNodeId="ns=1;i=5011" NodeId="ns=1;i=6463" BrowseName="1:ActualTemperature" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>ActualTemperature</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5047</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5011</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6464</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1687,93 +1703,20 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="ByteString" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6466" BrowseName="EventId">
-        <DisplayName>EventId</DisplayName>
-        <Description>A globally unique identifier for the event.</Description>
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5011" NodeId="ns=1;i=6465" BrowseName="1:Index" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Index</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5047</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="NodeId" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6467" BrowseName="EventType">
-        <DisplayName>EventType</DisplayName>
-        <Description>The identifier for the event type.</Description>
-        <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5047</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="TimeZoneDataType" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6468" BrowseName="LocalTime">
-        <DisplayName>LocalTime</DisplayName>
-        <Description>Information about the local time where the event originated.</Description>
-        <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5047</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6469" BrowseName="Message">
-        <DisplayName>Message</DisplayName>
-        <Description>A localized description of the event.</Description>
-        <References>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5047</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="UtcTime" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6470" BrowseName="ReceiveTime">
-        <DisplayName>ReceiveTime</DisplayName>
-        <Description>When the server received the event from the underlying system.</Description>
-        <References>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5047</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6471" BrowseName="Severity">
-        <DisplayName>Severity</DisplayName>
-        <Description>Indicates how urgent an event is.</Description>
-        <References>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5047</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6472" BrowseName="SourceName">
-        <DisplayName>SourceName</DisplayName>
-        <Description>A description of the source of the event.</Description>
-        <References>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5047</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="NodeId" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6473" BrowseName="SourceNode">
-        <DisplayName>SourceNode</DisplayName>
-        <Description>The source of the event.</Description>
-        <References>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5047</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="UtcTime" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6474" BrowseName="Time">
-        <DisplayName>Time</DisplayName>
-        <Description>When the event occurred.</Description>
-        <References>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5047</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5047" NodeId="ns=1;i=6465" BrowseName="1:ZoneId" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5011" NodeId="ns=1;i=6466" BrowseName="1:ZoneId" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>ZoneId</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5047</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5011</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6440" BrowseName="1:BarrelId" UserAccessLevel="3" AccessLevel="3">
@@ -1784,7 +1727,23 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Float" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6441" BrowseName="1:CushionVolume" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6597" BrowseName="1:CavityPressureAtTransfer" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>CavityPressureAtTransfer</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6590" BrowseName="1:CavityPressureMaximum" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>CavityPressureMaximum</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6441" BrowseName="1:CushionVolume" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>CushionVolume</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -1794,7 +1753,7 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
         <Value>
-            <uax:Float>0</uax:Float>
+            <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
     <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6441" NodeId="ns=1;i=6475" BrowseName="EngineeringUnits">
@@ -1811,6 +1770,174 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6441</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable SymbolicName="DecompressionVolume_AfterPlastification" DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6579" BrowseName="1:DecompressionVolume AfterPlastification" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DecompressionVolume AfterPlastification</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable SymbolicName="DecompressionVolume_BeforePlastification" DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6064" BrowseName="1:DecompressionVolume BeforePlastification" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DecompressionVolume BeforePlastification</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6599" BrowseName="1:DosingTime" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>DosingTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6587" BrowseName="1:HoldHydraulicPressureAverage" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HoldHydraulicPressureAverage</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6586" BrowseName="1:HoldHydraulicPressureMaximum" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HoldHydraulicPressureMaximum</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6589" BrowseName="1:HoldSpecificPressureAverage" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HoldSpecificPressureAverage</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6588" BrowseName="1:HoldSpecificPressureMaximum" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HoldSpecificPressureMaximum</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6595" BrowseName="1:HydraulicPressureAtTransfer" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HydraulicPressureAtTransfer</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6580" BrowseName="1:HydraulicPressureMaximum" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>HydraulicPressureMaximum</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6598" BrowseName="1:InjectionTime" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>InjectionTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6592" BrowseName="1:PlastificationHydraulicPressureAverage" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>PlastificationHydraulicPressureAverage</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6591" BrowseName="1:PlastificationHydraulicPressureMaximum" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>PlastificationHydraulicPressureMaximum</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6594" BrowseName="1:PlastificationSpecificPressureAverage" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>PlastificationSpecificPressureAverage</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6593" BrowseName="1:PlastificationSpecificPressureMaximum" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>PlastificationSpecificPressureMaximum</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6583" BrowseName="1:PlastificationSpeedAverage" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>PlastificationSpeedAverage</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6582" BrowseName="1:PlastificationSpeedMaximum" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>PlastificationSpeedMaximum</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6063" BrowseName="1:PlastificationVolume" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>PlastificationVolume</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6596" BrowseName="1:SpecificPressureAtTransfer" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SpecificPressureAtTransfer</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6581" BrowseName="1:SpecificPressureMaximum" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>SpecificPressureMaximum</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6585" BrowseName="1:TransferTime" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>TransferTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6584" BrowseName="1:TransferVolume" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>TransferVolume</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
         </References>
     </UAVariable>
     <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:JobConditionEventType">
@@ -2689,6 +2816,7 @@
         <DisplayName>ZoneCycleEventsType</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=6461</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5010</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6460</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
         </References>
@@ -2710,6 +2838,14 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
+    <UAObject ParentNodeId="ns=1;i=1041" NodeId="ns=1;i=5010" BrowseName="1:BaseObject">
+        <DisplayName>BaseObject</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1041</Reference>
+        </References>
+    </UAObject>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1041" NodeId="ns=1;i=6460" BrowseName="1:ZoneId" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>ZoneId</DisplayName>
         <References>
@@ -8026,6 +8162,48 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6118</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1047" BrowseName="1:ZoneCycleParametersType">
+        <DisplayName>ZoneCycleParametersType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6601</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6603</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6600</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="Number" ParentNodeId="ns=1;i=1047" NodeId="ns=1;i=6601" BrowseName="1:ActualTemperature" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ActualTemperature</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6602</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1047</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6601" NodeId="ns=1;i=6602" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6601</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1047" NodeId="ns=1;i=6603" BrowseName="1:Index" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Index</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1047</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1047" NodeId="ns=1;i=6600" BrowseName="1:ZoneId" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ZoneId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1047</Reference>
         </References>
     </UAVariable>
     <UAObjectType IsAbstract="true" NodeId="ns=1;i=1030" BrowseName="1:ZoneType">
