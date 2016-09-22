@@ -9,6 +9,7 @@
         <Alias Alias="UInt16">i=5</Alias>
         <Alias Alias="Int32">i=6</Alias>
         <Alias Alias="UInt32">i=7</Alias>
+        <Alias Alias="Int64">i=8</Alias>
         <Alias Alias="UInt64">i=9</Alias>
         <Alias Alias="Float">i=10</Alias>
         <Alias Alias="Double">i=11</Alias>
@@ -48,7 +49,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="Y4SsANRaf+xIfukLowF8Ng==" Version="1.4.3"/>
+            <ModelInfo Tool="UaModeler" Hash="J6ycspQopqTUCHmCSKH9Sw==" Version="1.4.3"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3016" BrowseName="1:CavityCycleQualityEnum">
@@ -1561,45 +1562,54 @@
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=6435</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6439</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6430</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6431</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6430</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6431</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6437</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6433</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6429</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6432</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6429</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6432</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="Float" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6435" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6435" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6467</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1038</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6435" NodeId="ns=1;i=6467" BrowseName="EURange">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6435</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="CavityCycleQualityEnum" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6439" BrowseName="1:CavityCycleQuality" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>CavityCycleQuality</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1038</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6430" BrowseName="1:CurrentLotName" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>CurrentLotName</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1038</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1038</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Int32" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6431" BrowseName="1:CycleCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Int64" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6431" BrowseName="1:CycleCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>CycleCounter</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1038</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1038</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="CycleQualityEnum" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6437" BrowseName="1:CycleQuality" UserAccessLevel="3" AccessLevel="3">
@@ -1610,12 +1620,12 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Float" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6433" BrowseName="1:CycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6433" BrowseName="1:CycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>CycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1038</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6434</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1038</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
     </UAVariable>
@@ -1630,17 +1640,17 @@
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6429" BrowseName="1:JobName" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>JobName</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1038</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1038</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6432" BrowseName="1:MachineCycleCounter" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Int64" ParentNodeId="ns=1;i=1038" NodeId="ns=1;i=6432" BrowseName="1:MachineCycleCounter" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>MachineCycleCounter</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1038</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1038</Reference>
         </References>
     </UAVariable>
     <UAObjectType NodeId="ns=1;i=1039" BrowseName="1:InjectionUnitCycleParametersEventType">
