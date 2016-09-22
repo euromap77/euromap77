@@ -47,7 +47,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="S4QndDlfPdxwKHmir9vzug==" Version="1.4.3"/>
+            <ModelInfo Tool="UaModeler" Hash="FjaztolCNySlUFHdsp5icA==" Version="1.4.3"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3016" BrowseName="1:CavityCycleQualityEnum">
@@ -224,9 +224,9 @@
             <Field Name="OTHER_0" Value="0"/>
             <Field Name="AUTOMATIC_1" Value="1"/>
             <Field Name="SEMI_AUTOMATIC_2" Value="2"/>
-            <Field SymbolicName="MANUAL_3" Name="MANUAL_MODE_3" Value="3"/>
-            <Field SymbolicName="SETUP_4" Name="SETUP_MODE_4" Value="4"/>
-            <Field SymbolicName="SLEEP_5" Name="SLEEP_MODE_5" Value="5"/>
+            <Field Name="MANUAL_3" Value="3"/>
+            <Field Name="SETUP_4" Value="4"/>
+            <Field Name="SLEEP_5" Value="5"/>
         </Definition>
     </UADataType>
     <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=3002" ValueRank="1" NodeId="ns=1;i=6038" ArrayDimensions="6" BrowseName="EnumStrings">
@@ -248,13 +248,13 @@
                     <uax:Text>SEMI_AUTOMATIC_2</uax:Text>
                 </uax:LocalizedText>
                 <uax:LocalizedText>
-                    <uax:Text>MANUAL_MODE_3</uax:Text>
+                    <uax:Text>MANUAL_3</uax:Text>
                 </uax:LocalizedText>
                 <uax:LocalizedText>
-                    <uax:Text>SETUP_MODE_4</uax:Text>
+                    <uax:Text>SETUP_4</uax:Text>
                 </uax:LocalizedText>
                 <uax:LocalizedText>
-                    <uax:Text>SLEEP_MODE_5</uax:Text>
+                    <uax:Text>SLEEP_5</uax:Text>
                 </uax:LocalizedText>
             </uax:ListOfLocalizedText>
         </Value>
