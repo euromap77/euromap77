@@ -2,9 +2,9 @@
     <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
     <xs:simpleType name="CavityCycleQualityEnum">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="NoPart_0"/>
-            <xs:enumeration value="GoodPart_1"/>
-            <xs:enumeration value="BadPart_2"/>
+            <xs:enumeration value="NO_PART_0_0"/>
+            <xs:enumeration value="GOOD_PART_1_1"/>
+            <xs:enumeration value="BAD_PART_2_2"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:CavityCycleQualityEnum" name="CavityCycleQualityEnum"/>
@@ -16,9 +16,9 @@
     <xs:element type="tns:ListOfCavityCycleQualityEnum" name="ListOfCavityCycleQualityEnum" nillable="true"/>
     <xs:simpleType name="CycleQualityEnum">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="Good_0"/>
-            <xs:enumeration value="Bad_1"/>
-            <xs:enumeration value="TestSampleCycle_2"/>
+            <xs:enumeration value="GOOD_CYCLE_1_0"/>
+            <xs:enumeration value="BAD_CYCLE_2_1"/>
+            <xs:enumeration value="TEST_SAMPLE_CYCLE_3_2"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:CycleQualityEnum" name="CycleQualityEnum"/>
@@ -176,6 +176,19 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfTemperatureConfigEnum" name="ListOfTemperatureConfigEnum" nillable="true"/>
+    <xs:complexType name="EuromapProfileType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="EuromapProfile"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Version"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:EuromapProfileType" name="EuromapProfileType"/>
+    <xs:complexType name="ListOfEuromapProfileType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EuromapProfileType" name="EuromapProfileType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEuromapProfileType" name="ListOfEuromapProfileType" nillable="true"/>
     <xs:complexType name="EuromapStructureType">
         <xs:sequence/>
     </xs:complexType>
@@ -186,33 +199,12 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfEuromapStructureType" name="ListOfEuromapStructureType" nillable="true"/>
-    <xs:complexType name="EuromapProfileType">
-        <xs:complexContent mixed="false">
-            <xs:extension base="tns:EuromapStructureType">
-                <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="EuromapProfile"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Version"/>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-    <xs:element type="tns:EuromapProfileType" name="EuromapProfileType"/>
-    <xs:complexType name="ListOfEuromapProfileType">
-        <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EuromapProfileType" name="EuromapProfileType" nillable="true"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element type="tns:ListOfEuromapProfileType" name="ListOfEuromapProfileType" nillable="true"/>
     <xs:complexType name="Message1Type">
-        <xs:complexContent mixed="false">
-            <xs:extension base="tns:EuromapStructureType">
-                <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="tns:MessageClassificationEnumType" name="Classification"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="StandstillAlarm"/>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:MessageClassificationEnumType" name="Classification"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="StandstillAlarm"/>
+        </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:Message1Type" name="Message1Type"/>
     <xs:complexType name="ListOfMessage1Type">
@@ -222,14 +214,10 @@
     </xs:complexType>
     <xs:element type="tns:ListOfMessage1Type" name="ListOfMessage1Type" nillable="true"/>
     <xs:complexType name="PageEntryDataType">
-        <xs:complexContent mixed="false">
-            <xs:extension base="tns:EuromapStructureType">
-                <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Title"/>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Title"/>
+        </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:PageEntryDataType" name="PageEntryDataType"/>
     <xs:complexType name="ListOfPageEntryDataType">
@@ -239,15 +227,11 @@
     </xs:complexType>
     <xs:element type="tns:ListOfPageEntryDataType" name="ListOfPageEntryDataType" nillable="true"/>
     <xs:complexType name="StandstillReasonType">
-        <xs:complexContent mixed="false">
-            <xs:extension base="tns:EuromapStructureType">
-                <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Text"/>
-                    <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="LockedbyClient"/>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Text"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="LockedbyClient"/>
+        </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:StandstillReasonType" name="StandstillReasonType"/>
     <xs:complexType name="ListOfStandstillReasonType">

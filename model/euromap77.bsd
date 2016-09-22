@@ -1,33 +1,33 @@
 <opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.euromap.org/euromap77" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://www.euromap.org/euromap77">
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
-    <opc:StructuredType BaseType="ua:ExtensionObject" Name="EuromapStructureType"/>
-    <opc:StructuredType BaseType="tns:EuromapStructureType" Name="EuromapProfileType">
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="EuromapProfileType">
         <opc:Field TypeName="opc:CharArray" Name="EuromapProfile"/>
         <opc:Field TypeName="opc:CharArray" Name="Version"/>
     </opc:StructuredType>
-    <opc:StructuredType BaseType="tns:EuromapStructureType" Name="Message1Type">
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="EuromapStructureType"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="Message1Type">
         <opc:Field TypeName="opc:CharArray" Name="Id"/>
         <opc:Field TypeName="tns:MessageClassificationEnumType" Name="Classification"/>
         <opc:Field TypeName="opc:Boolean" Name="StandstillAlarm"/>
     </opc:StructuredType>
-    <opc:StructuredType BaseType="tns:EuromapStructureType" Name="PageEntryDataType">
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PageEntryDataType">
         <opc:Field TypeName="opc:CharArray" Name="Id"/>
         <opc:Field TypeName="ua:LocalizedText" Name="Title"/>
     </opc:StructuredType>
-    <opc:StructuredType BaseType="tns:EuromapStructureType" Name="StandstillReasonType">
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="StandstillReasonType">
         <opc:Field TypeName="opc:CharArray" Name="Id"/>
         <opc:Field TypeName="ua:LocalizedText" Name="Text"/>
         <opc:Field TypeName="opc:Boolean" Name="LockedbyClient"/>
     </opc:StructuredType>
     <opc:EnumeratedType LengthInBits="32" Name="CavityCycleQualityEnum">
-        <opc:EnumeratedValue Name="NoPart" Value="0"/>
-        <opc:EnumeratedValue Name="GoodPart" Value="1"/>
-        <opc:EnumeratedValue Name="BadPart" Value="2"/>
+        <opc:EnumeratedValue Name="NO_PART_0" Value="0"/>
+        <opc:EnumeratedValue Name="GOOD_PART_1" Value="1"/>
+        <opc:EnumeratedValue Name="BAD_PART_2" Value="2"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="CycleQualityEnum">
-        <opc:EnumeratedValue Name="Good" Value="0"/>
-        <opc:EnumeratedValue Name="Bad" Value="1"/>
-        <opc:EnumeratedValue Name="TestSampleCycle" Value="2"/>
+        <opc:EnumeratedValue Name="GOOD_CYCLE_1" Value="0"/>
+        <opc:EnumeratedValue Name="BAD_CYCLE_2" Value="1"/>
+        <opc:EnumeratedValue Name="TEST_SAMPLE_CYCLE_3" Value="2"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="DatasetComponentEnumType">
         <opc:EnumeratedValue Name="IMM" Value="0"/>
