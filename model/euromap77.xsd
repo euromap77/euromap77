@@ -176,6 +176,16 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfTemperatureConfigEnum" name="ListOfTemperatureConfigEnum" nillable="true"/>
+    <xs:complexType name="DatasetInformationType">
+        <xs:sequence/>
+    </xs:complexType>
+    <xs:element type="tns:DatasetInformationType" name="DatasetInformationType"/>
+    <xs:complexType name="ListOfDatasetInformationType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DatasetInformationType" name="DatasetInformationType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfDatasetInformationType" name="ListOfDatasetInformationType" nillable="true"/>
     <xs:complexType name="EuromapProfileType">
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="EuromapProfile"/>
@@ -189,16 +199,6 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfEuromapProfileType" name="ListOfEuromapProfileType" nillable="true"/>
-    <xs:complexType name="EuromapStructureType">
-        <xs:sequence/>
-    </xs:complexType>
-    <xs:element type="tns:EuromapStructureType" name="EuromapStructureType"/>
-    <xs:complexType name="ListOfEuromapStructureType">
-        <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EuromapStructureType" name="EuromapStructureType" nillable="true"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element type="tns:ListOfEuromapStructureType" name="ListOfEuromapStructureType" nillable="true"/>
     <xs:complexType name="Message1Type">
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
