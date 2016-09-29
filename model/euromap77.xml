@@ -49,7 +49,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="WqVcm2Mz5anxPLP9vSeLFw==" Version="1.4.3"/>
+            <ModelInfo Tool="UaModeler" Hash="AB/VczsXOwFHARhasQ/I7Q==" Version="1.4.3"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3016" BrowseName="1:CavityCycleQualityEnum">
@@ -4489,7 +4489,7 @@
                         <uax:Argument>
                             <uax:Name>image</uax:Name>
                             <uax:DataType>
-                                <uax:Identifier>i=30</uax:Identifier>
+                                <uax:Identifier>i=12</uax:Identifier>
                             </uax:DataType>
                             <uax:ValueRank>-1</uax:ValueRank>
                             <uax:ArrayDimensions></uax:ArrayDimensions>
@@ -4554,7 +4554,7 @@
                         <uax:Argument>
                             <uax:Name>image</uax:Name>
                             <uax:DataType>
-                                <uax:Identifier>i=30</uax:Identifier>
+                                <uax:Identifier>i=12</uax:Identifier>
                             </uax:DataType>
                             <uax:ValueRank>-1</uax:ValueRank>
                             <uax:ArrayDimensions></uax:ArrayDimensions>
