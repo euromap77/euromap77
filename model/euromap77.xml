@@ -49,7 +49,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ModelInfo Tool="UaModeler" Hash="hvQK+kMwgT5TuE/3sRZZag==" Version="1.4.3"/>
+            <ModelInfo Tool="UaModeler" Hash="DpLuklivsCFpVMQhsW6CrQ==" Version="1.4.3"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3016" BrowseName="1:CavityCycleQualityEnum">
@@ -1985,7 +1985,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6091</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6054" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6054" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -2068,7 +2068,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6062" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6062" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>LastCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -2189,7 +2189,7 @@
             <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6078" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6078" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -2254,7 +2254,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6076" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1017" NodeId="ns=1;i=6076" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>LastCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -2658,7 +2658,7 @@
             <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
         </References>
     </UAObjectType>
-    <UAVariable DataType="Float" ParentNodeId="ns=1;i=1041" NodeId="ns=1;i=6461" BrowseName="1:ActualTemperature" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=1041" NodeId="ns=1;i=6461" BrowseName="1:ActualTemperature" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>ActualTemperature</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1041</Reference>
@@ -3266,7 +3266,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6333</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5038" NodeId="ns=1;i=6312" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5038" NodeId="ns=1;i=6312" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -3371,7 +3371,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5038" NodeId="ns=1;i=6320" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5038" NodeId="ns=1;i=6320" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>LastCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -3715,7 +3715,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6355</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5039" NodeId="ns=1;i=6334" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5039" NodeId="ns=1;i=6334" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -3799,7 +3799,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5039" NodeId="ns=1;i=6344" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5039" NodeId="ns=1;i=6344" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>LastCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -4106,7 +4106,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6399</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5041" NodeId="ns=1;i=6378" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5041" NodeId="ns=1;i=6378" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -4190,7 +4190,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5041" NodeId="ns=1;i=6388" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5041" NodeId="ns=1;i=6388" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>LastCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -4573,8 +4573,8 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1004" NodeId="ns=1;i=6015" BrowseName="1:MESUrl" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>MESUrl</DisplayName>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1004" NodeId="ns=1;i=6015" BrowseName="1:MesUrl" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>MesUrl</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1004</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -5210,8 +5210,8 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
     </UAVariable>
-    <UAVariable SymbolicName="MesMessage" DataType="String" ParentNodeId="ns=1;i=1014" NodeId="ns=1;i=6044" BrowseName="1:MESMessage" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>MESMessage</DisplayName>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1014" NodeId="ns=1;i=6044" BrowseName="1:MesMessage" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>MesMessage</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -6119,7 +6119,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6333</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5040" NodeId="ns=1;i=6356" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5040" NodeId="ns=1;i=6356" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -6203,7 +6203,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5040" NodeId="ns=1;i=6366" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5040" NodeId="ns=1;i=6366" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>LastCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -6532,7 +6532,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6333</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5042" NodeId="ns=1;i=6400" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5042" NodeId="ns=1;i=6400" BrowseName="1:AverageCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -6616,7 +6616,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5042" NodeId="ns=1;i=6410" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=5042" NodeId="ns=1;i=6410" BrowseName="1:LastCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>LastCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
@@ -6870,8 +6870,8 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6031" BrowseName="1:MESUrl" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>MESUrl</DisplayName>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6031" BrowseName="1:MesUrl" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>MesUrl</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -7674,8 +7674,8 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5015" NodeId="ns=1;i=6629" BrowseName="1:MESMessage" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>MESMessage</DisplayName>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5015" NodeId="ns=1;i=6629" BrowseName="1:MesMessage" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>MesMessage</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
