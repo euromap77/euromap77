@@ -36,21 +36,17 @@
         <opc:Field TypeName="ua:LocalizedText" Name="Text"/>
         <opc:Field TypeName="opc:Boolean" Name="LockedbyClient"/>
     </opc:StructuredType>
-    <opc:EnumeratedType LengthInBits="32" Name="CavityCycleQualityEnum">
+    <opc:EnumeratedType LengthInBits="32" Name="CavityCycleQualityEnumeration">
         <opc:EnumeratedValue Name="NO_PART_0" Value="0"/>
         <opc:EnumeratedValue Name="GOOD_PART_1" Value="1"/>
         <opc:EnumeratedValue Name="BAD_PART_2" Value="2"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="CycleQualityEnum">
+    <opc:EnumeratedType LengthInBits="32" Name="CycleQualityEnumeration">
         <opc:EnumeratedValue Name="GOOD_CYCLE_1" Value="0"/>
         <opc:EnumeratedValue Name="BAD_CYCLE_2" Value="1"/>
         <opc:EnumeratedValue Name="TEST_SAMPLE_CYCLE_3" Value="2"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="DatasetComponentEnumType">
-        <opc:EnumeratedValue Name="IMM_0" Value="0"/>
-        <opc:EnumeratedValue Name="ROBOT_1" Value="1"/>
-    </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="JobStatusEnum">
+    <opc:EnumeratedType LengthInBits="32" Name="JobStatusEnumeration">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
         <opc:EnumeratedValue Name="TRANSFERRED_ASSIGNED_1" Value="1"/>
         <opc:EnumeratedValue Name="SETUP_ACTIVE_2" Value="2"/>
@@ -123,7 +119,7 @@
         <opc:EnumeratedValue Name="OPERATION_MANUAL_OPERATION_301" Value="301"/>
         <opc:EnumeratedValue Name="OPERATION_EMERGENCY_STOP_302" Value="302"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="MouldStateEnum">
+    <opc:EnumeratedType LengthInBits="32" Name="MouldStateEnumeration">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
         <opc:EnumeratedValue Name="NO_MOULD_1" Value="1"/>
         <opc:EnumeratedValue Name="MOULD_CHANGE_2" Value="2"/>
@@ -141,7 +137,7 @@
         <opc:EnumeratedValue Name="PRODUCTION_4" Value="4"/>
         <opc:EnumeratedValue Name="DRY_CYCLE_5" Value="5"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="TemperatureConfigEnum">
+    <opc:EnumeratedType LengthInBits="32" Name="TemperatureConfigEnumeration">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
         <opc:EnumeratedValue Name="OFF_1" Value="1"/>
         <opc:EnumeratedValue Name="AUTOMATIC_2" Value="2"/>

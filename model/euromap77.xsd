@@ -1,47 +1,34 @@
 <xs:schema elementFormDefault="qualified" targetNamespace="http://www.euromap.org/euromap77/Types.xsd" xmlns:tns="http://www.euromap.org/euromap77/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
-    <xs:simpleType name="CavityCycleQualityEnum">
+    <xs:simpleType name="CavityCycleQualityEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="NO_PART_0_0"/>
             <xs:enumeration value="GOOD_PART_1_1"/>
             <xs:enumeration value="BAD_PART_2_2"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:CavityCycleQualityEnum" name="CavityCycleQualityEnum"/>
-    <xs:complexType name="ListOfCavityCycleQualityEnum">
+    <xs:element type="tns:CavityCycleQualityEnumeration" name="CavityCycleQualityEnumeration"/>
+    <xs:complexType name="ListOfCavityCycleQualityEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavityCycleQualityEnum" name="CavityCycleQualityEnum" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavityCycleQualityEnumeration" name="CavityCycleQualityEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfCavityCycleQualityEnum" name="ListOfCavityCycleQualityEnum" nillable="true"/>
-    <xs:simpleType name="CycleQualityEnum">
+    <xs:element type="tns:ListOfCavityCycleQualityEnumeration" name="ListOfCavityCycleQualityEnumeration" nillable="true"/>
+    <xs:simpleType name="CycleQualityEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="GOOD_CYCLE_1_0"/>
             <xs:enumeration value="BAD_CYCLE_2_1"/>
             <xs:enumeration value="TEST_SAMPLE_CYCLE_3_2"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:CycleQualityEnum" name="CycleQualityEnum"/>
-    <xs:complexType name="ListOfCycleQualityEnum">
+    <xs:element type="tns:CycleQualityEnumeration" name="CycleQualityEnumeration"/>
+    <xs:complexType name="ListOfCycleQualityEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CycleQualityEnum" name="CycleQualityEnum" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CycleQualityEnumeration" name="CycleQualityEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfCycleQualityEnum" name="ListOfCycleQualityEnum" nillable="true"/>
-    <xs:simpleType name="DatasetComponentEnumType">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="IMM_0_0"/>
-            <xs:enumeration value="ROBOT_1_1"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:element type="tns:DatasetComponentEnumType" name="DatasetComponentEnumType"/>
-    <xs:complexType name="ListOfDatasetComponentEnumType">
-        <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DatasetComponentEnumType" name="DatasetComponentEnumType" nillable="true"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element type="tns:ListOfDatasetComponentEnumType" name="ListOfDatasetComponentEnumType" nillable="true"/>
-    <xs:simpleType name="JobStatusEnum">
+    <xs:element type="tns:ListOfCycleQualityEnumeration" name="ListOfCycleQualityEnumeration" nillable="true"/>
+    <xs:simpleType name="JobStatusEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
             <xs:enumeration value="TRANSFERRED_ASSIGNED_1_1"/>
@@ -57,13 +44,13 @@
             <xs:enumeration value="TEAR_DOWN_FINISHED_11_11"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:JobStatusEnum" name="JobStatusEnum"/>
-    <xs:complexType name="ListOfJobStatusEnum">
+    <xs:element type="tns:JobStatusEnumeration" name="JobStatusEnumeration"/>
+    <xs:complexType name="ListOfJobStatusEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:JobStatusEnum" name="JobStatusEnum" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:JobStatusEnumeration" name="JobStatusEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfJobStatusEnum" name="ListOfJobStatusEnum" nillable="true"/>
+    <xs:element type="tns:ListOfJobStatusEnumeration" name="ListOfJobStatusEnumeration" nillable="true"/>
     <xs:simpleType name="LogBookEventsEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="PARAMTER_CHANGE_0_0"/>
@@ -150,7 +137,7 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfMessageClassificationEnumeration" name="ListOfMessageClassificationEnumeration" nillable="true"/>
-    <xs:simpleType name="MouldStateEnum">
+    <xs:simpleType name="MouldStateEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
             <xs:enumeration value="NO_MOULD_1_1"/>
@@ -158,13 +145,13 @@
             <xs:enumeration value="MOULD_INSTALLED_3_3"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:MouldStateEnum" name="MouldStateEnum"/>
-    <xs:complexType name="ListOfMouldStateEnum">
+    <xs:element type="tns:MouldStateEnumeration" name="MouldStateEnumeration"/>
+    <xs:complexType name="ListOfMouldStateEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MouldStateEnum" name="MouldStateEnum" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MouldStateEnumeration" name="MouldStateEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfMouldStateEnum" name="ListOfMouldStateEnum" nillable="true"/>
+    <xs:element type="tns:ListOfMouldStateEnumeration" name="ListOfMouldStateEnumeration" nillable="true"/>
     <xs:simpleType name="ProductionDatasetComponentEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="IMM_0_0"/>
@@ -195,7 +182,7 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfProductionStatusEnumeration" name="ListOfProductionStatusEnumeration" nillable="true"/>
-    <xs:simpleType name="TemperatureConfigEnum">
+    <xs:simpleType name="TemperatureConfigEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
             <xs:enumeration value="OFF_1_1"/>
@@ -206,13 +193,13 @@
             <xs:enumeration value="ONLY_MEASUREMENT_6_6"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:TemperatureConfigEnum" name="TemperatureConfigEnum"/>
-    <xs:complexType name="ListOfTemperatureConfigEnum">
+    <xs:element type="tns:TemperatureConfigEnumeration" name="TemperatureConfigEnumeration"/>
+    <xs:complexType name="ListOfTemperatureConfigEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TemperatureConfigEnum" name="TemperatureConfigEnum" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TemperatureConfigEnumeration" name="TemperatureConfigEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfTemperatureConfigEnum" name="ListOfTemperatureConfigEnum" nillable="true"/>
+    <xs:element type="tns:ListOfTemperatureConfigEnumeration" name="ListOfTemperatureConfigEnumeration" nillable="true"/>
     <xs:simpleType name="TypeOfChangeEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="UPDATE_0_0"/>
