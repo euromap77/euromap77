@@ -1,13 +1,30 @@
 <opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.euromap.org/euromap77" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://www.euromap.org/euromap77">
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
-    <opc:StructuredType BaseType="ua:ExtensionObject" Name="DatasetInformationType"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ProductionDatasetInformationType">
+        <opc:Field TypeName="opc:CharArray" Name="ProductionDatsetName"/>
+        <opc:Field TypeName="opc:CharArray" Name="ProductionDatsetName2"/>
+        <opc:Field TypeName="opc:CharArray" Name="ProductionDatsetName3"/>
+        <opc:Field TypeName="opc:DateTime" Name="CreationTimestamp"/>
+        <opc:Field TypeName="opc:CharArray" Name="UserName"/>
+        <opc:Field TypeName="tns:ProductionDatasetComponentEnumeration" Name="ProductionDatasetComponent"/>
+        <opc:Field TypeName="opc:CharArray" Name="Manufacturer"/>
+        <opc:Field TypeName="opc:CharArray" Name="SerialNumber"/>
+        <opc:Field TypeName="opc:CharArray" Name="Model"/>
+        <opc:Field TypeName="opc:CharArray" Name="ControllerType"/>
+        <opc:Field TypeName="opc:CharArray" Name="UserMachineName"/>
+        <opc:Field TypeName="opc:CharArray" Name="LocationName"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfProductName"/>
+        <opc:Field LengthField="NoOfProductName" TypeName="opc:CharArray" Name="ProductName"/>
+        <opc:Field TypeName="opc:CharArray" Name="MouldId"/>
+        <opc:Field TypeName="opc:UInt32" Name="NumCavities"/>
+    </opc:StructuredType>
     <opc:StructuredType BaseType="ua:ExtensionObject" Name="EuromapProfileType">
         <opc:Field TypeName="opc:CharArray" Name="EuromapProfile"/>
         <opc:Field TypeName="opc:CharArray" Name="Version"/>
     </opc:StructuredType>
     <opc:StructuredType BaseType="ua:ExtensionObject" Name="Message1Type">
         <opc:Field TypeName="opc:CharArray" Name="Id"/>
-        <opc:Field TypeName="tns:MessageClassificationEnumType" Name="Classification"/>
+        <opc:Field TypeName="tns:MessageClassificationEnumeration" Name="Classification"/>
         <opc:Field TypeName="opc:Boolean" Name="StandstillAlarm"/>
     </opc:StructuredType>
     <opc:StructuredType BaseType="ua:ExtensionObject" Name="PageEntryDataType">
@@ -30,24 +47,35 @@
         <opc:EnumeratedValue Name="TEST_SAMPLE_CYCLE_3" Value="2"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="DatasetComponentEnumType">
-        <opc:EnumeratedValue Name="IMM" Value="0"/>
-        <opc:EnumeratedValue Name="ROBOT" Value="1"/>
+        <opc:EnumeratedValue Name="IMM_0" Value="0"/>
+        <opc:EnumeratedValue Name="ROBOT_1" Value="1"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="JobStatusEnum">
-        <opc:EnumeratedValue Name="OTHER" Value="0"/>
-        <opc:EnumeratedValue Name="TRANSFERRED_ASSIGNED" Value="1"/>
-        <opc:EnumeratedValue Name="SETUP_ACTIVE" Value="2"/>
-        <opc:EnumeratedValue Name="SETUP_INTERRUPTED" Value="3"/>
-        <opc:EnumeratedValue Name="SETUP_FINISHED" Value="4"/>
-        <opc:EnumeratedValue Name="STARTUP_ACTIVE" Value="5"/>
-        <opc:EnumeratedValue Name="JOB_IN_PRODUCTION" Value="6"/>
-        <opc:EnumeratedValue Name="JOB_INTERRUPTED" Value="7"/>
-        <opc:EnumeratedValue Name="JOB_FINISHED" Value="8"/>
-        <opc:EnumeratedValue Name="TEAR_DOWN_ACTIVE" Value="9"/>
-        <opc:EnumeratedValue Name="TEAR_DOWN_INTERRUPTED" Value="10"/>
-        <opc:EnumeratedValue Name="TEAR_DOWN_FINISHED" Value="11"/>
+        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
+        <opc:EnumeratedValue Name="TRANSFERRED_ASSIGNED_1" Value="1"/>
+        <opc:EnumeratedValue Name="SETUP_ACTIVE_2" Value="2"/>
+        <opc:EnumeratedValue Name="SETUP_INTERRUPTED_3" Value="3"/>
+        <opc:EnumeratedValue Name="SETUP_FINISHED_4" Value="4"/>
+        <opc:EnumeratedValue Name="STARTUP_ACTIVE_5" Value="5"/>
+        <opc:EnumeratedValue Name="JOB_IN_PRODUCTION_6" Value="6"/>
+        <opc:EnumeratedValue Name="JOB_INTERRUPTED_7" Value="7"/>
+        <opc:EnumeratedValue Name="JOB_FINISHED_8" Value="8"/>
+        <opc:EnumeratedValue Name="TEAR_DOWN_ACTIVE_9" Value="9"/>
+        <opc:EnumeratedValue Name="TEAR_DOWN_INTERRUPTED_10" Value="10"/>
+        <opc:EnumeratedValue Name="TEAR_DOWN_FINISHED_11" Value="11"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="MachineModeEnum">
+    <opc:EnumeratedType LengthInBits="32" Name="LogBookEventsEnumeration">
+        <opc:EnumeratedValue Name="PARAMTER_CHANGE_0" Value="0"/>
+        <opc:EnumeratedValue Name="USER_1" Value="1"/>
+        <opc:EnumeratedValue Name="SEQUENCE_CHANGE_2" Value="2"/>
+        <opc:EnumeratedValue Name="MACHINE_MODE_CHANGE_3" Value="3"/>
+        <opc:EnumeratedValue Name="PRODUCTION_STATUS_CHANGE_4" Value="4"/>
+        <opc:EnumeratedValue Name="PRODUCTION_DATASET_CHANGE_5" Value="5"/>
+        <opc:EnumeratedValue Name="STAND_STILL_REASON_6" Value="6"/>
+        <opc:EnumeratedValue Name="MESSAGE_7" Value="7"/>
+        <opc:EnumeratedValue Name="USER_FEEDBACK_8" Value="8"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="MachineModeEnumeration">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
         <opc:EnumeratedValue Name="AUTOMATIC_1" Value="1"/>
         <opc:EnumeratedValue Name="SEMI_AUTOMATIC_2" Value="2"/>
@@ -55,42 +83,45 @@
         <opc:EnumeratedValue Name="SETUP_4" Value="4"/>
         <opc:EnumeratedValue Name="SLEEP_5" Value="5"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="MessageClassificationEnumType">
-        <opc:EnumeratedValue Name="INJECTION_UNIT" Value="100"/>
-        <opc:EnumeratedValue Name="CLAMPING_UNIT" Value="101"/>
-        <opc:EnumeratedValue Name="HARDWARE" Value="102"/>
-        <opc:EnumeratedValue Name="COMPRESSED_AIR_CONTROL" Value="103"/>
-        <opc:EnumeratedValue Name="MACHINE_MONITORING" Value="104"/>
-        <opc:EnumeratedValue Name="MOULD" Value="105"/>
-        <opc:EnumeratedValue Name="EJECTOR" Value="106"/>
-        <opc:EnumeratedValue Name="CORE_PULL" Value="107"/>
-        <opc:EnumeratedValue Name="TABLE" Value="108"/>
-        <opc:EnumeratedValue Name="INJECTION_PROGRAM" Value="109"/>
-        <opc:EnumeratedValue Name="HYDRAULIC_TEMPERATURE_CONTROL" Value="110"/>
-        <opc:EnumeratedValue Name="CYLINDER_TEMPERATURE_CONTROL" Value="111"/>
-        <opc:EnumeratedValue Name="MOULD_TEMPERATURE_CONTROL" Value="112"/>
-        <opc:EnumeratedValue Name="HOT_RUNNER" Value="113"/>
-        <opc:EnumeratedValue Name="INTERFACES" Value="114"/>
-        <opc:EnumeratedValue Name="ROBOTIC_SYSTEM_INTERFACE" Value="115"/>
-        <opc:EnumeratedValue Name="SPECIAL_PURPOSE_SIGNAL" Value="116"/>
-        <opc:EnumeratedValue Name="REALTIME_ETHERNET_SYSTEM" Value="117"/>
-        <opc:EnumeratedValue Name="SOFTWARE_MONITORING" Value="118"/>
-        <opc:EnumeratedValue Name="EXTERNAL_DEVICE_INTERFACE" Value="200"/>
-        <opc:EnumeratedValue Name="TEMPERATURE_CONTROL_UNIT" Value="201"/>
-        <opc:EnumeratedValue Name="ROBOTICS_SYSTEM" Value="202"/>
-        <opc:EnumeratedValue Name="LIQUID_SILICONE_RUBBER" Value="203"/>
-        <opc:EnumeratedValue Name="STRIPPER_UNIT" Value="204"/>
-        <opc:EnumeratedValue Name="DRYER" Value="205"/>
-        <opc:EnumeratedValue Name="CONVEYOR_BELT" Value="206"/>
-        <opc:EnumeratedValue Name="SORTER_UNIT" Value="207"/>
-        <opc:EnumeratedValue Name="COLOURING_UNIT" Value="208"/>
-        <opc:EnumeratedValue Name="INJESTER_UNIT" Value="209"/>
-        <opc:EnumeratedValue Name="EXTERNAL_ALARM" Value="210"/>
-        <opc:EnumeratedValue Name="VACUUM_CONTROL" Value="211"/>
-        <opc:EnumeratedValue Name="PRINTER_INTERFACE" Value="212"/>
-        <opc:EnumeratedValue Name="QUALITY_MONITORING" Value="300"/>
-        <opc:EnumeratedValue Name="MANUAL_OPERATION" Value="301"/>
-        <opc:EnumeratedValue Name="EMERGENCY_STOP" Value="302"/>
+    <opc:EnumeratedType LengthInBits="32" Name="MessageClassificationEnumeration">
+        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
+        <opc:EnumeratedValue Name="IMM_INJECTION_UNIT_100" Value="100"/>
+        <opc:EnumeratedValue Name="IMM_CLAMPING_UNIT_101" Value="101"/>
+        <opc:EnumeratedValue Name="IMM_HARDWARE_102" Value="102"/>
+        <opc:EnumeratedValue Name="IMM_COMPRESSED_AIR_CONTROL_103" Value="103"/>
+        <opc:EnumeratedValue Name="IMM_MACHINE_MONITORING_104" Value="104"/>
+        <opc:EnumeratedValue Name="IMM_MOULD_105" Value="105"/>
+        <opc:EnumeratedValue Name="IMM_EJECTOR_106" Value="106"/>
+        <opc:EnumeratedValue Name="IMM_CORE_PULL_107" Value="107"/>
+        <opc:EnumeratedValue Name="IMM_TABLE_108" Value="108"/>
+        <opc:EnumeratedValue Name="IMM_INJECTION_PROGRAM_109" Value="109"/>
+        <opc:EnumeratedValue Name="IMM_HYDRAULIC_TEMPERATURE_CONTROL_110" Value="110"/>
+        <opc:EnumeratedValue Name="IMM_CYLINDER_TEMPERATURE_CONTROL_111" Value="111"/>
+        <opc:EnumeratedValue Name="IMM_MOULD_TEMPERATURE_CONTROL_112" Value="112"/>
+        <opc:EnumeratedValue Name="IMM_HOT_RUNNER_113" Value="113"/>
+        <opc:EnumeratedValue Name="IMM_INTERFACES_114" Value="114"/>
+        <opc:EnumeratedValue Name="IMM_MEASURING_SYSTEM_115" Value="115"/>
+        <opc:EnumeratedValue Name="IMM_ROBOTIC_SYSTEM_INTERFACE_116" Value="116"/>
+        <opc:EnumeratedValue Name="IMM_SPECIAL_PURPOSE_SIGNALS_117" Value="117"/>
+        <opc:EnumeratedValue Name="IMM_REALTIME_ETHERNET_SYSTEM_118" Value="118"/>
+        <opc:EnumeratedValue Name="IMM_MACHINE_CONTROLLER_119" Value="119"/>
+        <opc:EnumeratedValue Name="IMM_SOFTWARE_MONITORING_120" Value="120"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_EXTERNAL_DEVICE_INTERFACE_200" Value="200"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_TEMPERATURE_CONTROL_UNIT_201" Value="201"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_ROBOTICS_SYSTEM_202" Value="202"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_LSR_203" Value="203"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_STRIPPER_UNIT_204" Value="204"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_DRYER_205" Value="205"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_CONVEYOR_BELT_206" Value="206"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_SORTER_UNIT_207" Value="207"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_COLOURING_UNIT_208" Value="208"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_INJESTER_UNIT_209" Value="209"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_EXTERNAL_ALARMS_210" Value="210"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_VACUUM_CONTROL_211" Value="211"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_PRINTER_INTERFACE_212" Value="212"/>
+        <opc:EnumeratedValue Name="OPERATION_QUALITY_MONITORING_300" Value="300"/>
+        <opc:EnumeratedValue Name="OPERATION_MANUAL_OPERATION_301" Value="301"/>
+        <opc:EnumeratedValue Name="OPERATION_EMERGENCY_STOP_302" Value="302"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="MouldStateEnum">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
@@ -98,7 +129,11 @@
         <opc:EnumeratedValue Name="MOULD_CHANGE_2" Value="2"/>
         <opc:EnumeratedValue Name="MOULD_INSTALLED_3" Value="3"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="ProductionStatusEnum">
+    <opc:EnumeratedType LengthInBits="32" Name="ProductionDatasetComponentEnumeration">
+        <opc:EnumeratedValue Name="IMM_0" Value="0"/>
+        <opc:EnumeratedValue Name="ROBOT_1" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ProductionStatusEnumeration">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
         <opc:EnumeratedValue Name="NO_PRODUCTION_1" Value="1"/>
         <opc:EnumeratedValue Name="START_UP_2" Value="2"/>
@@ -107,11 +142,23 @@
         <opc:EnumeratedValue Name="DRY_CYCLE_5" Value="5"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="TemperatureConfigEnum">
-        <opc:EnumeratedValue Name="OFF" Value="0"/>
-        <opc:EnumeratedValue Name="AUTO" Value="1"/>
-        <opc:EnumeratedValue Name="TUNING" Value="2"/>
-        <opc:EnumeratedValue Name="STANDBY" Value="3"/>
-        <opc:EnumeratedValue Name="OPEN_LOOP" Value="4"/>
-        <opc:EnumeratedValue Name="NOT_SUPPORTED" Value="5"/>
+        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
+        <opc:EnumeratedValue Name="OFF_1" Value="1"/>
+        <opc:EnumeratedValue Name="AUTOMATIC_2" Value="2"/>
+        <opc:EnumeratedValue Name="TUNING_3" Value="3"/>
+        <opc:EnumeratedValue Name="STANDBY_4" Value="4"/>
+        <opc:EnumeratedValue Name="OPEN_LOOP_5" Value="5"/>
+        <opc:EnumeratedValue Name="ONLY_MEASUREMENT_6" Value="6"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="TypeOfChangeEnumeration">
+        <opc:EnumeratedValue Name="UPDATE_0" Value="0"/>
+        <opc:EnumeratedValue Name="ADD_1" Value="1"/>
+        <opc:EnumeratedValue Name="MODIFY_2" Value="2"/>
+        <opc:EnumeratedValue Name="MOVE_3" Value="3"/>
+        <opc:EnumeratedValue Name="DELETE_4" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="UserChangeEnumeration">
+        <opc:EnumeratedValue Name="LOG_ON_0" Value="0"/>
+        <opc:EnumeratedValue Name="LOG_OFF_1" Value="1"/>
     </opc:EnumeratedType>
 </opc:TypeDictionary>

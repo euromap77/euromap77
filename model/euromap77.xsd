@@ -30,8 +30,8 @@
     <xs:element type="tns:ListOfCycleQualityEnum" name="ListOfCycleQualityEnum" nillable="true"/>
     <xs:simpleType name="DatasetComponentEnumType">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="IMM_0"/>
-            <xs:enumeration value="ROBOT_1"/>
+            <xs:enumeration value="IMM_0_0"/>
+            <xs:enumeration value="ROBOT_1_1"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:DatasetComponentEnumType" name="DatasetComponentEnumType"/>
@@ -43,18 +43,18 @@
     <xs:element type="tns:ListOfDatasetComponentEnumType" name="ListOfDatasetComponentEnumType" nillable="true"/>
     <xs:simpleType name="JobStatusEnum">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="OTHER_0"/>
-            <xs:enumeration value="TRANSFERRED_ASSIGNED_1"/>
-            <xs:enumeration value="SETUP_ACTIVE_2"/>
-            <xs:enumeration value="SETUP_INTERRUPTED_3"/>
-            <xs:enumeration value="SETUP_FINISHED_4"/>
-            <xs:enumeration value="STARTUP_ACTIVE_5"/>
-            <xs:enumeration value="JOB_IN_PRODUCTION_6"/>
-            <xs:enumeration value="JOB_INTERRUPTED_7"/>
-            <xs:enumeration value="JOB_FINISHED_8"/>
-            <xs:enumeration value="TEAR_DOWN_ACTIVE_9"/>
-            <xs:enumeration value="TEAR_DOWN_INTERRUPTED_10"/>
-            <xs:enumeration value="TEAR_DOWN_FINISHED_11"/>
+            <xs:enumeration value="OTHER_0_0"/>
+            <xs:enumeration value="TRANSFERRED_ASSIGNED_1_1"/>
+            <xs:enumeration value="SETUP_ACTIVE_2_2"/>
+            <xs:enumeration value="SETUP_INTERRUPTED_3_3"/>
+            <xs:enumeration value="SETUP_FINISHED_4_4"/>
+            <xs:enumeration value="STARTUP_ACTIVE_5_5"/>
+            <xs:enumeration value="JOB_IN_PRODUCTION_6_6"/>
+            <xs:enumeration value="JOB_INTERRUPTED_7_7"/>
+            <xs:enumeration value="JOB_FINISHED_8_8"/>
+            <xs:enumeration value="TEAR_DOWN_ACTIVE_9_9"/>
+            <xs:enumeration value="TEAR_DOWN_INTERRUPTED_10_10"/>
+            <xs:enumeration value="TEAR_DOWN_FINISHED_11_11"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:JobStatusEnum" name="JobStatusEnum"/>
@@ -64,7 +64,27 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfJobStatusEnum" name="ListOfJobStatusEnum" nillable="true"/>
-    <xs:simpleType name="MachineModeEnum">
+    <xs:simpleType name="LogBookEventsEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PARAMTER_CHANGE_0_0"/>
+            <xs:enumeration value="USER_1_1"/>
+            <xs:enumeration value="SEQUENCE_CHANGE_2_2"/>
+            <xs:enumeration value="MACHINE_MODE_CHANGE_3_3"/>
+            <xs:enumeration value="PRODUCTION_STATUS_CHANGE_4_4"/>
+            <xs:enumeration value="PRODUCTION_DATASET_CHANGE_5_5"/>
+            <xs:enumeration value="STAND_STILL_REASON_6_6"/>
+            <xs:enumeration value="MESSAGE_7_7"/>
+            <xs:enumeration value="USER_FEEDBACK_8_8"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:LogBookEventsEnumeration" name="LogBookEventsEnumeration"/>
+    <xs:complexType name="ListOfLogBookEventsEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:LogBookEventsEnumeration" name="LogBookEventsEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLogBookEventsEnumeration" name="ListOfLogBookEventsEnumeration" nillable="true"/>
+    <xs:simpleType name="MachineModeEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
             <xs:enumeration value="AUTOMATIC_1_1"/>
@@ -74,59 +94,62 @@
             <xs:enumeration value="SLEEP_5_5"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:MachineModeEnum" name="MachineModeEnum"/>
-    <xs:complexType name="ListOfMachineModeEnum">
+    <xs:element type="tns:MachineModeEnumeration" name="MachineModeEnumeration"/>
+    <xs:complexType name="ListOfMachineModeEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MachineModeEnum" name="MachineModeEnum" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MachineModeEnumeration" name="MachineModeEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfMachineModeEnum" name="ListOfMachineModeEnum" nillable="true"/>
-    <xs:simpleType name="MessageClassificationEnumType">
+    <xs:element type="tns:ListOfMachineModeEnumeration" name="ListOfMachineModeEnumeration" nillable="true"/>
+    <xs:simpleType name="MessageClassificationEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="INJECTION_UNIT_100"/>
-            <xs:enumeration value="CLAMPING_UNIT_101"/>
-            <xs:enumeration value="HARDWARE_102"/>
-            <xs:enumeration value="COMPRESSED_AIR_CONTROL_103"/>
-            <xs:enumeration value="MACHINE_MONITORING_104"/>
-            <xs:enumeration value="MOULD_105"/>
-            <xs:enumeration value="EJECTOR_106"/>
-            <xs:enumeration value="CORE_PULL_107"/>
-            <xs:enumeration value="TABLE_108"/>
-            <xs:enumeration value="INJECTION_PROGRAM_109"/>
-            <xs:enumeration value="HYDRAULIC_TEMPERATURE_CONTROL_110"/>
-            <xs:enumeration value="CYLINDER_TEMPERATURE_CONTROL_111"/>
-            <xs:enumeration value="MOULD_TEMPERATURE_CONTROL_112"/>
-            <xs:enumeration value="HOT_RUNNER_113"/>
-            <xs:enumeration value="INTERFACES_114"/>
-            <xs:enumeration value="ROBOTIC_SYSTEM_INTERFACE_115"/>
-            <xs:enumeration value="SPECIAL_PURPOSE_SIGNAL_116"/>
-            <xs:enumeration value="REALTIME_ETHERNET_SYSTEM_117"/>
-            <xs:enumeration value="SOFTWARE_MONITORING_118"/>
-            <xs:enumeration value="EXTERNAL_DEVICE_INTERFACE_200"/>
-            <xs:enumeration value="TEMPERATURE_CONTROL_UNIT_201"/>
-            <xs:enumeration value="ROBOTICS_SYSTEM_202"/>
-            <xs:enumeration value="LIQUID_SILICONE_RUBBER_203"/>
-            <xs:enumeration value="STRIPPER_UNIT_204"/>
-            <xs:enumeration value="DRYER_205"/>
-            <xs:enumeration value="CONVEYOR_BELT_206"/>
-            <xs:enumeration value="SORTER_UNIT_207"/>
-            <xs:enumeration value="COLOURING_UNIT_208"/>
-            <xs:enumeration value="INJESTER_UNIT_209"/>
-            <xs:enumeration value="EXTERNAL_ALARM_210"/>
-            <xs:enumeration value="VACUUM_CONTROL_211"/>
-            <xs:enumeration value="PRINTER_INTERFACE_212"/>
-            <xs:enumeration value="QUALITY_MONITORING_300"/>
-            <xs:enumeration value="MANUAL_OPERATION_301"/>
-            <xs:enumeration value="EMERGENCY_STOP_302"/>
+            <xs:enumeration value="OTHER_0_0"/>
+            <xs:enumeration value="IMM_INJECTION_UNIT_100_100"/>
+            <xs:enumeration value="IMM_CLAMPING_UNIT_101_101"/>
+            <xs:enumeration value="IMM_HARDWARE_102_102"/>
+            <xs:enumeration value="IMM_COMPRESSED_AIR_CONTROL_103_103"/>
+            <xs:enumeration value="IMM_MACHINE_MONITORING_104_104"/>
+            <xs:enumeration value="IMM_MOULD_105_105"/>
+            <xs:enumeration value="IMM_EJECTOR_106_106"/>
+            <xs:enumeration value="IMM_CORE_PULL_107_107"/>
+            <xs:enumeration value="IMM_TABLE_108_108"/>
+            <xs:enumeration value="IMM_INJECTION_PROGRAM_109_109"/>
+            <xs:enumeration value="IMM_HYDRAULIC_TEMPERATURE_CONTROL_110_110"/>
+            <xs:enumeration value="IMM_CYLINDER_TEMPERATURE_CONTROL_111_111"/>
+            <xs:enumeration value="IMM_MOULD_TEMPERATURE_CONTROL_112_112"/>
+            <xs:enumeration value="IMM_HOT_RUNNER_113_113"/>
+            <xs:enumeration value="IMM_INTERFACES_114_114"/>
+            <xs:enumeration value="IMM_MEASURING_SYSTEM_115_115"/>
+            <xs:enumeration value="IMM_ROBOTIC_SYSTEM_INTERFACE_116_116"/>
+            <xs:enumeration value="IMM_SPECIAL_PURPOSE_SIGNALS_117_117"/>
+            <xs:enumeration value="IMM_REALTIME_ETHERNET_SYSTEM_118_118"/>
+            <xs:enumeration value="IMM_MACHINE_CONTROLLER_119_119"/>
+            <xs:enumeration value="IMM_SOFTWARE_MONITORING_120_120"/>
+            <xs:enumeration value="PERIPHERAL_EXTERNAL_DEVICE_INTERFACE_200_200"/>
+            <xs:enumeration value="PERIPHERAL_TEMPERATURE_CONTROL_UNIT_201_201"/>
+            <xs:enumeration value="PERIPHERAL_ROBOTICS_SYSTEM_202_202"/>
+            <xs:enumeration value="PERIPHERAL_LSR_203_203"/>
+            <xs:enumeration value="PERIPHERAL_STRIPPER_UNIT_204_204"/>
+            <xs:enumeration value="PERIPHERAL_DRYER_205_205"/>
+            <xs:enumeration value="PERIPHERAL_CONVEYOR_BELT_206_206"/>
+            <xs:enumeration value="PERIPHERAL_SORTER_UNIT_207_207"/>
+            <xs:enumeration value="PERIPHERAL_COLOURING_UNIT_208_208"/>
+            <xs:enumeration value="PERIPHERAL_INJESTER_UNIT_209_209"/>
+            <xs:enumeration value="PERIPHERAL_EXTERNAL_ALARMS_210_210"/>
+            <xs:enumeration value="PERIPHERAL_VACUUM_CONTROL_211_211"/>
+            <xs:enumeration value="PERIPHERAL_PRINTER_INTERFACE_212_212"/>
+            <xs:enumeration value="OPERATION_QUALITY_MONITORING_300_300"/>
+            <xs:enumeration value="OPERATION_MANUAL_OPERATION_301_301"/>
+            <xs:enumeration value="OPERATION_EMERGENCY_STOP_302_302"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:MessageClassificationEnumType" name="MessageClassificationEnumType"/>
-    <xs:complexType name="ListOfMessageClassificationEnumType">
+    <xs:element type="tns:MessageClassificationEnumeration" name="MessageClassificationEnumeration"/>
+    <xs:complexType name="ListOfMessageClassificationEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MessageClassificationEnumType" name="MessageClassificationEnumType" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MessageClassificationEnumeration" name="MessageClassificationEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfMessageClassificationEnumType" name="ListOfMessageClassificationEnumType" nillable="true"/>
+    <xs:element type="tns:ListOfMessageClassificationEnumeration" name="ListOfMessageClassificationEnumeration" nillable="true"/>
     <xs:simpleType name="MouldStateEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
@@ -142,7 +165,20 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfMouldStateEnum" name="ListOfMouldStateEnum" nillable="true"/>
-    <xs:simpleType name="ProductionStatusEnum">
+    <xs:simpleType name="ProductionDatasetComponentEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="IMM_0_0"/>
+            <xs:enumeration value="ROBOT_1_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ProductionDatasetComponentEnumeration" name="ProductionDatasetComponentEnumeration"/>
+    <xs:complexType name="ListOfProductionDatasetComponentEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProductionDatasetComponentEnumeration" name="ProductionDatasetComponentEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProductionDatasetComponentEnumeration" name="ListOfProductionDatasetComponentEnumeration" nillable="true"/>
+    <xs:simpleType name="ProductionStatusEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
             <xs:enumeration value="NO_PRODUCTION_1_1"/>
@@ -152,21 +188,22 @@
             <xs:enumeration value="DRY_CYCLE_5_5"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:ProductionStatusEnum" name="ProductionStatusEnum"/>
-    <xs:complexType name="ListOfProductionStatusEnum">
+    <xs:element type="tns:ProductionStatusEnumeration" name="ProductionStatusEnumeration"/>
+    <xs:complexType name="ListOfProductionStatusEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProductionStatusEnum" name="ProductionStatusEnum" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProductionStatusEnumeration" name="ProductionStatusEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfProductionStatusEnum" name="ListOfProductionStatusEnum" nillable="true"/>
+    <xs:element type="tns:ListOfProductionStatusEnumeration" name="ListOfProductionStatusEnumeration" nillable="true"/>
     <xs:simpleType name="TemperatureConfigEnum">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="OFF_0"/>
-            <xs:enumeration value="AUTO_1"/>
-            <xs:enumeration value="TUNING_2"/>
-            <xs:enumeration value="STANDBY_3"/>
-            <xs:enumeration value="OPEN_LOOP_4"/>
-            <xs:enumeration value="NOT_SUPPORTED_5"/>
+            <xs:enumeration value="OTHER_0_0"/>
+            <xs:enumeration value="OFF_1_1"/>
+            <xs:enumeration value="AUTOMATIC_2_2"/>
+            <xs:enumeration value="TUNING_3_3"/>
+            <xs:enumeration value="STANDBY_4_4"/>
+            <xs:enumeration value="OPEN_LOOP_5_5"/>
+            <xs:enumeration value="ONLY_MEASUREMENT_6_6"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:TemperatureConfigEnum" name="TemperatureConfigEnum"/>
@@ -176,16 +213,61 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfTemperatureConfigEnum" name="ListOfTemperatureConfigEnum" nillable="true"/>
-    <xs:complexType name="DatasetInformationType">
-        <xs:sequence/>
-    </xs:complexType>
-    <xs:element type="tns:DatasetInformationType" name="DatasetInformationType"/>
-    <xs:complexType name="ListOfDatasetInformationType">
+    <xs:simpleType name="TypeOfChangeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="UPDATE_0_0"/>
+            <xs:enumeration value="ADD_1_1"/>
+            <xs:enumeration value="MODIFY_2_2"/>
+            <xs:enumeration value="MOVE_3_3"/>
+            <xs:enumeration value="DELETE_4_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:TypeOfChangeEnumeration" name="TypeOfChangeEnumeration"/>
+    <xs:complexType name="ListOfTypeOfChangeEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DatasetInformationType" name="DatasetInformationType" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TypeOfChangeEnumeration" name="TypeOfChangeEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfDatasetInformationType" name="ListOfDatasetInformationType" nillable="true"/>
+    <xs:element type="tns:ListOfTypeOfChangeEnumeration" name="ListOfTypeOfChangeEnumeration" nillable="true"/>
+    <xs:simpleType name="UserChangeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="LOG_ON_0_0"/>
+            <xs:enumeration value="LOG_OFF_1_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:UserChangeEnumeration" name="UserChangeEnumeration"/>
+    <xs:complexType name="ListOfUserChangeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:UserChangeEnumeration" name="UserChangeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfUserChangeEnumeration" name="ListOfUserChangeEnumeration" nillable="true"/>
+    <xs:complexType name="ProductionDatasetInformationType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName2"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName3"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="CreationTimestamp"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ProductionDatasetComponentEnumeration" name="ProductionDatasetComponent"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Manufacturer"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SerialNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Model"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ControllerType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserMachineName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="LocationName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="ProductName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="MouldId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="NumCavities"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ProductionDatasetInformationType" name="ProductionDatasetInformationType"/>
+    <xs:complexType name="ListOfProductionDatasetInformationType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProductionDatasetInformationType" name="ProductionDatasetInformationType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProductionDatasetInformationType" name="ListOfProductionDatasetInformationType" nillable="true"/>
     <xs:complexType name="EuromapProfileType">
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="EuromapProfile"/>
@@ -202,7 +284,7 @@
     <xs:complexType name="Message1Type">
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="tns:MessageClassificationEnumType" name="Classification"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:MessageClassificationEnumeration" name="Classification"/>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="StandstillAlarm"/>
         </xs:sequence>
     </xs:complexType>
