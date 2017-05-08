@@ -1,5 +1,18 @@
 <opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.euromap.org/euromap77" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://www.euromap.org/euromap77">
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="EuromapProfileType">
+        <opc:Field TypeName="opc:CharArray" Name="EuromapProfile"/>
+        <opc:Field TypeName="opc:CharArray" Name="Version"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="Message1Type">
+        <opc:Field TypeName="opc:CharArray" Name="Id"/>
+        <opc:Field TypeName="tns:MessageClassificationEnumeration" Name="Classification"/>
+        <opc:Field TypeName="opc:Boolean" Name="StandstillAlarm"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PageEntryDataType">
+        <opc:Field TypeName="opc:CharArray" Name="Id"/>
+        <opc:Field TypeName="ua:LocalizedText" Name="Title"/>
+    </opc:StructuredType>
     <opc:StructuredType BaseType="ua:ExtensionObject" Name="ProductionDatasetInformationType">
         <opc:Field TypeName="opc:CharArray" Name="ProductionDatsetName"/>
         <opc:Field TypeName="opc:CharArray" Name="ProductionDatsetName2"/>
@@ -17,19 +30,6 @@
         <opc:Field LengthField="NoOfProductName" TypeName="opc:CharArray" Name="ProductName"/>
         <opc:Field TypeName="opc:CharArray" Name="MouldId"/>
         <opc:Field TypeName="opc:UInt32" Name="NumCavities"/>
-    </opc:StructuredType>
-    <opc:StructuredType BaseType="ua:ExtensionObject" Name="EuromapProfileType">
-        <opc:Field TypeName="opc:CharArray" Name="EuromapProfile"/>
-        <opc:Field TypeName="opc:CharArray" Name="Version"/>
-    </opc:StructuredType>
-    <opc:StructuredType BaseType="ua:ExtensionObject" Name="Message1Type">
-        <opc:Field TypeName="opc:CharArray" Name="Id"/>
-        <opc:Field TypeName="tns:MessageClassificationEnumeration" Name="Classification"/>
-        <opc:Field TypeName="opc:Boolean" Name="StandstillAlarm"/>
-    </opc:StructuredType>
-    <opc:StructuredType BaseType="ua:ExtensionObject" Name="PageEntryDataType">
-        <opc:Field TypeName="opc:CharArray" Name="Id"/>
-        <opc:Field TypeName="ua:LocalizedText" Name="Title"/>
     </opc:StructuredType>
     <opc:StructuredType BaseType="ua:ExtensionObject" Name="StandstillReasonType">
         <opc:Field TypeName="opc:CharArray" Name="Id"/>

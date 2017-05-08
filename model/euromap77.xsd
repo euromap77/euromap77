@@ -229,32 +229,6 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfUserChangeEnumeration" name="ListOfUserChangeEnumeration" nillable="true"/>
-    <xs:complexType name="ProductionDatasetInformationType">
-        <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName2"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName3"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="CreationTimestamp"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="tns:ProductionDatasetComponentEnumeration" name="ProductionDatasetComponent"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Manufacturer"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SerialNumber"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Model"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ControllerType"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserMachineName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="LocationName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="ProductName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="MouldId"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="NumCavities"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element type="tns:ProductionDatasetInformationType" name="ProductionDatasetInformationType"/>
-    <xs:complexType name="ListOfProductionDatasetInformationType">
-        <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProductionDatasetInformationType" name="ProductionDatasetInformationType" nillable="true"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element type="tns:ListOfProductionDatasetInformationType" name="ListOfProductionDatasetInformationType" nillable="true"/>
     <xs:complexType name="EuromapProfileType">
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="EuromapProfile"/>
@@ -295,6 +269,32 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfPageEntryDataType" name="ListOfPageEntryDataType" nillable="true"/>
+    <xs:complexType name="ProductionDatasetInformationType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName2"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName3"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="CreationTimestamp"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ProductionDatasetComponentEnumeration" name="ProductionDatasetComponent"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Manufacturer"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SerialNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Model"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ControllerType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserMachineName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="LocationName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="ProductName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="MouldId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="NumCavities"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ProductionDatasetInformationType" name="ProductionDatasetInformationType"/>
+    <xs:complexType name="ListOfProductionDatasetInformationType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProductionDatasetInformationType" name="ProductionDatasetInformationType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProductionDatasetInformationType" name="ListOfProductionDatasetInformationType" nillable="true"/>
     <xs:complexType name="StandstillReasonType">
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
