@@ -15,8 +15,8 @@
     </opc:StructuredType>
     <opc:StructuredType BaseType="ua:ExtensionObject" Name="ProductionDatasetInformationType">
         <opc:Field TypeName="opc:CharArray" Name="ProductionDatsetName"/>
-        <opc:Field TypeName="opc:CharArray" Name="ProductionDatsetName2"/>
-        <opc:Field TypeName="opc:CharArray" Name="ProductionDatsetName3"/>
+        <opc:Field TypeName="opc:CharArray" Name="ProductionDatsetDescription"/>
+        <opc:Field TypeName="opc:CharArray" Name="ProductionDatsetMESId"/>
         <opc:Field TypeName="opc:DateTime" Name="CreationTimestamp"/>
         <opc:Field TypeName="opc:CharArray" Name="UserName"/>
         <opc:Field TypeName="tns:ProductionDatasetComponentEnumeration" Name="ProductionDatasetComponent"/>

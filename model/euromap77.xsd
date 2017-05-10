@@ -272,8 +272,8 @@
     <xs:complexType name="ProductionDatasetInformationType">
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName2"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetName3"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetDescription"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductionDatsetMESId"/>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="CreationTimestamp"/>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserName"/>
             <xs:element minOccurs="0" maxOccurs="1" type="tns:ProductionDatasetComponentEnumeration" name="ProductionDatasetComponent"/>

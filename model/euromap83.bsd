@@ -1,0 +1,41 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.euromap.org/euromap83" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://www.euromap.org/euromap83">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="DatasetInformationType">
+        <opc:Field TypeName="opc:CharArray" Name="DatsetName"/>
+        <opc:Field TypeName="opc:CharArray" Name="DatsetDescription"/>
+        <opc:Field TypeName="opc:CharArray" Name="DatsetMESId"/>
+        <opc:Field TypeName="ua:Variant" Name="CreationTimestamp"/>
+        <opc:Field TypeName="opc:CharArray" Name="UserName"/>
+        <opc:Field TypeName="tns:DatasetComponentEnumeration" Name="DatasetComponent"/>
+        <opc:Field TypeName="opc:CharArray" Name="Manufacturer"/>
+        <opc:Field TypeName="opc:CharArray" Name="SerialNumber"/>
+        <opc:Field TypeName="opc:CharArray" Name="Model"/>
+        <opc:Field TypeName="opc:CharArray" Name="ControllerType"/>
+        <opc:Field TypeName="opc:CharArray" Name="UserMachineName"/>
+        <opc:Field TypeName="opc:CharArray" Name="LocationName"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfProductName"/>
+        <opc:Field LengthField="NoOfProductName" TypeName="opc:CharArray" Name="ProductName"/>
+        <opc:Field TypeName="opc:CharArray" Name="MouldId"/>
+        <opc:Field TypeName="ua:Variant" Name="NumCavities"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="FileReadOptions">
+        <opc:Field TypeName="opc:CharArray" Name="DatasetName"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfDatasetComponent"/>
+        <opc:Field LengthField="NoOfDatasetComponent" TypeName="tns:DatasetComponentEnumeration" Name="DatasetComponent"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="FileWriteOptions">
+        <opc:Field TypeName="opc:CharArray" Name="DatasetName"/>
+        <opc:Field TypeName="tns:StorageEnumeration" Name="Storage"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfDatasetComponent"/>
+        <opc:Field LengthField="NoOfDatasetComponent" TypeName="tns:DatasetComponentEnumeration" Name="DatasetComponent"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="DatasetComponentEnumeration">
+        <opc:EnumeratedValue Name="IMM_0" Value="0"/>
+        <opc:EnumeratedValue Name="ROBOT_1" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="StorageEnumeration">
+        <opc:EnumeratedValue Name="FILE_SYSTEM_0" Value="0"/>
+        <opc:EnumeratedValue Name="CONTROL_SYSTEM_1" Value="1"/>
+        <opc:EnumeratedValue Name="FILE_AND_CONTROL_SYSTEM_2" Value="2"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
