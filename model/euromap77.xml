@@ -51,7 +51,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="QQQC4tT6On8lWi4kn8TUMg==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="Jcf2UKHljud1MGFTX0I1gg==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3016" BrowseName="1:CavityCycleQualityEnumeration">
@@ -1852,12 +1852,12 @@
         <DisplayName>BarrelZone_&lt;Nr></DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=6458</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1054</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6470</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6471</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6472</Reference>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1054</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6156</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6476</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6479</Reference>
@@ -1986,8 +1986,8 @@
         <DisplayName>NodeVersion</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1054</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
     <UAObjectType NodeId="ns=1;i=1015" BrowseName="1:MessageType">
@@ -3505,13 +3505,28 @@
             <uax:Float>0</uax:Float>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6186" NodeId="ns=1;i=6253" BrowseName="1:EngineeringUnits" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6186" NodeId="ns=1;i=6253" BrowseName="1:EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6186</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6186" NodeId="ns=1;i=6187" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3558,9 +3573,9 @@
     <UAObject ParentNodeId="ns=1;i=1028" NodeId="ns=1;i=5028" BrowseName="1:BarrelZones">
         <DisplayName>BarrelZones</DisplayName>
         <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1028</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1054</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1028</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6189</Reference>
         </References>
     </UAObject>
@@ -3651,8 +3666,8 @@
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6100</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
             <uax:ExtensionObject>
@@ -3702,13 +3717,28 @@
             <uax:Float>0</uax:Float>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6104" NodeId="ns=1;i=6251" BrowseName="1:EngineeringUnits" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6104" NodeId="ns=1;i=6251" BrowseName="1:EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6104</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6104</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6104" NodeId="ns=1;i=6105" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -6658,9 +6688,9 @@
             <Reference ReferenceType="HasComponent">ns=1;i=5037</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1032</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7023</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7021</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
     </UAObject>
     <UAObject ParentNodeId="ns=1;i=5004" NodeId="ns=1;i=5031" BrowseName="1:ActiveJob">
@@ -9134,8 +9164,8 @@
         <References>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5018</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1053</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1053</Reference>
         </References>
     </UAObject>
     <UAObject ParentNodeId="ns=1;i=5008" NodeId="ns=1;i=5018" BrowseName="1:ProductionDatasetLists">
@@ -9160,9 +9190,9 @@
     <UAVariable DataType="Argument" ParentNodeId="ns=1;i=7044" ValueRank="1" NodeId="ns=1;i=6138" ArrayDimensions="1" BrowseName="InputArguments">
         <DisplayName>InputArguments</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7044</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7044</Reference>
         </References>
         <Value>
             <uax:ListOfExtensionObject>
@@ -9189,8 +9219,8 @@
         <DisplayName>OutputArguments</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7044</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7044</Reference>
         </References>
         <Value>
             <uax:ListOfExtensionObject>
@@ -9224,9 +9254,9 @@
     <UAVariable DataType="Argument" ParentNodeId="ns=1;i=7045" ValueRank="1" NodeId="ns=1;i=6250" ArrayDimensions="1" BrowseName="InputArguments">
         <DisplayName>InputArguments</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7045</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7045</Reference>
         </References>
         <Value>
             <uax:ListOfExtensionObject>
@@ -9415,8 +9445,8 @@
         <DisplayName>MouldZones</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1055</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1029</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1055</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6223</Reference>
         </References>
     </UAObject>
@@ -9441,11 +9471,11 @@
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=6192</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6195</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1055</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1034</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6456</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6480</Reference>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1055</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6483</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6486</Reference>
         </References>
@@ -9565,8 +9595,8 @@
         <DisplayName>NodeVersion</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1055</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
     <UAObjectType NodeId="ns=1;i=1049" BrowseName="1:PowerUnitsType">
@@ -9731,7 +9761,9 @@
     <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:ProductionControlType">
         <DisplayName>ProductionControlType</DisplayName>
         <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=7046</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6169</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7047</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7009</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7011</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7008</Reference>
@@ -9744,6 +9776,13 @@
             <Reference ReferenceType="HasComponent">ns=1;i=7017</Reference>
         </References>
     </UAObjectType>
+    <UAMethod ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=7046" BrowseName="1:ActivateSleepMode">
+        <DisplayName>ActivateSleepMode</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAMethod>
     <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=6169" BrowseName="1:AutomaticRunEnabled">
         <DisplayName>AutomaticRunEnabled</DisplayName>
         <References>
@@ -9752,6 +9791,13 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
+    <UAMethod ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=7047" BrowseName="1:DeactivateSleepMode">
+        <DisplayName>DeactivateSleepMode</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAMethod>
     <UAMethod ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=7009" BrowseName="1:DisableAutomaticRun">
         <DisplayName>DisableAutomaticRun</DisplayName>
         <References>

@@ -1,6 +1,6 @@
 ###########################
 # UaModeler Project File  #
-# Generated at 08.05.2017 #
+# Generated at 10.05.2017 #
 ###########################
 
 PROJECTNAME = euromap77
@@ -28,7 +28,9 @@ PROJECTVARIABLES += GenerateDefaultApplication = true \
 
 OUTPUTPATH = ../E77
 
-GENERATE += euromap77.ua
+GENERATE += ($MODELS)/Opc.Ua.Di.NodeSet2.ua \
+    ($MODELS)/Opc.Ua.PLCopen.NodeSet.ua \
+    euromap77.ua
 
 LOCKEDMODELS += ($MODELS)/Opc.Ua.Di.NodeSet2.ua \
     ($MODELS)/Opc.Ua.PLCopen.NodeSet.ua
