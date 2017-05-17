@@ -1,18 +1,38 @@
 <xs:schema elementFormDefault="qualified" targetNamespace="http://www.euromap.org/euromap83/Types.xsd" xmlns:tns="http://www.euromap.org/euromap83/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
-    <xs:simpleType name="DatasetComponentEnumeration">
+    <xs:simpleType name="LogBookEventsEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PARAMTER_CHANGE_0_0"/>
+            <xs:enumeration value="USER_1_1"/>
+            <xs:enumeration value="SEQUENCE_CHANGE_2_2"/>
+            <xs:enumeration value="MACHINE_MODE_CHANGE_3_3"/>
+            <xs:enumeration value="PRODUCTION_STATUS_CHANGE_4_4"/>
+            <xs:enumeration value="PRODUCTION_DATASET_CHANGE_5_5"/>
+            <xs:enumeration value="STAND_STILL_REASON_6_6"/>
+            <xs:enumeration value="MESSAGE_7_7"/>
+            <xs:enumeration value="USER_FEEDBACK_8_8"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:LogBookEventsEnumeration" name="LogBookEventsEnumeration"/>
+    <xs:complexType name="ListOfLogBookEventsEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:LogBookEventsEnumeration" name="LogBookEventsEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfLogBookEventsEnumeration" name="ListOfLogBookEventsEnumeration" nillable="true"/>
+    <xs:simpleType name="ProductionDatasetComponentEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="IMM_0_0"/>
             <xs:enumeration value="ROBOT_1_1"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:DatasetComponentEnumeration" name="DatasetComponentEnumeration"/>
-    <xs:complexType name="ListOfDatasetComponentEnumeration">
+    <xs:element type="tns:ProductionDatasetComponentEnumeration" name="ProductionDatasetComponentEnumeration"/>
+    <xs:complexType name="ListOfProductionDatasetComponentEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DatasetComponentEnumeration" name="DatasetComponentEnumeration" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProductionDatasetComponentEnumeration" name="ProductionDatasetComponentEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfDatasetComponentEnumeration" name="ListOfDatasetComponentEnumeration" nillable="true"/>
+    <xs:element type="tns:ListOfProductionDatasetComponentEnumeration" name="ListOfProductionDatasetComponentEnumeration" nillable="true"/>
     <xs:simpleType name="StorageEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="FILE_SYSTEM_0_0"/>
@@ -27,36 +47,41 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfStorageEnumeration" name="ListOfStorageEnumeration" nillable="true"/>
-    <xs:complexType name="DatasetInformationType">
+    <xs:simpleType name="TemperatureConfigEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0_0"/>
+            <xs:enumeration value="OFF_1_1"/>
+            <xs:enumeration value="AUTOMATIC_2_2"/>
+            <xs:enumeration value="TUNING_3_3"/>
+            <xs:enumeration value="STANDBY_4_4"/>
+            <xs:enumeration value="OPEN_LOOP_5_5"/>
+            <xs:enumeration value="ONLY_MEASUREMENT_6_6"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:TemperatureConfigEnumeration" name="TemperatureConfigEnumeration"/>
+    <xs:complexType name="ListOfTemperatureConfigEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="DatsetName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="DatsetDescription"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="DatsetMESId"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="ua:Variant" name="CreationTimestamp"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="tns:DatasetComponentEnumeration" name="DatasetComponent"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Manufacturer"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SerialNumber"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Model"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ControllerType"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserMachineName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="LocationName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="ProductName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="MouldId"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="ua:Variant" name="NumCavities"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TemperatureConfigEnumeration" name="TemperatureConfigEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:DatasetInformationType" name="DatasetInformationType"/>
-    <xs:complexType name="ListOfDatasetInformationType">
+    <xs:element type="tns:ListOfTemperatureConfigEnumeration" name="ListOfTemperatureConfigEnumeration" nillable="true"/>
+    <xs:complexType name="EuromapProfileType">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DatasetInformationType" name="DatasetInformationType" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="EuromapProfile"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Version"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfDatasetInformationType" name="ListOfDatasetInformationType" nillable="true"/>
+    <xs:element type="tns:EuromapProfileType" name="EuromapProfileType"/>
+    <xs:complexType name="ListOfEuromapProfileType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EuromapProfileType" name="EuromapProfileType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEuromapProfileType" name="ListOfEuromapProfileType" nillable="true"/>
     <xs:complexType name="FileReadOptions">
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="DatasetName"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfDatasetComponentEnumeration" name="DatasetComponent"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfProductionDatasetComponentEnumeration" name="DatasetComponent"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:FileReadOptions" name="FileReadOptions"/>
@@ -70,7 +95,7 @@
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="DatasetName"/>
             <xs:element minOccurs="0" maxOccurs="1" type="tns:StorageEnumeration" name="Storage"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfDatasetComponentEnumeration" name="DatasetComponent"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfProductionDatasetComponentEnumeration" name="DatasetComponent"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:FileWriteOptions" name="FileWriteOptions"/>
@@ -80,4 +105,30 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfFileWriteOptions" name="ListOfFileWriteOptions" nillable="true"/>
+    <xs:complexType name="ProductionDatasetInformationType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Name"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Description"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="DatsetMESId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="CreationTimestamp"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ProductionDatasetComponentEnumeration" name="Component"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Manufacturer"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SerialNumber"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Model"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ControllerType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="UserMachineName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="LocationName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="ProductName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="MouldId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="NumCavities"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ProductionDatasetInformationType" name="ProductionDatasetInformationType"/>
+    <xs:complexType name="ListOfProductionDatasetInformationType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProductionDatasetInformationType" name="ProductionDatasetInformationType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProductionDatasetInformationType" name="ListOfProductionDatasetInformationType" nillable="true"/>
 </xs:schema>

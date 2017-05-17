@@ -1,12 +1,27 @@
 <opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.euromap.org/euromap83" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://www.euromap.org/euromap83">
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
-    <opc:StructuredType BaseType="ua:ExtensionObject" Name="DatasetInformationType">
-        <opc:Field TypeName="opc:CharArray" Name="DatsetName"/>
-        <opc:Field TypeName="opc:CharArray" Name="DatsetDescription"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="EuromapProfileType">
+        <opc:Field TypeName="opc:CharArray" Name="EuromapProfile"/>
+        <opc:Field TypeName="opc:CharArray" Name="Version"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="FileReadOptions">
+        <opc:Field TypeName="opc:CharArray" Name="DatasetName"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfDatasetComponent"/>
+        <opc:Field LengthField="NoOfDatasetComponent" TypeName="tns:ProductionDatasetComponentEnumeration" Name="DatasetComponent"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="FileWriteOptions">
+        <opc:Field TypeName="opc:CharArray" Name="DatasetName"/>
+        <opc:Field TypeName="tns:StorageEnumeration" Name="Storage"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfDatasetComponent"/>
+        <opc:Field LengthField="NoOfDatasetComponent" TypeName="tns:ProductionDatasetComponentEnumeration" Name="DatasetComponent"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ProductionDatasetInformationType">
+        <opc:Field TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="opc:CharArray" Name="Description"/>
         <opc:Field TypeName="opc:CharArray" Name="DatsetMESId"/>
-        <opc:Field TypeName="ua:Variant" Name="CreationTimestamp"/>
+        <opc:Field TypeName="opc:DateTime" Name="CreationTimestamp"/>
         <opc:Field TypeName="opc:CharArray" Name="UserName"/>
-        <opc:Field TypeName="tns:DatasetComponentEnumeration" Name="DatasetComponent"/>
+        <opc:Field TypeName="tns:ProductionDatasetComponentEnumeration" Name="Component"/>
         <opc:Field TypeName="opc:CharArray" Name="Manufacturer"/>
         <opc:Field TypeName="opc:CharArray" Name="SerialNumber"/>
         <opc:Field TypeName="opc:CharArray" Name="Model"/>
@@ -16,20 +31,20 @@
         <opc:Field TypeName="opc:Int32" Name="NoOfProductName"/>
         <opc:Field LengthField="NoOfProductName" TypeName="opc:CharArray" Name="ProductName"/>
         <opc:Field TypeName="opc:CharArray" Name="MouldId"/>
-        <opc:Field TypeName="ua:Variant" Name="NumCavities"/>
+        <opc:Field TypeName="opc:UInt32" Name="NumCavities"/>
     </opc:StructuredType>
-    <opc:StructuredType BaseType="ua:ExtensionObject" Name="FileReadOptions">
-        <opc:Field TypeName="opc:CharArray" Name="DatasetName"/>
-        <opc:Field TypeName="opc:Int32" Name="NoOfDatasetComponent"/>
-        <opc:Field LengthField="NoOfDatasetComponent" TypeName="tns:DatasetComponentEnumeration" Name="DatasetComponent"/>
-    </opc:StructuredType>
-    <opc:StructuredType BaseType="ua:ExtensionObject" Name="FileWriteOptions">
-        <opc:Field TypeName="opc:CharArray" Name="DatasetName"/>
-        <opc:Field TypeName="tns:StorageEnumeration" Name="Storage"/>
-        <opc:Field TypeName="opc:Int32" Name="NoOfDatasetComponent"/>
-        <opc:Field LengthField="NoOfDatasetComponent" TypeName="tns:DatasetComponentEnumeration" Name="DatasetComponent"/>
-    </opc:StructuredType>
-    <opc:EnumeratedType LengthInBits="32" Name="DatasetComponentEnumeration">
+    <opc:EnumeratedType LengthInBits="32" Name="LogBookEventsEnumeration">
+        <opc:EnumeratedValue Name="PARAMTER_CHANGE_0" Value="0"/>
+        <opc:EnumeratedValue Name="USER_1" Value="1"/>
+        <opc:EnumeratedValue Name="SEQUENCE_CHANGE_2" Value="2"/>
+        <opc:EnumeratedValue Name="MACHINE_MODE_CHANGE_3" Value="3"/>
+        <opc:EnumeratedValue Name="PRODUCTION_STATUS_CHANGE_4" Value="4"/>
+        <opc:EnumeratedValue Name="PRODUCTION_DATASET_CHANGE_5" Value="5"/>
+        <opc:EnumeratedValue Name="STAND_STILL_REASON_6" Value="6"/>
+        <opc:EnumeratedValue Name="MESSAGE_7" Value="7"/>
+        <opc:EnumeratedValue Name="USER_FEEDBACK_8" Value="8"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="ProductionDatasetComponentEnumeration">
         <opc:EnumeratedValue Name="IMM_0" Value="0"/>
         <opc:EnumeratedValue Name="ROBOT_1" Value="1"/>
     </opc:EnumeratedType>
@@ -37,5 +52,14 @@
         <opc:EnumeratedValue Name="FILE_SYSTEM_0" Value="0"/>
         <opc:EnumeratedValue Name="CONTROL_SYSTEM_1" Value="1"/>
         <opc:EnumeratedValue Name="FILE_AND_CONTROL_SYSTEM_2" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="TemperatureConfigEnumeration">
+        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
+        <opc:EnumeratedValue Name="OFF_1" Value="1"/>
+        <opc:EnumeratedValue Name="AUTOMATIC_2" Value="2"/>
+        <opc:EnumeratedValue Name="TUNING_3" Value="3"/>
+        <opc:EnumeratedValue Name="STANDBY_4" Value="4"/>
+        <opc:EnumeratedValue Name="OPEN_LOOP_5" Value="5"/>
+        <opc:EnumeratedValue Name="ONLY_MEASUREMENT_6" Value="6"/>
     </opc:EnumeratedType>
 </opc:TypeDictionary>
