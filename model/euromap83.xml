@@ -31,7 +31,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="mUDkPOYGQU92kuy1/a4cdQ==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="uOp3TntUZngqg9pVnPJSsg==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3009" BrowseName="1:LogBookEventsEnumeration">
@@ -874,13 +874,16 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5020" NodeId="ns=1;i=6132" BrowseName="1:MouldId" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5020" NodeId="ns=1;i=6132" BrowseName="1:MouldId">
         <DisplayName>MouldId</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5020</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:String></uax:String>
+        </Value>
     </UAVariable>
     <UAObject ParentNodeId="ns=1;i=5020" NodeId="ns=1;i=5021" BrowseName="1:MouldZones">
         <DisplayName>MouldZones</DisplayName>
@@ -891,13 +894,16 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6133</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5021" NodeId="ns=1;i=6133" BrowseName="1:NodeVersion" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5021" NodeId="ns=1;i=6133" BrowseName="1:NodeVersion">
         <DisplayName>NodeVersion</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5021</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:String></uax:String>
+        </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1050" NodeId="ns=1;i=6134" BrowseName="1:NodeVersion" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>NodeVersion</DisplayName>
@@ -942,13 +948,16 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1029" NodeId="ns=1;i=6127" BrowseName="1:MouldId" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1029" NodeId="ns=1;i=6127" BrowseName="1:MouldId">
         <DisplayName>MouldId</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1029</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:String></uax:String>
+        </Value>
     </UAVariable>
     <UAObject ParentNodeId="ns=1;i=1029" NodeId="ns=1;i=5019" BrowseName="1:MouldZones">
         <DisplayName>MouldZones</DisplayName>
@@ -959,13 +968,16 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6128</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5019" NodeId="ns=1;i=6128" BrowseName="1:NodeVersion" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5019" NodeId="ns=1;i=6128" BrowseName="1:NodeVersion">
         <DisplayName>NodeVersion</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5019</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:String></uax:String>
+        </Value>
     </UAVariable>
     <UAObjectType NodeId="ns=1;i=1055" BrowseName="1:MouldZonesType">
         <DisplayName>MouldZonesType</DisplayName>
@@ -1262,11 +1274,11 @@
     <UAVariable DataType="Double" ParentNodeId="ns=1;i=1035" NodeId="ns=1;i=6148" BrowseName="1:ActualPressure">
         <DisplayName>ActualPressure</DisplayName>
         <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1035</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6150</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6149</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1035</Reference>
         </References>
         <Value>
             <uax:Double>0</uax:Double>
@@ -1275,9 +1287,9 @@
     <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6148" NodeId="ns=1;i=6150" BrowseName="1:EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6148</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6148</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6148" NodeId="ns=1;i=6149" BrowseName="EURange">
@@ -2239,9 +2251,9 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1048</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1045</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6068</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6069</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1045</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5016" NodeId="ns=1;i=6064" BrowseName="1:CardUid" UserAccessLevel="3" AccessLevel="3">
@@ -2276,16 +2288,16 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5016" NodeId="ns=1;i=6068" BrowseName="1:VendorLevel" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>VendorLevel</DisplayName>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5016" NodeId="ns=1;i=6068" BrowseName="1:UserLevel" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>UserLevel</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5016</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5016" NodeId="ns=1;i=6069" BrowseName="1:VendorRole" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>VendorRole</DisplayName>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5016" NodeId="ns=1;i=6069" BrowseName="1:UserRole" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>UserRole</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -2299,9 +2311,9 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6058</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6059</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6060</Reference>
-            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6061</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6062</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
         </References>
     </UAObjectType>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1045" NodeId="ns=1;i=6057" BrowseName="1:CardUid" UserAccessLevel="3" AccessLevel="3">
@@ -2336,16 +2348,16 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1045" NodeId="ns=1;i=6061" BrowseName="1:VendorLevel" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>VendorLevel</DisplayName>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1045" NodeId="ns=1;i=6061" BrowseName="1:UserLevel" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>UserLevel</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1045</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1045" NodeId="ns=1;i=6062" BrowseName="1:VendorRole" UserAccessLevel="3" AccessLevel="3">
-        <DisplayName>VendorRole</DisplayName>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1045" NodeId="ns=1;i=6062" BrowseName="1:UserRole" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>UserRole</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
