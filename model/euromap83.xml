@@ -31,7 +31,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="uOp3TntUZngqg9pVnPJSsg==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="43h8JjAbPoI45fy2aAa+4A==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3009" BrowseName="1:LogBookEventsEnumeration">
@@ -616,16 +616,16 @@
             <uax:String>//xs:element[@name='ProductionDatasetInformationType']</uax:String>
         </Value>
     </UAVariable>
-    <UAObjectType NodeId="ns=1;i=1054" BrowseName="1:BarrelZonesType">
-        <DisplayName>BarrelZonesType</DisplayName>
+    <UAObjectType NodeId="ns=1;i=1054" BrowseName="1:BarrelTemperatureZonesType">
+        <DisplayName>BarrelTemperatureZonesType</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=5017</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6109</Reference>
         </References>
     </UAObjectType>
-    <UAObject SymbolicName="BarrelZone__Nr_" ParentNodeId="ns=1;i=1054" NodeId="ns=1;i=5017" BrowseName="1:BarrelZone_&lt;Nr>">
-        <DisplayName>BarrelZone_&lt;Nr></DisplayName>
+    <UAObject ParentNodeId="ns=1;i=1054" NodeId="ns=1;i=5017" BrowseName="1:BarrelTemperatureZone__Nr_">
+        <DisplayName>BarrelTemperatureZone__Nr_</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=6096</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1054</Reference>
@@ -885,8 +885,8 @@
             <uax:String></uax:String>
         </Value>
     </UAVariable>
-    <UAObject ParentNodeId="ns=1;i=5020" NodeId="ns=1;i=5021" BrowseName="1:MouldZones">
-        <DisplayName>MouldZones</DisplayName>
+    <UAObject ParentNodeId="ns=1;i=5020" NodeId="ns=1;i=5021" BrowseName="1:MouldTemperatureZones">
+        <DisplayName>MouldTemperatureZones</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5020</Reference>
@@ -894,16 +894,13 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6133</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5021" NodeId="ns=1;i=6133" BrowseName="1:NodeVersion">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5021" NodeId="ns=1;i=6133" BrowseName="1:NodeVersion" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>NodeVersion</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5021</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
-        <Value>
-            <uax:String></uax:String>
-        </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1050" NodeId="ns=1;i=6134" BrowseName="1:NodeVersion" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>NodeVersion</DisplayName>
@@ -959,8 +956,8 @@
             <uax:String></uax:String>
         </Value>
     </UAVariable>
-    <UAObject ParentNodeId="ns=1;i=1029" NodeId="ns=1;i=5019" BrowseName="1:MouldZones">
-        <DisplayName>MouldZones</DisplayName>
+    <UAObject ParentNodeId="ns=1;i=1029" NodeId="ns=1;i=5019" BrowseName="1:MouldTemperatureZones">
+        <DisplayName>MouldTemperatureZones</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1029</Reference>
@@ -968,27 +965,24 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6128</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5019" NodeId="ns=1;i=6128" BrowseName="1:NodeVersion">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5019" NodeId="ns=1;i=6128" BrowseName="1:NodeVersion" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>NodeVersion</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5019</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
-        <Value>
-            <uax:String></uax:String>
-        </Value>
     </UAVariable>
-    <UAObjectType NodeId="ns=1;i=1055" BrowseName="1:MouldZonesType">
-        <DisplayName>MouldZonesType</DisplayName>
+    <UAObjectType NodeId="ns=1;i=1055" BrowseName="1:MouldTemperatureZonesType">
+        <DisplayName>MouldTemperatureZonesType</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=5018</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6123</Reference>
         </References>
     </UAObjectType>
-    <UAObject SymbolicName="MouldZones__Nr_" ParentNodeId="ns=1;i=1055" NodeId="ns=1;i=5018" BrowseName="1:MouldZones_&lt;Nr>">
-        <DisplayName>MouldZones_&lt;Nr></DisplayName>
+    <UAObject ParentNodeId="ns=1;i=1055" NodeId="ns=1;i=5018" BrowseName="1:MouldTemperatureZone__Nr_">
+        <DisplayName>MouldTemperatureZone__Nr_</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=6111</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6114</Reference>
@@ -1968,8 +1962,8 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1030</Reference>
         </References>
     </UAVariable>
-    <UAObjectType NodeId="ns=1;i=1001" BrowseName="1:BarrelZoneType">
-        <DisplayName>BarrelZoneType</DisplayName>
+    <UAObjectType NodeId="ns=1;i=1001" BrowseName="1:BarrelTemperatureZoneType">
+        <DisplayName>BarrelTemperatureZoneType</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=6095</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1030</Reference>
@@ -1983,8 +1977,8 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1001</Reference>
         </References>
     </UAVariable>
-    <UAObjectType NodeId="ns=1;i=1034" BrowseName="1:MouldZoneType">
-        <DisplayName>MouldZoneType</DisplayName>
+    <UAObjectType NodeId="ns=1;i=1034" BrowseName="1:MouldTemperatureZoneType">
+        <DisplayName>MouldTemperatureZoneType</DisplayName>
         <References>
             <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1030</Reference>
         </References>

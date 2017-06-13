@@ -68,7 +68,7 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfMachineModeEnumeration" name="ListOfMachineModeEnumeration" nillable="true"/>
-    <xs:simpleType name="MessageClassificationEnumeration">
+    <xs:simpleType name="IMMMessageClassificationEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
             <xs:enumeration value="IMM_INJECTION_UNIT_100_100"/>
@@ -110,13 +110,13 @@
             <xs:enumeration value="OPERATION_EMERGENCY_STOP_302_302"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:MessageClassificationEnumeration" name="MessageClassificationEnumeration"/>
-    <xs:complexType name="ListOfMessageClassificationEnumeration">
+    <xs:element type="tns:IMMMessageClassificationEnumeration" name="IMMMessageClassificationEnumeration"/>
+    <xs:complexType name="ListOfIMMMessageClassificationEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MessageClassificationEnumeration" name="MessageClassificationEnumeration" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:IMMMessageClassificationEnumeration" name="IMMMessageClassificationEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfMessageClassificationEnumeration" name="ListOfMessageClassificationEnumeration" nillable="true"/>
+    <xs:element type="tns:ListOfIMMMessageClassificationEnumeration" name="ListOfIMMMessageClassificationEnumeration" nillable="true"/>
     <xs:simpleType name="MouldStateEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
@@ -181,7 +181,7 @@
     <xs:complexType name="Message1Type">
         <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="tns:MessageClassificationEnumeration" name="Classification"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:IMMMessageClassificationEnumeration" name="Classification"/>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="StandstillAlarm"/>
         </xs:sequence>
     </xs:complexType>

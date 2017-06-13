@@ -2,7 +2,7 @@
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
     <opc:StructuredType BaseType="ua:ExtensionObject" Name="Message1Type">
         <opc:Field TypeName="opc:CharArray" Name="Id"/>
-        <opc:Field TypeName="tns:MessageClassificationEnumeration" Name="Classification"/>
+        <opc:Field TypeName="tns:IMMMessageClassificationEnumeration" Name="Classification"/>
         <opc:Field TypeName="opc:Boolean" Name="StandstillAlarm"/>
     </opc:StructuredType>
     <opc:StructuredType BaseType="ua:ExtensionObject" Name="PageEntryDataType">
@@ -46,7 +46,7 @@
         <opc:EnumeratedValue Name="SETUP_4" Value="4"/>
         <opc:EnumeratedValue Name="SLEEP_5" Value="5"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="MessageClassificationEnumeration">
+    <opc:EnumeratedType LengthInBits="32" Name="IMMMessageClassificationEnumeration">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
         <opc:EnumeratedValue Name="IMM_INJECTION_UNIT_100" Value="100"/>
         <opc:EnumeratedValue Name="IMM_CLAMPING_UNIT_101" Value="101"/>
