@@ -24,28 +24,6 @@
         <opc:EnumeratedValue Name="BAD_CYCLE_2" Value="1"/>
         <opc:EnumeratedValue Name="TEST_SAMPLE_CYCLE_3" Value="2"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="JobStatusEnumeration">
-        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
-        <opc:EnumeratedValue Name="TRANSFERRED_ASSIGNED_1" Value="1"/>
-        <opc:EnumeratedValue Name="SETUP_ACTIVE_2" Value="2"/>
-        <opc:EnumeratedValue Name="SETUP_INTERRUPTED_3" Value="3"/>
-        <opc:EnumeratedValue Name="SETUP_FINISHED_4" Value="4"/>
-        <opc:EnumeratedValue Name="STARTUP_ACTIVE_5" Value="5"/>
-        <opc:EnumeratedValue Name="JOB_IN_PRODUCTION_6" Value="6"/>
-        <opc:EnumeratedValue Name="JOB_INTERRUPTED_7" Value="7"/>
-        <opc:EnumeratedValue Name="JOB_FINISHED_8" Value="8"/>
-        <opc:EnumeratedValue Name="TEAR_DOWN_ACTIVE_9" Value="9"/>
-        <opc:EnumeratedValue Name="TEAR_DOWN_INTERRUPTED_10" Value="10"/>
-        <opc:EnumeratedValue Name="TEAR_DOWN_FINISHED_11" Value="11"/>
-    </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="MachineModeEnumeration">
-        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
-        <opc:EnumeratedValue Name="AUTOMATIC_1" Value="1"/>
-        <opc:EnumeratedValue Name="SEMI_AUTOMATIC_2" Value="2"/>
-        <opc:EnumeratedValue Name="MANUAL_3" Value="3"/>
-        <opc:EnumeratedValue Name="SETUP_4" Value="4"/>
-        <opc:EnumeratedValue Name="SLEEP_5" Value="5"/>
-    </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="IMMMessageClassificationEnumeration">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
         <opc:EnumeratedValue Name="IMM_INJECTION_UNIT_100" Value="100"/>
@@ -86,11 +64,27 @@
         <opc:EnumeratedValue Name="OPERATION_MANUAL_OPERATION_301" Value="301"/>
         <opc:EnumeratedValue Name="OPERATION_EMERGENCY_STOP_302" Value="302"/>
     </opc:EnumeratedType>
-    <opc:EnumeratedType LengthInBits="32" Name="MouldStateEnumeration">
+    <opc:EnumeratedType LengthInBits="32" Name="JobStatusEnumeration">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
-        <opc:EnumeratedValue Name="NO_MOULD_1" Value="1"/>
-        <opc:EnumeratedValue Name="MOULD_CHANGE_2" Value="2"/>
-        <opc:EnumeratedValue Name="MOULD_INSTALLED_3" Value="3"/>
+        <opc:EnumeratedValue Name="TRANSFERRED_ASSIGNED_1" Value="1"/>
+        <opc:EnumeratedValue Name="SETUP_ACTIVE_2" Value="2"/>
+        <opc:EnumeratedValue Name="SETUP_INTERRUPTED_3" Value="3"/>
+        <opc:EnumeratedValue Name="SETUP_FINISHED_4" Value="4"/>
+        <opc:EnumeratedValue Name="STARTUP_ACTIVE_5" Value="5"/>
+        <opc:EnumeratedValue Name="JOB_IN_PRODUCTION_6" Value="6"/>
+        <opc:EnumeratedValue Name="JOB_INTERRUPTED_7" Value="7"/>
+        <opc:EnumeratedValue Name="JOB_FINISHED_8" Value="8"/>
+        <opc:EnumeratedValue Name="TEAR_DOWN_ACTIVE_9" Value="9"/>
+        <opc:EnumeratedValue Name="TEAR_DOWN_INTERRUPTED_10" Value="10"/>
+        <opc:EnumeratedValue Name="TEAR_DOWN_FINISHED_11" Value="11"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="MachineModeEnumeration">
+        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
+        <opc:EnumeratedValue Name="AUTOMATIC_1" Value="1"/>
+        <opc:EnumeratedValue Name="SEMI_AUTOMATIC_2" Value="2"/>
+        <opc:EnumeratedValue Name="MANUAL_3" Value="3"/>
+        <opc:EnumeratedValue Name="SETUP_4" Value="4"/>
+        <opc:EnumeratedValue Name="SLEEP_5" Value="5"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="ProductionStatusEnumeration">
         <opc:EnumeratedValue Name="OTHER_0" Value="0"/>

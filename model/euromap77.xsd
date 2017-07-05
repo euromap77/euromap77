@@ -28,46 +28,6 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfCycleQualityEnumeration" name="ListOfCycleQualityEnumeration" nillable="true"/>
-    <xs:simpleType name="JobStatusEnumeration">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="OTHER_0_0"/>
-            <xs:enumeration value="TRANSFERRED_ASSIGNED_1_1"/>
-            <xs:enumeration value="SETUP_ACTIVE_2_2"/>
-            <xs:enumeration value="SETUP_INTERRUPTED_3_3"/>
-            <xs:enumeration value="SETUP_FINISHED_4_4"/>
-            <xs:enumeration value="STARTUP_ACTIVE_5_5"/>
-            <xs:enumeration value="JOB_IN_PRODUCTION_6_6"/>
-            <xs:enumeration value="JOB_INTERRUPTED_7_7"/>
-            <xs:enumeration value="JOB_FINISHED_8_8"/>
-            <xs:enumeration value="TEAR_DOWN_ACTIVE_9_9"/>
-            <xs:enumeration value="TEAR_DOWN_INTERRUPTED_10_10"/>
-            <xs:enumeration value="TEAR_DOWN_FINISHED_11_11"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:element type="tns:JobStatusEnumeration" name="JobStatusEnumeration"/>
-    <xs:complexType name="ListOfJobStatusEnumeration">
-        <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:JobStatusEnumeration" name="JobStatusEnumeration" nillable="true"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element type="tns:ListOfJobStatusEnumeration" name="ListOfJobStatusEnumeration" nillable="true"/>
-    <xs:simpleType name="MachineModeEnumeration">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="OTHER_0_0"/>
-            <xs:enumeration value="AUTOMATIC_1_1"/>
-            <xs:enumeration value="SEMI_AUTOMATIC_2_2"/>
-            <xs:enumeration value="MANUAL_3_3"/>
-            <xs:enumeration value="SETUP_4_4"/>
-            <xs:enumeration value="SLEEP_5_5"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:element type="tns:MachineModeEnumeration" name="MachineModeEnumeration"/>
-    <xs:complexType name="ListOfMachineModeEnumeration">
-        <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MachineModeEnumeration" name="MachineModeEnumeration" nillable="true"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element type="tns:ListOfMachineModeEnumeration" name="ListOfMachineModeEnumeration" nillable="true"/>
     <xs:simpleType name="IMMMessageClassificationEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
@@ -117,21 +77,46 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfIMMMessageClassificationEnumeration" name="ListOfIMMMessageClassificationEnumeration" nillable="true"/>
-    <xs:simpleType name="MouldStateEnumeration">
+    <xs:simpleType name="JobStatusEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
-            <xs:enumeration value="NO_MOULD_1_1"/>
-            <xs:enumeration value="MOULD_CHANGE_2_2"/>
-            <xs:enumeration value="MOULD_INSTALLED_3_3"/>
+            <xs:enumeration value="TRANSFERRED_ASSIGNED_1_1"/>
+            <xs:enumeration value="SETUP_ACTIVE_2_2"/>
+            <xs:enumeration value="SETUP_INTERRUPTED_3_3"/>
+            <xs:enumeration value="SETUP_FINISHED_4_4"/>
+            <xs:enumeration value="STARTUP_ACTIVE_5_5"/>
+            <xs:enumeration value="JOB_IN_PRODUCTION_6_6"/>
+            <xs:enumeration value="JOB_INTERRUPTED_7_7"/>
+            <xs:enumeration value="JOB_FINISHED_8_8"/>
+            <xs:enumeration value="TEAR_DOWN_ACTIVE_9_9"/>
+            <xs:enumeration value="TEAR_DOWN_INTERRUPTED_10_10"/>
+            <xs:enumeration value="TEAR_DOWN_FINISHED_11_11"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:element type="tns:MouldStateEnumeration" name="MouldStateEnumeration"/>
-    <xs:complexType name="ListOfMouldStateEnumeration">
+    <xs:element type="tns:JobStatusEnumeration" name="JobStatusEnumeration"/>
+    <xs:complexType name="ListOfJobStatusEnumeration">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MouldStateEnumeration" name="MouldStateEnumeration" nillable="true"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:JobStatusEnumeration" name="JobStatusEnumeration" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfMouldStateEnumeration" name="ListOfMouldStateEnumeration" nillable="true"/>
+    <xs:element type="tns:ListOfJobStatusEnumeration" name="ListOfJobStatusEnumeration" nillable="true"/>
+    <xs:simpleType name="MachineModeEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OTHER_0_0"/>
+            <xs:enumeration value="AUTOMATIC_1_1"/>
+            <xs:enumeration value="SEMI_AUTOMATIC_2_2"/>
+            <xs:enumeration value="MANUAL_3_3"/>
+            <xs:enumeration value="SETUP_4_4"/>
+            <xs:enumeration value="SLEEP_5_5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:MachineModeEnumeration" name="MachineModeEnumeration"/>
+    <xs:complexType name="ListOfMachineModeEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MachineModeEnumeration" name="MachineModeEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMachineModeEnumeration" name="ListOfMachineModeEnumeration" nillable="true"/>
     <xs:simpleType name="ProductionStatusEnumeration">
         <xs:restriction base="xs:string">
             <xs:enumeration value="OTHER_0_0"/>
