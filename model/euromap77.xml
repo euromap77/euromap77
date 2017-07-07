@@ -49,7 +49,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="4hWQye6WbXoRWsAmAlhmIw==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="X6lmWw0rHRp/WBXCwpPoHQ==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3016" BrowseName="1:CavityCycleQualityEnumeration">
@@ -1017,7 +1017,7 @@
         <Definition Name="1:StandstillReasonType">
             <Field DataType="String" Name="Id"/>
             <Field DataType="LocalizedText" Name="Text"/>
-            <Field DataType="Boolean" Name="LockedbyClient"/>
+            <Field DataType="Boolean" Name="LockedByMES"/>
         </Definition>
     </UADataType>
     <UAVariable DataType="String" Historizing="true" ParentNodeId="ns=1;i=6012" NodeId="ns=1;i=6010" BrowseName="1:StandstillReasonType">
@@ -1072,111 +1072,111 @@
         EJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiIE5hbWU9IlN0YW5kc3RpbGxSZWFzb25Ue
         XBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJJZCIvP
         gogIDxvcGM6RmllbGQgVHlwZU5hbWU9InVhOkxvY2FsaXplZFRleHQiIE5hbWU9IlRleHQiL
-        z4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Qm9vbGVhbiIgTmFtZT0iTG9ja2VkYnlDb
-        GllbnQiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZ
-        W5ndGhJbkJpdHM9IjMyIiBOYW1lPSJDYXZpdHlDeWNsZVF1YWxpdHlFbnVtZXJhdGlvbiI+C
-        iAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTk9fUEFSVF8wIiBWYWx1ZT0iMCIvPgogI
-        DxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkdPT0RfUEFSVF8xIiBWYWx1ZT0iMSIvPgogI
-        DxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkJBRF9QQVJUXzIiIFZhbHVlPSIyIi8+CiA8L
-        29wYzpFbnVtZXJhdGVkVHlwZT4KIDxvcGM6RW51bWVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzP
-        SIzMiIgTmFtZT0iQ3ljbGVRdWFsaXR5RW51bWVyYXRpb24iPgogIDxvcGM6RW51bWVyYXRlZ
-        FZhbHVlIE5hbWU9IkdPT0RfQ1lDTEVfMSIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0Z
-        WRWYWx1ZSBOYW1lPSJCQURfQ1lDTEVfMiIgVmFsdWU9IjEiLz4KICA8b3BjOkVudW1lcmF0Z
-        WRWYWx1ZSBOYW1lPSJURVNUX1NBTVBMRV9DWUNMRV8zIiBWYWx1ZT0iMiIvPgogPC9vcGM6R
-        W51bWVyYXRlZFR5cGU+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiI
-        E5hbWU9IklNTU1lc3NhZ2VDbGFzc2lmaWNhdGlvbkVudW1lcmF0aW9uIj4KICA8b3BjOkVud
-        W1lcmF0ZWRWYWx1ZSBOYW1lPSJPVEhFUl8wIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyY
-        XRlZFZhbHVlIE5hbWU9IklNTV9JTkpFQ1RJT05fVU5JVF8xMDAiIFZhbHVlPSIxMDAiLz4KI
-        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fQ0xBTVBJTkdfVU5JVF8xMDEiIFZhb
-        HVlPSIxMDEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fSEFSRFdBUkVfM
-        TAyIiBWYWx1ZT0iMTAyIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0NPT
-        VBSRVNTRURfQUlSX0NPTlRST0xfMTAzIiBWYWx1ZT0iMTAzIi8+CiAgPG9wYzpFbnVtZXJhd
-        GVkVmFsdWUgTmFtZT0iSU1NX01BQ0hJTkVfTU9OSVRPUklOR18xMDQiIFZhbHVlPSIxMDQiL
-        z4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fTU9VTERfMTA1IiBWYWx1ZT0iM
-        TA1Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0VKRUNUT1JfMTA2IiBWY
-        Wx1ZT0iMTA2Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0NPUkVfUFVMT
-        F8xMDciIFZhbHVlPSIxMDciLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fV
-        EFCTEVfMTA4IiBWYWx1ZT0iMTA4Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iS
-        U1NX0lOSkVDVElPTl9QUk9HUkFNXzEwOSIgVmFsdWU9IjEwOSIvPgogIDxvcGM6RW51bWVyY
-        XRlZFZhbHVlIE5hbWU9IklNTV9IWURSQVVMSUNfVEVNUEVSQVRVUkVfQ09OVFJPTF8xMTAiI
-        FZhbHVlPSIxMTAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fQ1lMSU5ER
-        VJfVEVNUEVSQVRVUkVfQ09OVFJPTF8xMTEiIFZhbHVlPSIxMTEiLz4KICA8b3BjOkVudW1lc
-        mF0ZWRWYWx1ZSBOYW1lPSJJTU1fTU9VTERfVEVNUEVSQVRVUkVfQ09OVFJPTF8xMTIiIFZhb
-        HVlPSIxMTIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fSE9UX1JVTk5FU
-        l8xMTMiIFZhbHVlPSIxMTMiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fS
-        U5URVJGQUNFU18xMTQiIFZhbHVlPSIxMTQiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOY
-        W1lPSJJTU1fTUVBU1VSSU5HX1NZU1RFTV8xMTUiIFZhbHVlPSIxMTUiLz4KICA8b3BjOkVud
-        W1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fUk9CT1RJQ19TWVNURU1fSU5URVJGQUNFXzExNiIgV
-        mFsdWU9IjExNiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9TUEVDSUFMX
-        1BVUlBPU0VfU0lHTkFMU18xMTciIFZhbHVlPSIxMTciLz4KICA8b3BjOkVudW1lcmF0ZWRWY
-        Wx1ZSBOYW1lPSJJTU1fUkVBTFRJTUVfRVRIRVJORVRfU1lTVEVNXzExOCIgVmFsdWU9IjExO
-        CIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9NQUNISU5FX0NPTlRST0xMR
-        VJfMTE5IiBWYWx1ZT0iMTE5Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX
-        1NPRlRXQVJFX01PTklUT1JJTkdfMTIwIiBWYWx1ZT0iMTIwIi8+CiAgPG9wYzpFbnVtZXJhd
-        GVkVmFsdWUgTmFtZT0iUEVSSVBIRVJBTF9FWFRFUk5BTF9ERVZJQ0VfSU5URVJGQUNFXzIwM
-        CIgVmFsdWU9IjIwMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQ
-        UxfVEVNUEVSQVRVUkVfQ09OVFJPTF9VTklUXzIwMSIgVmFsdWU9IjIwMSIvPgogIDxvcGM6R
-        W51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfUk9CT1RJQ1NfU1lTVEVNXzIwMiIgV
-        mFsdWU9IjIwMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfT
-        FNSXzIwMyIgVmFsdWU9IjIwMyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFU
-        klQSEVSQUxfU1RSSVBQRVJfVU5JVF8yMDQiIFZhbHVlPSIyMDQiLz4KICA8b3BjOkVudW1lc
-        mF0ZWRWYWx1ZSBOYW1lPSJQRVJJUEhFUkFMX0RSWUVSXzIwNSIgVmFsdWU9IjIwNSIvPgogI
-        DxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfQ09OVkVZT1JfQkVMVF8yM
-        DYiIFZhbHVlPSIyMDYiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQRVJJUEhFU
-        kFMX1NPUlRFUl9VTklUXzIwNyIgVmFsdWU9IjIwNyIvPgogIDxvcGM6RW51bWVyYXRlZFZhb
-        HVlIE5hbWU9IlBFUklQSEVSQUxfQ09MT1VSSU5HX1VOSVRfMjA4IiBWYWx1ZT0iMjA4Ii8+C
-        iAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUEVSSVBIRVJBTF9JTkpFU1RFUl9VTklUX
-        zIwOSIgVmFsdWU9IjIwOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQS
-        EVSQUxfRVhURVJOQUxfQUxBUk1TXzIxMCIgVmFsdWU9IjIxMCIvPgogIDxvcGM6RW51bWVyY
-        XRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfVkFDVVVNX0NPTlRST0xfMjExIiBWYWx1ZT0iM
-        jExIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUEVSSVBIRVJBTF9QUklOVEVSX
-        0lOVEVSRkFDRV8yMTIiIFZhbHVlPSIyMTIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOY
-        W1lPSJPUEVSQVRJT05fUVVBTElUWV9NT05JVE9SSU5HXzMwMCIgVmFsdWU9IjMwMCIvPgogI
-        DxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik9QRVJBVElPTl9NQU5VQUxfT1BFUkFUSU9OX
-        zMwMSIgVmFsdWU9IjMwMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik9QRVJBV
-        ElPTl9FTUVSR0VOQ1lfU1RPUF8zMDIiIFZhbHVlPSIzMDIiLz4KIDwvb3BjOkVudW1lcmF0Z
-        WRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJKb
-        2JTdGF0dXNFbnVtZXJhdGlvbiI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iT1RIR
-        VJfMCIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJUUkFOU0ZFU
-        lJFRF9BU1NJR05FRF8xIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hb
-        WU9IlNFVFVQX0FDVElWRV8yIiBWYWx1ZT0iMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
-        E5hbWU9IlNFVFVQX0lOVEVSUlVQVEVEXzMiIFZhbHVlPSIzIi8+CiAgPG9wYzpFbnVtZXJhd
-        GVkVmFsdWUgTmFtZT0iU0VUVVBfRklOSVNIRURfNCIgVmFsdWU9IjQiLz4KICA8b3BjOkVud
-        W1lcmF0ZWRWYWx1ZSBOYW1lPSJTVEFSVFVQX0FDVElWRV81IiBWYWx1ZT0iNSIvPgogIDxvc
-        GM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkpPQl9JTl9QUk9EVUNUSU9OXzYiIFZhbHVlPSI2I
-        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSk9CX0lOVEVSUlVQVEVEXzciIFZhb
-        HVlPSI3Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSk9CX0ZJTklTSEVEXzgiI
-        FZhbHVlPSI4Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVEVBUl9ET1dOX0FDV
-        ElWRV85IiBWYWx1ZT0iOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlRFQVJfR
-        E9XTl9JTlRFUlJVUFRFRF8xMCIgVmFsdWU9IjEwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsd
-        WUgTmFtZT0iVEVBUl9ET1dOX0ZJTklTSEVEXzExIiBWYWx1ZT0iMTEiLz4KIDwvb3BjOkVud
-        W1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOY
-        W1lPSJNYWNoaW5lTW9kZUVudW1lcmF0aW9uIj4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOY
-        W1lPSJPVEhFUl8wIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
-        kFVVE9NQVRJQ18xIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
-        lNFTUlfQVVUT01BVElDXzIiIFZhbHVlPSIyIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgT
-        mFtZT0iTUFOVUFMXzMiIFZhbHVlPSIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZ
-        T0iU0VUVVBfNCIgVmFsdWU9IjQiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTT
-        EVFUF81IiBWYWx1ZT0iNSIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+CiA8b3BjOkVudW1lc
-        mF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9IlByb2R1Y3Rpb25TdGF0dXNFbnVtZ
-        XJhdGlvbiI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iT1RIRVJfMCIgVmFsdWU9I
-        jAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJOT19QUk9EVUNUSU9OXzEiIFZhb
-        HVlPSIxIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU1RBUlRfVVBfMiIgVmFsd
-        WU9IjIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSRUFEWV9GT1JfUFJPRFVDV
-        ElPTl8zIiBWYWx1ZT0iMyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBST0RVQ
-        1RJT05fNCIgVmFsdWU9IjQiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJEUllfQ
-        1lDTEVfNSIgVmFsdWU9IjUiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZ
-        XJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJUeXBlT2ZDaGFuZ2VFbnVtZXJhd
-        GlvbiI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVVBEQVRFXzAiIFZhbHVlPSIwI
-        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQUREXzEiIFZhbHVlPSIxIi8+CiAgP
-        G9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTU9ESUZZXzIiIFZhbHVlPSIyIi8+CiAgPG9wY
-        zpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTU9WRV8zIiBWYWx1ZT0iMyIvPgogIDxvcGM6RW51b
-        WVyYXRlZFZhbHVlIE5hbWU9IkRFTEVURV80IiBWYWx1ZT0iNCIvPgogPC9vcGM6RW51bWVyY
-        XRlZFR5cGU+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9I
-        lVzZXJDaGFuZ2VFbnVtZXJhdGlvbiI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iT
-        E9HX09OXzAiIFZhbHVlPSIwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTE9HX
-        09GRl8xIiBWYWx1ZT0iMSIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+Cjwvb3BjOlR5cGVEa
-        WN0aW9uYXJ5Pgo=</uax:ByteString>
+        z4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Qm9vbGVhbiIgTmFtZT0iTG9ja2VkQnlNR
+        VMiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5nd
+        GhJbkJpdHM9IjMyIiBOYW1lPSJDYXZpdHlDeWNsZVF1YWxpdHlFbnVtZXJhdGlvbiI+CiAgP
+        G9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTk9fUEFSVF8wIiBWYWx1ZT0iMCIvPgogIDxvc
+        GM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkdPT0RfUEFSVF8xIiBWYWx1ZT0iMSIvPgogIDxvc
+        GM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkJBRF9QQVJUXzIiIFZhbHVlPSIyIi8+CiA8L29wY
+        zpFbnVtZXJhdGVkVHlwZT4KIDxvcGM6RW51bWVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzPSIzM
+        iIgTmFtZT0iQ3ljbGVRdWFsaXR5RW51bWVyYXRpb24iPgogIDxvcGM6RW51bWVyYXRlZFZhb
+        HVlIE5hbWU9IkdPT0RfQ1lDTEVfMSIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWY
+        Wx1ZSBOYW1lPSJCQURfQ1lDTEVfMiIgVmFsdWU9IjEiLz4KICA8b3BjOkVudW1lcmF0ZWRWY
+        Wx1ZSBOYW1lPSJURVNUX1NBTVBMRV9DWUNMRV8zIiBWYWx1ZT0iMiIvPgogPC9vcGM6RW51b
+        WVyYXRlZFR5cGU+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hb
+        WU9IklNTU1lc3NhZ2VDbGFzc2lmaWNhdGlvbkVudW1lcmF0aW9uIj4KICA8b3BjOkVudW1lc
+        mF0ZWRWYWx1ZSBOYW1lPSJPVEhFUl8wIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZ
+        FZhbHVlIE5hbWU9IklNTV9JTkpFQ1RJT05fVU5JVF8xMDAiIFZhbHVlPSIxMDAiLz4KICA8b
+        3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fQ0xBTVBJTkdfVU5JVF8xMDEiIFZhbHVlP
+        SIxMDEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fSEFSRFdBUkVfMTAyI
+        iBWYWx1ZT0iMTAyIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0NPTVBSR
+        VNTRURfQUlSX0NPTlRST0xfMTAzIiBWYWx1ZT0iMTAzIi8+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0iSU1NX01BQ0hJTkVfTU9OSVRPUklOR18xMDQiIFZhbHVlPSIxMDQiLz4KI
+        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fTU9VTERfMTA1IiBWYWx1ZT0iMTA1I
+        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0VKRUNUT1JfMTA2IiBWYWx1Z
+        T0iMTA2Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0NPUkVfUFVMTF8xM
+        DciIFZhbHVlPSIxMDciLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fVEFCT
+        EVfMTA4IiBWYWx1ZT0iMTA4Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX
+        0lOSkVDVElPTl9QUk9HUkFNXzEwOSIgVmFsdWU9IjEwOSIvPgogIDxvcGM6RW51bWVyYXRlZ
+        FZhbHVlIE5hbWU9IklNTV9IWURSQVVMSUNfVEVNUEVSQVRVUkVfQ09OVFJPTF8xMTAiIFZhb
+        HVlPSIxMTAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fQ1lMSU5ERVJfV
+        EVNUEVSQVRVUkVfQ09OVFJPTF8xMTEiIFZhbHVlPSIxMTEiLz4KICA8b3BjOkVudW1lcmF0Z
+        WRWYWx1ZSBOYW1lPSJJTU1fTU9VTERfVEVNUEVSQVRVUkVfQ09OVFJPTF8xMTIiIFZhbHVlP
+        SIxMTIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fSE9UX1JVTk5FUl8xM
+        TMiIFZhbHVlPSIxMTMiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fSU5UR
+        VJGQUNFU18xMTQiIFZhbHVlPSIxMTQiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
+        SJJTU1fTUVBU1VSSU5HX1NZU1RFTV8xMTUiIFZhbHVlPSIxMTUiLz4KICA8b3BjOkVudW1lc
+        mF0ZWRWYWx1ZSBOYW1lPSJJTU1fUk9CT1RJQ19TWVNURU1fSU5URVJGQUNFXzExNiIgVmFsd
+        WU9IjExNiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9TUEVDSUFMX1BVU
+        lBPU0VfU0lHTkFMU18xMTciIFZhbHVlPSIxMTciLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1Z
+        SBOYW1lPSJJTU1fUkVBTFRJTUVfRVRIRVJORVRfU1lTVEVNXzExOCIgVmFsdWU9IjExOCIvP
+        gogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9NQUNISU5FX0NPTlRST0xMRVJfM
+        TE5IiBWYWx1ZT0iMTE5Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX1NPR
+        lRXQVJFX01PTklUT1JJTkdfMTIwIiBWYWx1ZT0iMTIwIi8+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0iUEVSSVBIRVJBTF9FWFRFUk5BTF9ERVZJQ0VfSU5URVJGQUNFXzIwMCIgV
+        mFsdWU9IjIwMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfV
+        EVNUEVSQVRVUkVfQ09OVFJPTF9VTklUXzIwMSIgVmFsdWU9IjIwMSIvPgogIDxvcGM6RW51b
+        WVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfUk9CT1RJQ1NfU1lTVEVNXzIwMiIgVmFsd
+        WU9IjIwMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfTFNSX
+        zIwMyIgVmFsdWU9IjIwMyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQS
+        EVSQUxfU1RSSVBQRVJfVU5JVF8yMDQiIFZhbHVlPSIyMDQiLz4KICA8b3BjOkVudW1lcmF0Z
+        WRWYWx1ZSBOYW1lPSJQRVJJUEhFUkFMX0RSWUVSXzIwNSIgVmFsdWU9IjIwNSIvPgogIDxvc
+        GM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfQ09OVkVZT1JfQkVMVF8yMDYiI
+        FZhbHVlPSIyMDYiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQRVJJUEhFUkFMX
+        1NPUlRFUl9VTklUXzIwNyIgVmFsdWU9IjIwNyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9IlBFUklQSEVSQUxfQ09MT1VSSU5HX1VOSVRfMjA4IiBWYWx1ZT0iMjA4Ii8+CiAgP
+        G9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUEVSSVBIRVJBTF9JTkpFU1RFUl9VTklUXzIwO
+        SIgVmFsdWU9IjIwOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQ
+        UxfRVhURVJOQUxfQUxBUk1TXzIxMCIgVmFsdWU9IjIxMCIvPgogIDxvcGM6RW51bWVyYXRlZ
+        FZhbHVlIE5hbWU9IlBFUklQSEVSQUxfVkFDVVVNX0NPTlRST0xfMjExIiBWYWx1ZT0iMjExI
+        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUEVSSVBIRVJBTF9QUklOVEVSX0lOV
+        EVSRkFDRV8yMTIiIFZhbHVlPSIyMTIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
+        SJPUEVSQVRJT05fUVVBTElUWV9NT05JVE9SSU5HXzMwMCIgVmFsdWU9IjMwMCIvPgogIDxvc
+        GM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik9QRVJBVElPTl9NQU5VQUxfT1BFUkFUSU9OXzMwM
+        SIgVmFsdWU9IjMwMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9Ik9QRVJBVElPT
+        l9FTUVSR0VOQ1lfU1RPUF8zMDIiIFZhbHVlPSIzMDIiLz4KIDwvb3BjOkVudW1lcmF0ZWRUe
+        XBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJKb2JTd
+        GF0dXNFbnVtZXJhdGlvbiI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iT1RIRVJfM
+        CIgVmFsdWU9IjAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJUUkFOU0ZFUlJFR
+        F9BU1NJR05FRF8xIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
+        lNFVFVQX0FDVElWRV8yIiBWYWx1ZT0iMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hb
+        WU9IlNFVFVQX0lOVEVSUlVQVEVEXzMiIFZhbHVlPSIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0iU0VUVVBfRklOSVNIRURfNCIgVmFsdWU9IjQiLz4KICA8b3BjOkVudW1lc
+        mF0ZWRWYWx1ZSBOYW1lPSJTVEFSVFVQX0FDVElWRV81IiBWYWx1ZT0iNSIvPgogIDxvcGM6R
+        W51bWVyYXRlZFZhbHVlIE5hbWU9IkpPQl9JTl9QUk9EVUNUSU9OXzYiIFZhbHVlPSI2Ii8+C
+        iAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSk9CX0lOVEVSUlVQVEVEXzciIFZhbHVlP
+        SI3Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSk9CX0ZJTklTSEVEXzgiIFZhb
+        HVlPSI4Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVEVBUl9ET1dOX0FDVElWR
+        V85IiBWYWx1ZT0iOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlRFQVJfRE9XT
+        l9JTlRFUlJVUFRFRF8xMCIgVmFsdWU9IjEwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgT
+        mFtZT0iVEVBUl9ET1dOX0ZJTklTSEVEXzExIiBWYWx1ZT0iMTEiLz4KIDwvb3BjOkVudW1lc
+        mF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lP
+        SJNYWNoaW5lTW9kZUVudW1lcmF0aW9uIj4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
+        SJPVEhFUl8wIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkFVV
+        E9NQVRJQ18xIiBWYWx1ZT0iMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlNFT
+        UlfQVVUT01BVElDXzIiIFZhbHVlPSIyIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZ
+        T0iTUFOVUFMXzMiIFZhbHVlPSIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU
+        0VUVVBfNCIgVmFsdWU9IjQiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJTTEVFU
+        F81IiBWYWx1ZT0iNSIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+CiA8b3BjOkVudW1lcmF0Z
+        WRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9IlByb2R1Y3Rpb25TdGF0dXNFbnVtZXJhd
+        GlvbiI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iT1RIRVJfMCIgVmFsdWU9IjAiL
+        z4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJOT19QUk9EVUNUSU9OXzEiIFZhbHVlP
+        SIxIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU1RBUlRfVVBfMiIgVmFsdWU9I
+        jIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJSRUFEWV9GT1JfUFJPRFVDVElPT
+        l8zIiBWYWx1ZT0iMyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBST0RVQ1RJT
+        05fNCIgVmFsdWU9IjQiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJEUllfQ1lDT
+        EVfNSIgVmFsdWU9IjUiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZXJhd
+        GVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJUeXBlT2ZDaGFuZ2VFbnVtZXJhdGlvb
+        iI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iVVBEQVRFXzAiIFZhbHVlPSIwIi8+C
+        iAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQUREXzEiIFZhbHVlPSIxIi8+CiAgPG9wY
+        zpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTU9ESUZZXzIiIFZhbHVlPSIyIi8+CiAgPG9wYzpFb
+        nVtZXJhdGVkVmFsdWUgTmFtZT0iTU9WRV8zIiBWYWx1ZT0iMyIvPgogIDxvcGM6RW51bWVyY
+        XRlZFZhbHVlIE5hbWU9IkRFTEVURV80IiBWYWx1ZT0iNCIvPgogPC9vcGM6RW51bWVyYXRlZ
+        FR5cGU+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0cz0iMzIiIE5hbWU9IlVzZ
+        XJDaGFuZ2VFbnVtZXJhdGlvbiI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTE9HX
+        09OXzAiIFZhbHVlPSIwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iTE9HX09GR
+        l8xIiBWYWx1ZT0iMSIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+Cjwvb3BjOlR5cGVEaWN0a
+        W9uYXJ5Pgo=</uax:ByteString>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6012" NodeId="ns=1;i=6013" BrowseName="NamespaceUri">
@@ -1393,16 +1393,16 @@
         XhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iSWQiLz4KICAgPHhzOmVsZW1lb
         nQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InVhOkxvY2FsaXplZFRleHQiI
         G5hbWU9IlRleHQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9I
-        jEiIHR5cGU9InhzOmJvb2xlYW4iIG5hbWU9IkxvY2tlZGJ5Q2xpZW50Ii8+CiAgPC94czpzZ
-        XF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6U3Rhb
-        mRzdGlsbFJlYXNvblR5cGUiIG5hbWU9IlN0YW5kc3RpbGxSZWFzb25UeXBlIi8+CiA8eHM6Y
-        29tcGxleFR5cGUgbmFtZT0iTGlzdE9mU3RhbmRzdGlsbFJlYXNvblR5cGUiPgogIDx4czpzZ
-        XF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91b
-        mRlZCIgdHlwZT0idG5zOlN0YW5kc3RpbGxSZWFzb25UeXBlIiBuYW1lPSJTdGFuZHN0aWxsU
-        mVhc29uVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb
-        21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZTdGFuZHN0aWxsUmVhc
-        29uVHlwZSIgbmFtZT0iTGlzdE9mU3RhbmRzdGlsbFJlYXNvblR5cGUiIG5pbGxhYmxlPSJ0c
-        nVlIi8+CjwveHM6c2NoZW1hPgo=</uax:ByteString>
+        jEiIHR5cGU9InhzOmJvb2xlYW4iIG5hbWU9IkxvY2tlZEJ5TUVTIi8+CiAgPC94czpzZXF1Z
+        W5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6U3RhbmRzd
+        GlsbFJlYXNvblR5cGUiIG5hbWU9IlN0YW5kc3RpbGxSZWFzb25UeXBlIi8+CiA8eHM6Y29tc
+        GxleFR5cGUgbmFtZT0iTGlzdE9mU3RhbmRzdGlsbFJlYXNvblR5cGUiPgogIDx4czpzZXF1Z
+        W5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZ
+        CIgdHlwZT0idG5zOlN0YW5kc3RpbGxSZWFzb25UeXBlIiBuYW1lPSJTdGFuZHN0aWxsUmVhc
+        29uVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wb
+        GV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZTdGFuZHN0aWxsUmVhc29uV
+        HlwZSIgbmFtZT0iTGlzdE9mU3RhbmRzdGlsbFJlYXNvblR5cGUiIG5pbGxhYmxlPSJ0cnVlI
+        i8+CjwveHM6c2NoZW1hPgo=</uax:ByteString>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6050" NodeId="ns=1;i=6051" BrowseName="NamespaceUri">
@@ -2861,6 +2861,7 @@
         <References>
             <Reference ReferenceType="HasProperty">ns=1;i=6573</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6574</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6485</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6575</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6576</Reference>
@@ -2880,6 +2881,14 @@
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5050" NodeId="ns=1;i=6574" BrowseName="2:Id" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>Id</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5050</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=5050" NodeId="ns=1;i=6485" BrowseName="2:IsPresent" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>IsPresent</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5050</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -3344,8 +3353,8 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1027</Reference>
         </References>
     </UAVariable>
-    <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:IMMType">
-        <DisplayName>IMMType</DisplayName>
+    <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:IMM_MES_InterfaceType">
+        <DisplayName>IMM_MES_InterfaceType</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=5029</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5004</Reference>
@@ -3384,6 +3393,7 @@
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1032</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7023</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7066</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7021</Reference>
         </References>
     </UAObject>
@@ -5059,6 +5069,13 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
         </References>
     </UAMethod>
+    <UAMethod ParentNodeId="ns=1;i=5004" NodeId="ns=1;i=7066" BrowseName="1:ResetBoxCycleCounter" MethodDeclarationId="ns=1;i=7065">
+        <DisplayName>ResetBoxCycleCounter</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
+        </References>
+    </UAMethod>
     <UAMethod ParentNodeId="ns=1;i=5004" NodeId="ns=1;i=7021" BrowseName="1:ResetCycleCounter" MethodDeclarationId="ns=1;i=7020">
         <DisplayName>ResetCycleCounter</DisplayName>
         <References>
@@ -5297,6 +5314,20 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>ns=1;i=5018</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <StandstillReasonType xmlns="http://www.euromap.org/euromap77/Types.xsd">
+                        <Id></Id>
+                        <Text/>
+                        <LockedByMES>false</LockedByMES>
+                    </StandstillReasonType>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6032" BrowseName="1:StandstillReasonsLockedByMES" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>StandstillReasonsLockedByMES</DisplayName>
@@ -5453,6 +5484,7 @@
         <DisplayName>MachineStatus</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=7061</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6484</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7062</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6628</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
@@ -5504,6 +5536,14 @@
                 </uax:ExtensionObject>
             </uax:ListOfExtensionObject>
         </Value>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=5015" NodeId="ns=1;i=6484" BrowseName="1:IsPresent" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>IsPresent</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5015</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
     </UAVariable>
     <UAMethod ParentNodeId="ns=1;i=5015" NodeId="ns=1;i=7062" BrowseName="1:LoadProductionDataset" MethodDeclarationId="ns=1;i=7003">
         <DisplayName>LoadProductionDataset</DisplayName>
@@ -7274,6 +7314,7 @@
             <Reference ReferenceType="HasComponent">ns=1;i=5036</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7022</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7065</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7020</Reference>
         </References>
     </UAObjectType>
@@ -8442,6 +8483,13 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1032</Reference>
         </References>
     </UAMethod>
+    <UAMethod ParentNodeId="ns=1;i=1032" NodeId="ns=1;i=7065" BrowseName="1:ResetBoxCycleCounter">
+        <DisplayName>ResetBoxCycleCounter</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1032</Reference>
+        </References>
+    </UAMethod>
     <UAMethod ParentNodeId="ns=1;i=1032" NodeId="ns=1;i=7020" BrowseName="1:ResetCycleCounter">
         <DisplayName>ResetCycleCounter</DisplayName>
         <References>
@@ -8678,6 +8726,20 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1004</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>ns=1;i=5018</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <StandstillReasonType xmlns="http://www.euromap.org/euromap77/Types.xsd">
+                        <Id></Id>
+                        <Text/>
+                        <LockedByMES>false</LockedByMES>
+                    </StandstillReasonType>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1004" NodeId="ns=1;i=6009" BrowseName="1:StandstillReasonsLockedByMES" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>StandstillReasonsLockedByMES</DisplayName>
@@ -8709,6 +8771,7 @@
             <Reference ReferenceType="HasComponent">ns=1;i=7006</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7002</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7007</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6154</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7003</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6041</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
@@ -8773,6 +8836,14 @@
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
     </UAMethod>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1014" NodeId="ns=1;i=6154" BrowseName="1:IsPresent" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>IsPresent</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1014</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
     <UAMethod ParentNodeId="ns=1;i=1014" NodeId="ns=1;i=7003" BrowseName="1:LoadProductionDataset">
         <DisplayName>LoadProductionDataset</DisplayName>
         <References>

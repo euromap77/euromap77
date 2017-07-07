@@ -33,7 +33,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="U+cGeUB4J5Hz2Olaaned2A==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="gQFRqmLsEdWU6aokWa/2Cg==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3009" BrowseName="1:LogBookEventsEnumeration">
@@ -2338,6 +2338,7 @@
         <References>
             <Reference ReferenceType="HasProperty">ns=1;i=6064</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6065</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6157</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6066</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
@@ -2357,6 +2358,14 @@
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5016" NodeId="ns=1;i=6065" BrowseName="1:Id" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>Id</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5016</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=5016" NodeId="ns=1;i=6157" BrowseName="1:IsPresent" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>IsPresent</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5016</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2400,6 +2409,7 @@
         <References>
             <Reference ReferenceType="HasProperty">ns=1;i=6057</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6058</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6156</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6059</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6060</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6061</Reference>
@@ -2417,6 +2427,14 @@
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1045" NodeId="ns=1;i=6058" BrowseName="1:Id" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>Id</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1045</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1045" NodeId="ns=1;i=6156" BrowseName="1:IsPresent" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>IsPresent</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1045</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
