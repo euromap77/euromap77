@@ -46,7 +46,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="aPbXIyqi4KFzZR6ERr5N+w==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="XyjHCHBlPY+IryfOmufFrQ==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3004" BrowseName="1:IMMMessageClassificationEnumeration">
@@ -845,13 +845,16 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6056</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5029" NodeId="ns=1;i=6056" BrowseName="1:NodeVersion">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5029" NodeId="ns=1;i=6056" BrowseName="NodeVersion">
         <DisplayName>NodeVersion</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5029</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:String></uax:String>
+        </Value>
     </UAVariable>
     <UAObject ParentNodeId="ns=1;i=1007" NodeId="ns=1;i=5004" BrowseName="2:Jobs">
         <DisplayName>Jobs</DisplayName>
@@ -3703,13 +3706,16 @@
             <uax:String></uax:String>
         </Value>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1016" NodeId="ns=1;i=6006" BrowseName="1:NodeVersion">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1016" NodeId="ns=1;i=6006" BrowseName="NodeVersion">
         <DisplayName>NodeVersion</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1016</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:String></uax:String>
+        </Value>
     </UAVariable>
     <UAObjectType NodeId="ns=1;i=1028" BrowseName="1:InjectionUnitType">
         <DisplayName>InjectionUnitType</DisplayName>
