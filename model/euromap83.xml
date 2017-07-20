@@ -55,7 +55,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="gq2thbV1P/OV5GV8D7vm9w==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="l9rASo874JRcIHnlYyg8sg==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3020" BrowseName="1:CavityCycleQualityEnumeration">
@@ -1666,8 +1666,8 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1004" NodeId="ns=1;i=6015" BrowseName="1:IsStandstillAlarm">
-        <DisplayName>IsStandstillAlarm</DisplayName>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1004" NodeId="ns=1;i=6015" BrowseName="1:IsStandstillMessage">
+        <DisplayName>IsStandstillMessage</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1004</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1999,8 +1999,8 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1042" NodeId="ns=1;i=6185" BrowseName="1:IsStandstillAlarm">
-        <DisplayName>IsStandstillAlarm</DisplayName>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1042" NodeId="ns=1;i=6185" BrowseName="1:IsStandstillMessage">
+        <DisplayName>IsStandstillMessage</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1042</Reference>
@@ -2121,8 +2121,8 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAObjectType NodeId="ns=1;i=1044" BrowseName="1:ProductionStatusLogType">
-        <DisplayName>ProductionStatusLogType</DisplayName>
+    <UAObjectType NodeId="ns=1;i=1044" BrowseName="1:ProductionStatusChangeLogType">
+        <DisplayName>ProductionStatusChangeLogType</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty">ns=1;i=6171</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6172</Reference>
@@ -2304,8 +2304,8 @@
             <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1023</Reference>
         </References>
     </UAObjectType>
-    <UAObjectType NodeId="ns=1;i=1040" BrowseName="1:RequestProductionDatasetList">
-        <DisplayName>RequestProductionDatasetList</DisplayName>
+    <UAObjectType NodeId="ns=1;i=1040" BrowseName="1:RequestProductionDatasetListEventType">
+        <DisplayName>RequestProductionDatasetListEventType</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty">ns=1;i=6286</Reference>
             <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
@@ -3744,8 +3744,8 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAMethod ParentNodeId="ns=1;i=1016" NodeId="ns=1;i=7019" BrowseName="1:SetServerTime">
-        <DisplayName>SetServerTime</DisplayName>
+    <UAMethod ParentNodeId="ns=1;i=1016" NodeId="ns=1;i=7019" BrowseName="1:SetMachineTime">
+        <DisplayName>SetMachineTime</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty">ns=1;i=6198</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -5613,7 +5613,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5018</Reference>
         </References>
     </UAVariable>
-    <UAObjectType NodeId="ns=1;i=1030" BrowseName="1:TemperatuerZoneType">
+    <UAObjectType NodeId="ns=1;i=1030" BrowseName="1:TemperatureZoneType">
         <DisplayName>TemperatureZoneType</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent">ns=1;i=6071</Reference>
