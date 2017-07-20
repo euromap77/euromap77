@@ -21,7 +21,7 @@
             <xs:enumeration value="IMM_MEASURING_SYSTEM_115_115"/>
             <xs:enumeration value="IMM_ROBOTIC_SYSTEM_INTERFACE_116_116"/>
             <xs:enumeration value="IMM_SPECIAL_PURPOSE_SIGNALS_117_117"/>
-            <xs:enumeration value="IMM_REALTIME_ETHERNET_SYSTEM_118_118"/>
+            <xs:enumeration value="IMM_REAL_TIME_ETHERNET_SYSTEM_118_118"/>
             <xs:enumeration value="IMM_MACHINE_CONTROLLER_119_119"/>
             <xs:enumeration value="IMM_SOFTWARE_MONITORING_120_120"/>
             <xs:enumeration value="PERIPHERAL_EXTERNAL_DEVICE_INTERFACE_200_200"/>

@@ -20,7 +20,7 @@
         <opc:EnumeratedValue Name="IMM_MEASURING_SYSTEM_115" Value="115"/>
         <opc:EnumeratedValue Name="IMM_ROBOTIC_SYSTEM_INTERFACE_116" Value="116"/>
         <opc:EnumeratedValue Name="IMM_SPECIAL_PURPOSE_SIGNALS_117" Value="117"/>
-        <opc:EnumeratedValue Name="IMM_REALTIME_ETHERNET_SYSTEM_118" Value="118"/>
+        <opc:EnumeratedValue Name="IMM_REAL_TIME_ETHERNET_SYSTEM_118" Value="118"/>
         <opc:EnumeratedValue Name="IMM_MACHINE_CONTROLLER_119" Value="119"/>
         <opc:EnumeratedValue Name="IMM_SOFTWARE_MONITORING_120" Value="120"/>
         <opc:EnumeratedValue Name="PERIPHERAL_EXTERNAL_DEVICE_INTERFACE_200" Value="200"/>
