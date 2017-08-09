@@ -46,7 +46,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="xsIjjUQQjSeNj6MAnyLsQg==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="ub/Ie/uO2kDT+lF8w2tkDg==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3004" BrowseName="1:IMMMessageClassificationEnumeration">
@@ -2749,13 +2749,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6118" NodeId="ns=1;i=6120" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6118" NodeId="ns=1;i=6120" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6118</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6118</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6118" NodeId="ns=1;i=6119" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -2778,13 +2793,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6129" NodeId="ns=1;i=6448" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6129" NodeId="ns=1;i=6448" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6129</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6129</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6129" NodeId="ns=1;i=6130" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -2836,13 +2866,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6131" NodeId="ns=1;i=6449" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6131" NodeId="ns=1;i=6449" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6131</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6131</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6131" NodeId="ns=1;i=6132" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -2865,13 +2910,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6064" NodeId="ns=1;i=6450" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6064" NodeId="ns=1;i=6450" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6064</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6064</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6064" NodeId="ns=1;i=6136" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -2905,13 +2965,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6146" NodeId="ns=1;i=6454" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6146" NodeId="ns=1;i=6454" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6146</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6146</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6146" NodeId="ns=1;i=6147" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -2934,13 +3009,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6148" NodeId="ns=1;i=6455" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6148" NodeId="ns=1;i=6455" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6148</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6148</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6148" NodeId="ns=1;i=6149" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -2963,13 +3053,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6150" NodeId="ns=1;i=6456" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6150" NodeId="ns=1;i=6456" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6150</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6150</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6150" NodeId="ns=1;i=6151" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -2992,13 +3097,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6152" NodeId="ns=1;i=6457" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6152" NodeId="ns=1;i=6457" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6152</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6152</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6152" NodeId="ns=1;i=6153" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3021,13 +3141,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6188" NodeId="ns=1;i=6459" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6188" NodeId="ns=1;i=6459" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6188</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6188</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6188" NodeId="ns=1;i=6191" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3049,9 +3184,21 @@
         <DisplayName>InjectionSpeedAverage</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6016</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6066</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1039</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6065" NodeId="ns=1;i=6016" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6065</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6065" NodeId="ns=1;i=6066" BrowseName="EURange">
@@ -3066,9 +3213,21 @@
         <DisplayName>InjectionSpeedMaximum</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6032</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6062</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1039</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6061" NodeId="ns=1;i=6032" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6061</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6061" NodeId="ns=1;i=6062" BrowseName="EURange">
@@ -3103,13 +3262,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6208" NodeId="ns=1;i=6472" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6208" NodeId="ns=1;i=6472" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6208</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6208</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6208" NodeId="ns=1;i=6210" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3132,13 +3306,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6211" NodeId="ns=1;i=6473" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6211" NodeId="ns=1;i=6473" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6211</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6211</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6211" NodeId="ns=1;i=6214" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3152,7 +3341,7 @@
         <DisplayName>PlastificationHydraulicPressureAverage</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6470</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6080</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6195</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1039</Reference>
@@ -3161,12 +3350,12 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6194" NodeId="ns=1;i=6470" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6194" NodeId="ns=1;i=6080" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6194</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6194</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6194" NodeId="ns=1;i=6195" BrowseName="EURange">
@@ -3190,13 +3379,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6197" NodeId="ns=1;i=6471" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6197" NodeId="ns=1;i=6471" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6197</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6197</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6197" NodeId="ns=1;i=6206" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3219,13 +3423,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6223" NodeId="ns=1;i=6474" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6223" NodeId="ns=1;i=6474" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6223</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6223</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6223" NodeId="ns=1;i=6224" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3248,13 +3467,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6225" NodeId="ns=1;i=6476" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6225" NodeId="ns=1;i=6476" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6225</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6225</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6225" NodeId="ns=1;i=6226" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3268,9 +3502,21 @@
         <DisplayName>PlastificationSpecificPressureAverage</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6081</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6068</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6067" NodeId="ns=1;i=6081" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6067</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6067" NodeId="ns=1;i=6068" BrowseName="EURange">
@@ -3285,9 +3531,21 @@
         <DisplayName>PlastificationSpecificPressureMaximum</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6082</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6070</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6069" NodeId="ns=1;i=6082" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6069</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6069" NodeId="ns=1;i=6070" BrowseName="EURange">
@@ -3311,13 +3569,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6063" NodeId="ns=1;i=6477" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6063" NodeId="ns=1;i=6477" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6063</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6063</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6063" NodeId="ns=1;i=6227" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3340,13 +3613,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6247" NodeId="ns=1;i=6479" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6247" NodeId="ns=1;i=6479" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6247</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6247</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6247" NodeId="ns=1;i=6248" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3369,13 +3657,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6117" NodeId="ns=1;i=6428" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6117" NodeId="ns=1;i=6428" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6117</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6117</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6117" NodeId="ns=1;i=6128" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3398,13 +3701,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6156" NodeId="ns=1;i=6458" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6156" NodeId="ns=1;i=6458" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6156</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6156</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6156" NodeId="ns=1;i=6162" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3427,13 +3745,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6228" NodeId="ns=1;i=6478" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6228" NodeId="ns=1;i=6478" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6228</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6228</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6228" NodeId="ns=1;i=6246" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3447,9 +3780,21 @@
         <DisplayName>TransferStroke</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6083</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6072</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1039</Reference>
+        </References>
+        <Value>
+            <uax:Double>0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6071" NodeId="ns=1;i=6083" BrowseName="EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6071</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6071" NodeId="ns=1;i=6072" BrowseName="EURange">
@@ -3473,13 +3818,28 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6254" NodeId="ns=1;i=6481" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6254" NodeId="ns=1;i=6481" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6254</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6254</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <uax:EUInformation>
+                        <uax:NamespaceUri></uax:NamespaceUri>
+                        <uax:UnitId>-1</uax:UnitId>
+                        <uax:DisplayName/>
+                        <uax:Description/>
+                    </uax:EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Range" ParentNodeId="ns=1;i=6254" NodeId="ns=1;i=6427" BrowseName="EURange">
         <DisplayName>EURange</DisplayName>
@@ -3646,7 +4006,7 @@
         <DisplayName>ScrewVolume</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6253</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6031</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6187</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5027</Reference>
@@ -3655,7 +4015,7 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6186" NodeId="ns=1;i=6253" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6186" NodeId="ns=1;i=6031" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6186</Reference>
@@ -3873,11 +4233,11 @@
             <uax:Double>0</uax:Double>
         </Value>
     </UAVariable>
-    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6104" NodeId="ns=1;i=6251" BrowseName="1:EngineeringUnits">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=6104" NodeId="ns=1;i=6251" BrowseName="EngineeringUnits">
         <DisplayName>EngineeringUnits</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6104</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6104</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
