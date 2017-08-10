@@ -46,7 +46,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="i4I2BvMk/OdG0vHVWxzgnA==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="4z98wQqijRB5cs9CFyK/fg==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3004" BrowseName="1:IMMMessageClassificationEnumeration">
@@ -3172,13 +3172,16 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6107" BrowseName="1:Index" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6107" BrowseName="1:Index">
         <DisplayName>Index</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1039</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
+        <Value>
+            <uax:UInt32>0</uax:UInt32>
+        </Value>
     </UAVariable>
     <UAVariable DataType="Double" ParentNodeId="ns=1;i=1039" NodeId="ns=1;i=6065" BrowseName="1:InjectionSpeedAverage">
         <DisplayName>InjectionSpeedAverage</DisplayName>
