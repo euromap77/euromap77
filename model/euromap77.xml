@@ -6,10 +6,10 @@
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="http://www.euromap.org/euromap77/" PublicationDate="2017-07-19T12:38:12Z" Version="RC 2.00">
+        <Model ModelUri="http://www.euromap.org/euromap77/" PublicationDate="2017-08-14T13:39:50Z" Version="RC 2.00">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2013-12-02T00:00:00Z" Version="1.03"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2013-12-02T00:00:00Z" Version="1.01"/>
-            <RequiredModel ModelUri="http://www.euromap.org/euromap83/" PublicationDate="2017-07-19T12:36:26Z" Version="RC 1.00"/>
+            <RequiredModel ModelUri="http://www.euromap.org/euromap83/" PublicationDate="2017-08-14T13:39:11Z" Version="RC 1.00"/>
         </Model>
     </Models>
     <Aliases>
@@ -46,7 +46,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="4z98wQqijRB5cs9CFyK/fg==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="e2siCUdugakIzlzqKlVtRQ==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3004" BrowseName="1:IMMMessageClassificationEnumeration">
@@ -4321,7 +4321,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
-            <uax:DateTime>2017-07-19T12:38:12Z</uax:DateTime>
+            <uax:DateTime>2017-08-14T13:39:50Z</uax:DateTime>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5020" NodeId="ns=1;i=6075" BrowseName="NamespaceUri">

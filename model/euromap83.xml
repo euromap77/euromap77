@@ -5,7 +5,7 @@
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="http://www.euromap.org/euromap83/" PublicationDate="2017-07-19T12:36:26Z" Version="RC 1.00">
+        <Model ModelUri="http://www.euromap.org/euromap83/" PublicationDate="2017-08-14T13:39:11Z" Version="RC 1.00">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2013-12-02T00:00:00Z" Version="1.03"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2013-12-02T00:00:00Z" Version="1.01"/>
         </Model>
@@ -55,7 +55,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="rCDx4N7Z4/YWjxYzXvNDng==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="PHkzO6F9E+bvZ5ydGarhCQ==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3020" BrowseName="1:CavityCycleQualityEnumeration">
@@ -1581,13 +1581,18 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=1031" ValueRank="1" NodeId="ns=1;i=6248" BrowseName="1:LastPartId" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=1031" ValueRank="1" NodeId="ns=1;i=6248" BrowseName="1:LastPartId">
         <DisplayName>LastPartId</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1031</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
+        <Value>
+            <uax:ListOfString>
+                <uax:String></uax:String>
+            </uax:ListOfString>
+        </Value>
     </UAVariable>
     <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=1031" NodeId="ns=1;i=6238" BrowseName="1:MachineCycleCounter">
         <DisplayName>MachineCycleCounter</DisplayName>
@@ -2600,7 +2605,7 @@
                             <uax:DataType>
                                 <uax:Identifier>i=1</uax:Identifier>
                             </uax:DataType>
-                            <uax:ValueRank>1</uax:ValueRank>
+                            <uax:ValueRank>-1</uax:ValueRank>
                             <uax:ArrayDimensions/>
                             <uax:Description/>
                         </uax:Argument>
@@ -2814,7 +2819,7 @@
                             <uax:DataType>
                                 <uax:Identifier>i=1</uax:Identifier>
                             </uax:DataType>
-                            <uax:ValueRank>1</uax:ValueRank>
+                            <uax:ValueRank>-1</uax:ValueRank>
                             <uax:ArrayDimensions/>
                             <uax:Description/>
                         </uax:Argument>
@@ -2999,7 +3004,7 @@
         <DisplayName>SetJobData</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty">ns=1;i=6334</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5033</Reference>
         </References>
     </UAMethod>
@@ -3166,7 +3171,7 @@
                             <uax:DataType>
                                 <uax:Identifier>i=1</uax:Identifier>
                             </uax:DataType>
-                            <uax:ValueRank>1</uax:ValueRank>
+                            <uax:ValueRank>-1</uax:ValueRank>
                             <uax:ArrayDimensions/>
                             <uax:Description/>
                         </uax:Argument>
@@ -3326,7 +3331,7 @@
         <DisplayName>SetJobData</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty">ns=1;i=6371</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5035</Reference>
         </References>
     </UAMethod>
@@ -3493,7 +3498,7 @@
                             <uax:DataType>
                                 <uax:Identifier>i=1</uax:Identifier>
                             </uax:DataType>
-                            <uax:ValueRank>1</uax:ValueRank>
+                            <uax:ValueRank>-1</uax:ValueRank>
                             <uax:ArrayDimensions/>
                             <uax:Description/>
                         </uax:Argument>
@@ -6280,7 +6285,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
-            <uax:DateTime>2017-07-19T12:36:26Z</uax:DateTime>
+            <uax:DateTime>2017-08-14T13:39:11Z</uax:DateTime>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6096" BrowseName="NamespaceUri">
