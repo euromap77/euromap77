@@ -91,97 +91,97 @@
         <opc:Field TypeName="opc:Boolean" Name="LockedByMES"/>
     </opc:StructuredType>
     <opc:EnumeratedType LengthInBits="32" Name="CavityCycleQualityEnumeration">
-        <opc:EnumeratedValue Name="NO_PART_0" Value="0"/>
-        <opc:EnumeratedValue Name="GOOD_PART_1" Value="1"/>
-        <opc:EnumeratedValue Name="BAD_PART_2" Value="2"/>
+        <opc:EnumeratedValue Name="NO_PART" Value="0"/>
+        <opc:EnumeratedValue Name="GOOD_PART" Value="1"/>
+        <opc:EnumeratedValue Name="BAD_PART" Value="2"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="CycleQualityEnumeration">
-        <opc:EnumeratedValue Name="GOOD_CYCLE_0" Value="0"/>
-        <opc:EnumeratedValue Name="BAD_CYCLE_1" Value="1"/>
-        <opc:EnumeratedValue Name="TEST_SAMPLE_CYCLE_2" Value="2"/>
-        <opc:EnumeratedValue Name="FAILED_CYCLE_3" Value="3"/>
+        <opc:EnumeratedValue Name="GOOD_CYCLE" Value="0"/>
+        <opc:EnumeratedValue Name="BAD_CYCLE" Value="1"/>
+        <opc:EnumeratedValue Name="TEST_SAMPLE_CYCLE" Value="2"/>
+        <opc:EnumeratedValue Name="FAILED_CYCLE" Value="3"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="EventOriginatorEnumeration">
-        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
-        <opc:EnumeratedValue Name="MACHINE_1" Value="1"/>
-        <opc:EnumeratedValue Name="OPERATOR_2" Value="2"/>
-        <opc:EnumeratedValue Name="MES_3" Value="3"/>
-        <opc:EnumeratedValue Name="PERIPHERAL_DEVICE_4" Value="4"/>
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="MACHINE" Value="1"/>
+        <opc:EnumeratedValue Name="OPERATOR" Value="2"/>
+        <opc:EnumeratedValue Name="MES" Value="3"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_DEVICE" Value="4"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="JobStatusEnumeration">
-        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
-        <opc:EnumeratedValue Name="TRANSFERRED_ASSIGNED_1" Value="1"/>
-        <opc:EnumeratedValue Name="SET_UP_ACTIVE_2" Value="2"/>
-        <opc:EnumeratedValue Name="SET_UP_INTERRUPTED_3" Value="3"/>
-        <opc:EnumeratedValue Name="SET_UP_FINISHED_4" Value="4"/>
-        <opc:EnumeratedValue Name="START_UP_ACTIVE_5" Value="5"/>
-        <opc:EnumeratedValue Name="JOB_IN_PRODUCTION_6" Value="6"/>
-        <opc:EnumeratedValue Name="JOB_INTERRUPTED_7" Value="7"/>
-        <opc:EnumeratedValue Name="JOB_FINISHED_8" Value="8"/>
-        <opc:EnumeratedValue Name="TEAR_DOWN_ACTIVE_9" Value="9"/>
-        <opc:EnumeratedValue Name="TEAR_DOWN_INTERRUPTED_10" Value="10"/>
-        <opc:EnumeratedValue Name="TEAR_DOWN_FINISHED_11" Value="11"/>
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="TRANSFERRED_ASSIGNED" Value="1"/>
+        <opc:EnumeratedValue Name="SET_UP_ACTIVE" Value="2"/>
+        <opc:EnumeratedValue Name="SET_UP_INTERRUPTED" Value="3"/>
+        <opc:EnumeratedValue Name="SET_UP_FINISHED" Value="4"/>
+        <opc:EnumeratedValue Name="START_UP_ACTIVE" Value="5"/>
+        <opc:EnumeratedValue Name="JOB_IN_PRODUCTION" Value="6"/>
+        <opc:EnumeratedValue Name="JOB_INTERRUPTED" Value="7"/>
+        <opc:EnumeratedValue Name="JOB_FINISHED" Value="8"/>
+        <opc:EnumeratedValue Name="TEAR_DOWN_ACTIVE" Value="9"/>
+        <opc:EnumeratedValue Name="TEAR_DOWN_INTERRUPTED" Value="10"/>
+        <opc:EnumeratedValue Name="TEAR_DOWN_FINISHED" Value="11"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="LogbookEventsEnumeration">
-        <opc:EnumeratedValue Name="PARAMTER_CHANGE_0" Value="0"/>
-        <opc:EnumeratedValue Name="USER_1" Value="1"/>
-        <opc:EnumeratedValue Name="SEQUENCE_CHANGE_2" Value="2"/>
-        <opc:EnumeratedValue Name="MACHINE_MODE_CHANGE_3" Value="3"/>
-        <opc:EnumeratedValue Name="PRODUCTION_STATUS_CHANGE_4" Value="4"/>
-        <opc:EnumeratedValue Name="PRODUCTION_DATASET_CHANGE_5" Value="5"/>
-        <opc:EnumeratedValue Name="STANDSTILL_REASON_6" Value="6"/>
-        <opc:EnumeratedValue Name="MESSAGE_7" Value="7"/>
-        <opc:EnumeratedValue Name="USER_FEEDBACK_8" Value="8"/>
+        <opc:EnumeratedValue Name="PARAMTER_CHANGE" Value="0"/>
+        <opc:EnumeratedValue Name="USER" Value="1"/>
+        <opc:EnumeratedValue Name="SEQUENCE_CHANGE" Value="2"/>
+        <opc:EnumeratedValue Name="MACHINE_MODE_CHANGE" Value="3"/>
+        <opc:EnumeratedValue Name="PRODUCTION_STATUS_CHANGE" Value="4"/>
+        <opc:EnumeratedValue Name="PRODUCTION_DATASET_CHANGE" Value="5"/>
+        <opc:EnumeratedValue Name="STANDSTILL_REASON" Value="6"/>
+        <opc:EnumeratedValue Name="MESSAGE" Value="7"/>
+        <opc:EnumeratedValue Name="USER_FEEDBACK" Value="8"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="MachineModeEnumeration">
-        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
-        <opc:EnumeratedValue Name="AUTOMATIC_1" Value="1"/>
-        <opc:EnumeratedValue Name="SEMI_AUTOMATIC_2" Value="2"/>
-        <opc:EnumeratedValue Name="MANUAL_3" Value="3"/>
-        <opc:EnumeratedValue Name="SETUP_4" Value="4"/>
-        <opc:EnumeratedValue Name="SLEEP_5" Value="5"/>
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="AUTOMATIC" Value="1"/>
+        <opc:EnumeratedValue Name="SEMI_AUTOMATIC" Value="2"/>
+        <opc:EnumeratedValue Name="MANUAL" Value="3"/>
+        <opc:EnumeratedValue Name="SETUP" Value="4"/>
+        <opc:EnumeratedValue Name="SLEEP" Value="5"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="MouldStatusEnumeration">
-        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
-        <opc:EnumeratedValue Name="MOULD_NOT_INSTALLED_1" Value="1"/>
-        <opc:EnumeratedValue Name="MOULD_CHANGE_2" Value="2"/>
-        <opc:EnumeratedValue Name="MOULD_INSTALLED_3" Value="3"/>
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="MOULD_NOT_INSTALLED" Value="1"/>
+        <opc:EnumeratedValue Name="MOULD_CHANGE" Value="2"/>
+        <opc:EnumeratedValue Name="MOULD_INSTALLED" Value="3"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="ProductionDatasetComponentEnumeration">
-        <opc:EnumeratedValue Name="IMM_0" Value="0"/>
-        <opc:EnumeratedValue Name="ROBOT_1" Value="1"/>
+        <opc:EnumeratedValue Name="IMM" Value="0"/>
+        <opc:EnumeratedValue Name="ROBOT" Value="1"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="ProductionStatusEnumeration">
-        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
-        <opc:EnumeratedValue Name="NO_PRODUCTION_1" Value="1"/>
-        <opc:EnumeratedValue Name="START_UP_2" Value="2"/>
-        <opc:EnumeratedValue Name="READY_FOR_PRODUCTION_3" Value="3"/>
-        <opc:EnumeratedValue Name="PRODUCTION_4" Value="4"/>
-        <opc:EnumeratedValue Name="DRY_RUN_5" Value="5"/>
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="NO_PRODUCTION" Value="1"/>
+        <opc:EnumeratedValue Name="START_UP" Value="2"/>
+        <opc:EnumeratedValue Name="READY_FOR_PRODUCTION" Value="3"/>
+        <opc:EnumeratedValue Name="PRODUCTION" Value="4"/>
+        <opc:EnumeratedValue Name="DRY_RUN" Value="5"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="SequenceChangeEnumeration">
-        <opc:EnumeratedValue Name="UPDATE_0" Value="0"/>
-        <opc:EnumeratedValue Name="ADD_1" Value="1"/>
-        <opc:EnumeratedValue Name="MODIFY_2" Value="2"/>
-        <opc:EnumeratedValue Name="MOVE_3" Value="3"/>
-        <opc:EnumeratedValue Name="DELETE_4" Value="4"/>
+        <opc:EnumeratedValue Name="UPDATE" Value="0"/>
+        <opc:EnumeratedValue Name="ADD" Value="1"/>
+        <opc:EnumeratedValue Name="MODIFY" Value="2"/>
+        <opc:EnumeratedValue Name="MOVE" Value="3"/>
+        <opc:EnumeratedValue Name="DELETE" Value="4"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="StorageEnumeration">
-        <opc:EnumeratedValue Name="FILE_SYSTEM_0" Value="0"/>
-        <opc:EnumeratedValue Name="CONTROL_SYSTEM_1" Value="1"/>
-        <opc:EnumeratedValue Name="FILE_AND_CONTROL_SYSTEM_2" Value="2"/>
+        <opc:EnumeratedValue Name="FILE_SYSTEM" Value="0"/>
+        <opc:EnumeratedValue Name="CONTROL_SYSTEM" Value="1"/>
+        <opc:EnumeratedValue Name="FILE_AND_CONTROL_SYSTEM" Value="2"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="TemperatureConfigurationEnumeration">
-        <opc:EnumeratedValue Name="OTHER_0" Value="0"/>
-        <opc:EnumeratedValue Name="OFF_1" Value="1"/>
-        <opc:EnumeratedValue Name="AUTOMATIC_2" Value="2"/>
-        <opc:EnumeratedValue Name="TUNING_3" Value="3"/>
-        <opc:EnumeratedValue Name="STANDBY_4" Value="4"/>
-        <opc:EnumeratedValue Name="OPEN_LOOP_5" Value="5"/>
-        <opc:EnumeratedValue Name="ONLY_MEASUREMENT_6" Value="6"/>
+        <opc:EnumeratedValue Name="OTHER" Value="0"/>
+        <opc:EnumeratedValue Name="OFF" Value="1"/>
+        <opc:EnumeratedValue Name="AUTOMATIC" Value="2"/>
+        <opc:EnumeratedValue Name="TUNING" Value="3"/>
+        <opc:EnumeratedValue Name="STANDBY" Value="4"/>
+        <opc:EnumeratedValue Name="OPEN_LOOP" Value="5"/>
+        <opc:EnumeratedValue Name="ONLY_MEASUREMENT" Value="6"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="UserChangeEnumeration">
-        <opc:EnumeratedValue Name="LOG_ON_0" Value="0"/>
-        <opc:EnumeratedValue Name="LOG_OFF_1" Value="1"/>
+        <opc:EnumeratedValue Name="LOG_ON" Value="0"/>
+        <opc:EnumeratedValue Name="LOG_OFF" Value="1"/>
     </opc:EnumeratedType>
 </opc:TypeDictionary>

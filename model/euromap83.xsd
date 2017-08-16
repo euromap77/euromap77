@@ -2,9 +2,9 @@
     <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
     <xs:simpleType name="CavityCycleQualityEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="NO_PART_0_0"/>
-            <xs:enumeration value="GOOD_PART_1_1"/>
-            <xs:enumeration value="BAD_PART_2_2"/>
+            <xs:enumeration value="NO_PART_0"/>
+            <xs:enumeration value="GOOD_PART_1"/>
+            <xs:enumeration value="BAD_PART_2"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:CavityCycleQualityEnumeration" name="CavityCycleQualityEnumeration"/>
@@ -16,10 +16,10 @@
     <xs:element type="tns:ListOfCavityCycleQualityEnumeration" name="ListOfCavityCycleQualityEnumeration" nillable="true"/>
     <xs:simpleType name="CycleQualityEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="GOOD_CYCLE_0_0"/>
-            <xs:enumeration value="BAD_CYCLE_1_1"/>
-            <xs:enumeration value="TEST_SAMPLE_CYCLE_2_2"/>
-            <xs:enumeration value="FAILED_CYCLE_3_3"/>
+            <xs:enumeration value="GOOD_CYCLE_0"/>
+            <xs:enumeration value="BAD_CYCLE_1"/>
+            <xs:enumeration value="TEST_SAMPLE_CYCLE_2"/>
+            <xs:enumeration value="FAILED_CYCLE_3"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:CycleQualityEnumeration" name="CycleQualityEnumeration"/>
@@ -31,11 +31,11 @@
     <xs:element type="tns:ListOfCycleQualityEnumeration" name="ListOfCycleQualityEnumeration" nillable="true"/>
     <xs:simpleType name="EventOriginatorEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="OTHER_0_0"/>
-            <xs:enumeration value="MACHINE_1_1"/>
-            <xs:enumeration value="OPERATOR_2_2"/>
-            <xs:enumeration value="MES_3_3"/>
-            <xs:enumeration value="PERIPHERAL_DEVICE_4_4"/>
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="MACHINE_1"/>
+            <xs:enumeration value="OPERATOR_2"/>
+            <xs:enumeration value="MES_3"/>
+            <xs:enumeration value="PERIPHERAL_DEVICE_4"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:EventOriginatorEnumeration" name="EventOriginatorEnumeration"/>
@@ -47,18 +47,18 @@
     <xs:element type="tns:ListOfEventOriginatorEnumeration" name="ListOfEventOriginatorEnumeration" nillable="true"/>
     <xs:simpleType name="JobStatusEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="OTHER_0_0"/>
-            <xs:enumeration value="TRANSFERRED_ASSIGNED_1_1"/>
-            <xs:enumeration value="SET_UP_ACTIVE_2_2"/>
-            <xs:enumeration value="SET_UP_INTERRUPTED_3_3"/>
-            <xs:enumeration value="SET_UP_FINISHED_4_4"/>
-            <xs:enumeration value="START_UP_ACTIVE_5_5"/>
-            <xs:enumeration value="JOB_IN_PRODUCTION_6_6"/>
-            <xs:enumeration value="JOB_INTERRUPTED_7_7"/>
-            <xs:enumeration value="JOB_FINISHED_8_8"/>
-            <xs:enumeration value="TEAR_DOWN_ACTIVE_9_9"/>
-            <xs:enumeration value="TEAR_DOWN_INTERRUPTED_10_10"/>
-            <xs:enumeration value="TEAR_DOWN_FINISHED_11_11"/>
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="TRANSFERRED_ASSIGNED_1"/>
+            <xs:enumeration value="SET_UP_ACTIVE_2"/>
+            <xs:enumeration value="SET_UP_INTERRUPTED_3"/>
+            <xs:enumeration value="SET_UP_FINISHED_4"/>
+            <xs:enumeration value="START_UP_ACTIVE_5"/>
+            <xs:enumeration value="JOB_IN_PRODUCTION_6"/>
+            <xs:enumeration value="JOB_INTERRUPTED_7"/>
+            <xs:enumeration value="JOB_FINISHED_8"/>
+            <xs:enumeration value="TEAR_DOWN_ACTIVE_9"/>
+            <xs:enumeration value="TEAR_DOWN_INTERRUPTED_10"/>
+            <xs:enumeration value="TEAR_DOWN_FINISHED_11"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:JobStatusEnumeration" name="JobStatusEnumeration"/>
@@ -70,15 +70,15 @@
     <xs:element type="tns:ListOfJobStatusEnumeration" name="ListOfJobStatusEnumeration" nillable="true"/>
     <xs:simpleType name="LogbookEventsEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="PARAMTER_CHANGE_0_0"/>
-            <xs:enumeration value="USER_1_1"/>
-            <xs:enumeration value="SEQUENCE_CHANGE_2_2"/>
-            <xs:enumeration value="MACHINE_MODE_CHANGE_3_3"/>
-            <xs:enumeration value="PRODUCTION_STATUS_CHANGE_4_4"/>
-            <xs:enumeration value="PRODUCTION_DATASET_CHANGE_5_5"/>
-            <xs:enumeration value="STANDSTILL_REASON_6_6"/>
-            <xs:enumeration value="MESSAGE_7_7"/>
-            <xs:enumeration value="USER_FEEDBACK_8_8"/>
+            <xs:enumeration value="PARAMTER_CHANGE_0"/>
+            <xs:enumeration value="USER_1"/>
+            <xs:enumeration value="SEQUENCE_CHANGE_2"/>
+            <xs:enumeration value="MACHINE_MODE_CHANGE_3"/>
+            <xs:enumeration value="PRODUCTION_STATUS_CHANGE_4"/>
+            <xs:enumeration value="PRODUCTION_DATASET_CHANGE_5"/>
+            <xs:enumeration value="STANDSTILL_REASON_6"/>
+            <xs:enumeration value="MESSAGE_7"/>
+            <xs:enumeration value="USER_FEEDBACK_8"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:LogbookEventsEnumeration" name="LogbookEventsEnumeration"/>
@@ -90,12 +90,12 @@
     <xs:element type="tns:ListOfLogbookEventsEnumeration" name="ListOfLogbookEventsEnumeration" nillable="true"/>
     <xs:simpleType name="MachineModeEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="OTHER_0_0"/>
-            <xs:enumeration value="AUTOMATIC_1_1"/>
-            <xs:enumeration value="SEMI_AUTOMATIC_2_2"/>
-            <xs:enumeration value="MANUAL_3_3"/>
-            <xs:enumeration value="SETUP_4_4"/>
-            <xs:enumeration value="SLEEP_5_5"/>
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="AUTOMATIC_1"/>
+            <xs:enumeration value="SEMI_AUTOMATIC_2"/>
+            <xs:enumeration value="MANUAL_3"/>
+            <xs:enumeration value="SETUP_4"/>
+            <xs:enumeration value="SLEEP_5"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:MachineModeEnumeration" name="MachineModeEnumeration"/>
@@ -107,10 +107,10 @@
     <xs:element type="tns:ListOfMachineModeEnumeration" name="ListOfMachineModeEnumeration" nillable="true"/>
     <xs:simpleType name="MouldStatusEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="OTHER_0_0"/>
-            <xs:enumeration value="MOULD_NOT_INSTALLED_1_1"/>
-            <xs:enumeration value="MOULD_CHANGE_2_2"/>
-            <xs:enumeration value="MOULD_INSTALLED_3_3"/>
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="MOULD_NOT_INSTALLED_1"/>
+            <xs:enumeration value="MOULD_CHANGE_2"/>
+            <xs:enumeration value="MOULD_INSTALLED_3"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:MouldStatusEnumeration" name="MouldStatusEnumeration"/>
@@ -122,8 +122,8 @@
     <xs:element type="tns:ListOfMouldStatusEnumeration" name="ListOfMouldStatusEnumeration" nillable="true"/>
     <xs:simpleType name="ProductionDatasetComponentEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="IMM_0_0"/>
-            <xs:enumeration value="ROBOT_1_1"/>
+            <xs:enumeration value="IMM_0"/>
+            <xs:enumeration value="ROBOT_1"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:ProductionDatasetComponentEnumeration" name="ProductionDatasetComponentEnumeration"/>
@@ -135,12 +135,12 @@
     <xs:element type="tns:ListOfProductionDatasetComponentEnumeration" name="ListOfProductionDatasetComponentEnumeration" nillable="true"/>
     <xs:simpleType name="ProductionStatusEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="OTHER_0_0"/>
-            <xs:enumeration value="NO_PRODUCTION_1_1"/>
-            <xs:enumeration value="START_UP_2_2"/>
-            <xs:enumeration value="READY_FOR_PRODUCTION_3_3"/>
-            <xs:enumeration value="PRODUCTION_4_4"/>
-            <xs:enumeration value="DRY_RUN_5_5"/>
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="NO_PRODUCTION_1"/>
+            <xs:enumeration value="START_UP_2"/>
+            <xs:enumeration value="READY_FOR_PRODUCTION_3"/>
+            <xs:enumeration value="PRODUCTION_4"/>
+            <xs:enumeration value="DRY_RUN_5"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:ProductionStatusEnumeration" name="ProductionStatusEnumeration"/>
@@ -152,11 +152,11 @@
     <xs:element type="tns:ListOfProductionStatusEnumeration" name="ListOfProductionStatusEnumeration" nillable="true"/>
     <xs:simpleType name="SequenceChangeEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="UPDATE_0_0"/>
-            <xs:enumeration value="ADD_1_1"/>
-            <xs:enumeration value="MODIFY_2_2"/>
-            <xs:enumeration value="MOVE_3_3"/>
-            <xs:enumeration value="DELETE_4_4"/>
+            <xs:enumeration value="UPDATE_0"/>
+            <xs:enumeration value="ADD_1"/>
+            <xs:enumeration value="MODIFY_2"/>
+            <xs:enumeration value="MOVE_3"/>
+            <xs:enumeration value="DELETE_4"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:SequenceChangeEnumeration" name="SequenceChangeEnumeration"/>
@@ -168,9 +168,9 @@
     <xs:element type="tns:ListOfSequenceChangeEnumeration" name="ListOfSequenceChangeEnumeration" nillable="true"/>
     <xs:simpleType name="StorageEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="FILE_SYSTEM_0_0"/>
-            <xs:enumeration value="CONTROL_SYSTEM_1_1"/>
-            <xs:enumeration value="FILE_AND_CONTROL_SYSTEM_2_2"/>
+            <xs:enumeration value="FILE_SYSTEM_0"/>
+            <xs:enumeration value="CONTROL_SYSTEM_1"/>
+            <xs:enumeration value="FILE_AND_CONTROL_SYSTEM_2"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:StorageEnumeration" name="StorageEnumeration"/>
@@ -182,13 +182,13 @@
     <xs:element type="tns:ListOfStorageEnumeration" name="ListOfStorageEnumeration" nillable="true"/>
     <xs:simpleType name="TemperatureConfigurationEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="OTHER_0_0"/>
-            <xs:enumeration value="OFF_1_1"/>
-            <xs:enumeration value="AUTOMATIC_2_2"/>
-            <xs:enumeration value="TUNING_3_3"/>
-            <xs:enumeration value="STANDBY_4_4"/>
-            <xs:enumeration value="OPEN_LOOP_5_5"/>
-            <xs:enumeration value="ONLY_MEASUREMENT_6_6"/>
+            <xs:enumeration value="OTHER_0"/>
+            <xs:enumeration value="OFF_1"/>
+            <xs:enumeration value="AUTOMATIC_2"/>
+            <xs:enumeration value="TUNING_3"/>
+            <xs:enumeration value="STANDBY_4"/>
+            <xs:enumeration value="OPEN_LOOP_5"/>
+            <xs:enumeration value="ONLY_MEASUREMENT_6"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:TemperatureConfigurationEnumeration" name="TemperatureConfigurationEnumeration"/>
@@ -200,8 +200,8 @@
     <xs:element type="tns:ListOfTemperatureConfigurationEnumeration" name="ListOfTemperatureConfigurationEnumeration" nillable="true"/>
     <xs:simpleType name="UserChangeEnumeration">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="LOG_ON_0_0"/>
-            <xs:enumeration value="LOG_OFF_1_1"/>
+            <xs:enumeration value="LOG_ON_0"/>
+            <xs:enumeration value="LOG_OFF_1"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:UserChangeEnumeration" name="UserChangeEnumeration"/>

@@ -6,10 +6,10 @@
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="http://www.euromap.org/euromap77/" PublicationDate="2017-08-14T13:39:50Z" Version="RC 2.00">
+        <Model ModelUri="http://www.euromap.org/euromap77/" PublicationDate="2017-08-16T12:48:12Z" Version="RC 2.00">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2013-12-02T00:00:00Z" Version="1.03"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2013-12-02T00:00:00Z" Version="1.01"/>
-            <RequiredModel ModelUri="http://www.euromap.org/euromap83/" PublicationDate="2017-08-14T13:39:11Z" Version="RC 1.00"/>
+            <RequiredModel ModelUri="http://www.euromap.org/euromap83/" PublicationDate="2017-08-16T12:46:35Z" Version="RC 1.00"/>
         </Model>
     </Models>
     <Aliases>
@@ -46,7 +46,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="e2siCUdugakIzlzqKlVtRQ==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="kM4yjJZFkdYhrwcU62IjIA==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3004" BrowseName="1:IMMMessageClassificationEnumeration">
@@ -56,45 +56,45 @@
             <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
         </References>
         <Definition Name="1:IMMMessageClassificationEnumeration">
-            <Field Name="OTHER_0" Value="0"/>
-            <Field Name="IMM_INJECTION_UNIT_100" Value="100"/>
-            <Field Name="IMM_CLAMPING_UNIT_101" Value="101"/>
-            <Field Name="IMM_HARDWARE_102" Value="102"/>
+            <Field Name="OTHER" Value="0"/>
+            <Field Name="IMM_INJECTION_UNIT" Value="100"/>
+            <Field Name="IMM_CLAMPING_UNIT" Value="101"/>
+            <Field Name="IMM_HARDWARE" Value="102"/>
             <Field Name="IMM_COMPRESSED_AIR_CONTROL_103" Value="103"/>
             <Field Name="IMM_MACHINE_MONITORING_104" Value="104"/>
-            <Field Name="IMM_MOULD_105" Value="105"/>
-            <Field Name="IMM_EJECTOR_106" Value="106"/>
-            <Field Name="IMM_CORE_PULL_107" Value="107"/>
-            <Field Name="IMM_TABLE_108" Value="108"/>
-            <Field Name="IMM_INJECTION_PROGRAM_109" Value="109"/>
-            <Field Name="IMM_HYDRAULIC_TEMPERATURE_CONTROL_110" Value="110"/>
-            <Field Name="IMM_CYLINDER_TEMPERATURE_CONTROL_111" Value="111"/>
-            <Field Name="IMM_MOULD_TEMPERATURE_CONTROL_112" Value="112"/>
-            <Field Name="IMM_HOT_RUNNER_113" Value="113"/>
-            <Field Name="IMM_INTERFACES_114" Value="114"/>
-            <Field Name="IMM_MEASURING_SYSTEM_115" Value="115"/>
-            <Field Name="IMM_ROBOTIC_SYSTEM_INTERFACE_116" Value="116"/>
-            <Field Name="IMM_SPECIAL_PURPOSE_SIGNALS_117" Value="117"/>
-            <Field Name="IMM_REAL_TIME_ETHERNET_SYSTEM_118" Value="118"/>
-            <Field Name="IMM_MACHINE_CONTROLLER_119" Value="119"/>
-            <Field Name="IMM_SOFTWARE_MONITORING_120" Value="120"/>
-            <Field Name="PERIPHERAL_EXTERNAL_DEVICE_INTERFACE_200" Value="200"/>
-            <Field Name="PERIPHERAL_TEMPERATURE_CONTROL_UNIT_201" Value="201"/>
-            <Field Name="PERIPHERAL_ROBOTICS_SYSTEM_202" Value="202"/>
-            <Field Name="PERIPHERAL_LSR_203" Value="203"/>
-            <Field Name="PERIPHERAL_STRIPPER_UNIT_204" Value="204"/>
-            <Field Name="PERIPHERAL_DRYER_205" Value="205"/>
-            <Field Name="PERIPHERAL_CONVEYOR_BELT_206" Value="206"/>
-            <Field Name="PERIPHERAL_SORTER_UNIT_207" Value="207"/>
-            <Field Name="PERIPHERAL_COLOURING_UNIT_208" Value="208"/>
-            <Field Name="PERIPHERAL_INJESTER_UNIT_209" Value="209"/>
-            <Field Name="PERIPHERAL_EXTERNAL_ALARMS_210" Value="210"/>
-            <Field Name="PERIPHERAL_VACUUM_CONTROL_211" Value="211"/>
-            <Field Name="PERIPHERAL_PRINTER_INTERFACE_212" Value="212"/>
-            <Field Name="OPERATION_QUALITY_MONITORING_300" Value="300"/>
-            <Field Name="OPERATION_MANUAL_OPERATION_301" Value="301"/>
-            <Field Name="OPERATION_EMERGENCY_STOP_302" Value="302"/>
-            <Field Name="OPERATION_PRODUCTION_STATUS_303" Value="303"/>
+            <Field Name="IMM_MOULD" Value="105"/>
+            <Field Name="IMM_EJECTOR" Value="106"/>
+            <Field Name="IMM_CORE_PULL" Value="107"/>
+            <Field Name="IMM_TABLE" Value="108"/>
+            <Field Name="IMM_INJECTION_PROGRAM" Value="109"/>
+            <Field Name="IMM_HYDRAULIC_TEMPERATURE_CONTROL" Value="110"/>
+            <Field Name="IMM_CYLINDER_TEMPERATURE_CONTROL" Value="111"/>
+            <Field Name="IMM_MOULD_TEMPERATURE_CONTROL" Value="112"/>
+            <Field Name="IMM_HOT_RUNNER" Value="113"/>
+            <Field Name="IMM_INTERFACES" Value="114"/>
+            <Field Name="IMM_MEASURING_SYSTEM" Value="115"/>
+            <Field Name="IMM_ROBOTIC_SYSTEM_INTERFACE" Value="116"/>
+            <Field Name="IMM_SPECIAL_PURPOSE_SIGNALS" Value="117"/>
+            <Field Name="IMM_REAL_TIME_ETHERNET_SYSTEM" Value="118"/>
+            <Field Name="IMM_MACHINE_CONTROLLER" Value="119"/>
+            <Field Name="IMM_SOFTWARE_MONITORING" Value="120"/>
+            <Field Name="PERIPHERAL_EXTERNAL_DEVICE_INTERFACE" Value="200"/>
+            <Field Name="PERIPHERAL_TEMPERATURE_CONTROL_UNIT" Value="201"/>
+            <Field Name="PERIPHERAL_ROBOTICS_SYSTEM" Value="202"/>
+            <Field Name="PERIPHERAL_LSR" Value="203"/>
+            <Field Name="PERIPHERAL_STRIPPER_UNIT" Value="204"/>
+            <Field Name="PERIPHERAL_DRYER" Value="205"/>
+            <Field Name="PERIPHERAL_CONVEYOR_BELT" Value="206"/>
+            <Field Name="PERIPHERAL_SORTER_UNIT" Value="207"/>
+            <Field Name="PERIPHERAL_COLOURING_UNIT" Value="208"/>
+            <Field Name="PERIPHERAL_INJESTER_UNIT" Value="209"/>
+            <Field Name="PERIPHERAL_EXTERNAL_ALARMS" Value="210"/>
+            <Field Name="PERIPHERAL_VACUUM_CONTROL" Value="211"/>
+            <Field Name="PERIPHERAL_PRINTER_INTERFACE" Value="212"/>
+            <Field Name="OPERATION_QUALITY_MONITORING" Value="300"/>
+            <Field Name="OPERATION_MANUAL_OPERATION" Value="301"/>
+            <Field Name="OPERATION_EMERGENCY_STOP" Value="302"/>
+            <Field Name="OPERATION_PRODUCTION_STATUS" Value="303"/>
         </Definition>
     </UADataType>
     <UAVariable DataType="EnumValueType" ParentNodeId="ns=1;i=3004" ValueRank="1" NodeId="ns=1;i=6049" ArrayDimensions="39" BrowseName="EnumValues">
@@ -114,7 +114,7 @@
                         <uax:EnumValueType>
                             <uax:Value>0</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>OTHER_0</uax:Text>
+                                <uax:Text>OTHER</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -128,7 +128,7 @@
                         <uax:EnumValueType>
                             <uax:Value>100</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_INJECTION_UNIT_100</uax:Text>
+                                <uax:Text>IMM_INJECTION_UNIT</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -142,7 +142,7 @@
                         <uax:EnumValueType>
                             <uax:Value>101</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_CLAMPING_UNIT_101</uax:Text>
+                                <uax:Text>IMM_CLAMPING_UNIT</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -156,7 +156,7 @@
                         <uax:EnumValueType>
                             <uax:Value>102</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_HARDWARE_102</uax:Text>
+                                <uax:Text>IMM_HARDWARE</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -198,7 +198,7 @@
                         <uax:EnumValueType>
                             <uax:Value>105</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_MOULD_105</uax:Text>
+                                <uax:Text>IMM_MOULD</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -212,7 +212,7 @@
                         <uax:EnumValueType>
                             <uax:Value>106</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_EJECTOR_106</uax:Text>
+                                <uax:Text>IMM_EJECTOR</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -226,7 +226,7 @@
                         <uax:EnumValueType>
                             <uax:Value>107</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_CORE_PULL_107</uax:Text>
+                                <uax:Text>IMM_CORE_PULL</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -240,7 +240,7 @@
                         <uax:EnumValueType>
                             <uax:Value>108</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_TABLE_108</uax:Text>
+                                <uax:Text>IMM_TABLE</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -254,7 +254,7 @@
                         <uax:EnumValueType>
                             <uax:Value>109</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_INJECTION_PROGRAM_109</uax:Text>
+                                <uax:Text>IMM_INJECTION_PROGRAM</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -268,7 +268,7 @@
                         <uax:EnumValueType>
                             <uax:Value>110</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_HYDRAULIC_TEMPERATURE_CONTROL_110</uax:Text>
+                                <uax:Text>IMM_HYDRAULIC_TEMPERATURE_CONTROL</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -282,7 +282,7 @@
                         <uax:EnumValueType>
                             <uax:Value>111</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_CYLINDER_TEMPERATURE_CONTROL_111</uax:Text>
+                                <uax:Text>IMM_CYLINDER_TEMPERATURE_CONTROL</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -296,7 +296,7 @@
                         <uax:EnumValueType>
                             <uax:Value>112</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_MOULD_TEMPERATURE_CONTROL_112</uax:Text>
+                                <uax:Text>IMM_MOULD_TEMPERATURE_CONTROL</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -310,7 +310,7 @@
                         <uax:EnumValueType>
                             <uax:Value>113</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_HOT_RUNNER_113</uax:Text>
+                                <uax:Text>IMM_HOT_RUNNER</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -324,7 +324,7 @@
                         <uax:EnumValueType>
                             <uax:Value>114</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_INTERFACES_114</uax:Text>
+                                <uax:Text>IMM_INTERFACES</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -338,7 +338,7 @@
                         <uax:EnumValueType>
                             <uax:Value>115</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_MEASURING_SYSTEM_115</uax:Text>
+                                <uax:Text>IMM_MEASURING_SYSTEM</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -352,7 +352,7 @@
                         <uax:EnumValueType>
                             <uax:Value>116</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_ROBOTIC_SYSTEM_INTERFACE_116</uax:Text>
+                                <uax:Text>IMM_ROBOTIC_SYSTEM_INTERFACE</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -366,7 +366,7 @@
                         <uax:EnumValueType>
                             <uax:Value>117</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_SPECIAL_PURPOSE_SIGNALS_117</uax:Text>
+                                <uax:Text>IMM_SPECIAL_PURPOSE_SIGNALS</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -380,7 +380,7 @@
                         <uax:EnumValueType>
                             <uax:Value>118</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_REAL_TIME_ETHERNET_SYSTEM_118</uax:Text>
+                                <uax:Text>IMM_REAL_TIME_ETHERNET_SYSTEM</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -394,7 +394,7 @@
                         <uax:EnumValueType>
                             <uax:Value>119</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_MACHINE_CONTROLLER_119</uax:Text>
+                                <uax:Text>IMM_MACHINE_CONTROLLER</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -408,7 +408,7 @@
                         <uax:EnumValueType>
                             <uax:Value>120</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>IMM_SOFTWARE_MONITORING_120</uax:Text>
+                                <uax:Text>IMM_SOFTWARE_MONITORING</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -422,7 +422,7 @@
                         <uax:EnumValueType>
                             <uax:Value>200</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_EXTERNAL_DEVICE_INTERFACE_200</uax:Text>
+                                <uax:Text>PERIPHERAL_EXTERNAL_DEVICE_INTERFACE</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -436,7 +436,7 @@
                         <uax:EnumValueType>
                             <uax:Value>201</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_TEMPERATURE_CONTROL_UNIT_201</uax:Text>
+                                <uax:Text>PERIPHERAL_TEMPERATURE_CONTROL_UNIT</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -450,7 +450,7 @@
                         <uax:EnumValueType>
                             <uax:Value>202</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_ROBOTICS_SYSTEM_202</uax:Text>
+                                <uax:Text>PERIPHERAL_ROBOTICS_SYSTEM</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -464,7 +464,7 @@
                         <uax:EnumValueType>
                             <uax:Value>203</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_LSR_203</uax:Text>
+                                <uax:Text>PERIPHERAL_LSR</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -478,7 +478,7 @@
                         <uax:EnumValueType>
                             <uax:Value>204</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_STRIPPER_UNIT_204</uax:Text>
+                                <uax:Text>PERIPHERAL_STRIPPER_UNIT</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -492,7 +492,7 @@
                         <uax:EnumValueType>
                             <uax:Value>205</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_DRYER_205</uax:Text>
+                                <uax:Text>PERIPHERAL_DRYER</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -506,7 +506,7 @@
                         <uax:EnumValueType>
                             <uax:Value>206</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_CONVEYOR_BELT_206</uax:Text>
+                                <uax:Text>PERIPHERAL_CONVEYOR_BELT</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -520,7 +520,7 @@
                         <uax:EnumValueType>
                             <uax:Value>207</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_SORTER_UNIT_207</uax:Text>
+                                <uax:Text>PERIPHERAL_SORTER_UNIT</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -534,7 +534,7 @@
                         <uax:EnumValueType>
                             <uax:Value>208</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_COLOURING_UNIT_208</uax:Text>
+                                <uax:Text>PERIPHERAL_COLOURING_UNIT</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -548,7 +548,7 @@
                         <uax:EnumValueType>
                             <uax:Value>209</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_INJESTER_UNIT_209</uax:Text>
+                                <uax:Text>PERIPHERAL_INJESTER_UNIT</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -562,7 +562,7 @@
                         <uax:EnumValueType>
                             <uax:Value>210</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_EXTERNAL_ALARMS_210</uax:Text>
+                                <uax:Text>PERIPHERAL_EXTERNAL_ALARMS</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -576,7 +576,7 @@
                         <uax:EnumValueType>
                             <uax:Value>211</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_VACUUM_CONTROL_211</uax:Text>
+                                <uax:Text>PERIPHERAL_VACUUM_CONTROL</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -590,7 +590,7 @@
                         <uax:EnumValueType>
                             <uax:Value>212</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>PERIPHERAL_PRINTER_INTERFACE_212</uax:Text>
+                                <uax:Text>PERIPHERAL_PRINTER_INTERFACE</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -604,7 +604,7 @@
                         <uax:EnumValueType>
                             <uax:Value>300</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>OPERATION_QUALITY_MONITORING_300</uax:Text>
+                                <uax:Text>OPERATION_QUALITY_MONITORING</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -618,7 +618,7 @@
                         <uax:EnumValueType>
                             <uax:Value>301</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>OPERATION_MANUAL_OPERATION_301</uax:Text>
+                                <uax:Text>OPERATION_MANUAL_OPERATION</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -632,7 +632,7 @@
                         <uax:EnumValueType>
                             <uax:Value>302</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>OPERATION_EMERGENCY_STOP_302</uax:Text>
+                                <uax:Text>OPERATION_EMERGENCY_STOP</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -646,7 +646,7 @@
                         <uax:EnumValueType>
                             <uax:Value>303</uax:Value>
                             <uax:DisplayName>
-                                <uax:Text>OPERATION_PRODUCTION_STATUS_303</uax:Text>
+                                <uax:Text>OPERATION_PRODUCTION_STATUS</uax:Text>
                             </uax:DisplayName>
                             <uax:Description/>
                         </uax:EnumValueType>
@@ -672,59 +672,56 @@
         XAub3JnL2V1cm9tYXA3Ny8iPgogPG9wYzpJbXBvcnQgTmFtZXNwYWNlPSJodHRwOi8vb3BjZ
         m91bmRhdGlvbi5vcmcvVUEvIi8+CiA8b3BjOkVudW1lcmF0ZWRUeXBlIExlbmd0aEluQml0c
         z0iMzIiIE5hbWU9IklNTU1lc3NhZ2VDbGFzc2lmaWNhdGlvbkVudW1lcmF0aW9uIj4KICA8b
-        3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJPVEhFUl8wIiBWYWx1ZT0iMCIvPgogIDxvcGM6R
-        W51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9JTkpFQ1RJT05fVU5JVF8xMDAiIFZhbHVlPSIxM
-        DAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fQ0xBTVBJTkdfVU5JVF8xM
-        DEiIFZhbHVlPSIxMDEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fSEFSR
-        FdBUkVfMTAyIiBWYWx1ZT0iMTAyIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iS
-        U1NX0NPTVBSRVNTRURfQUlSX0NPTlRST0xfMTAzIiBWYWx1ZT0iMTAzIi8+CiAgPG9wYzpFb
-        nVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX01BQ0hJTkVfTU9OSVRPUklOR18xMDQiIFZhbHVlP
-        SIxMDQiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fTU9VTERfMTA1IiBWY
-        Wx1ZT0iMTA1Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0VKRUNUT1JfM
-        TA2IiBWYWx1ZT0iMTA2Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0NPU
-        kVfUFVMTF8xMDciIFZhbHVlPSIxMDciLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
-        SJJTU1fVEFCTEVfMTA4IiBWYWx1ZT0iMTA4Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgT
-        mFtZT0iSU1NX0lOSkVDVElPTl9QUk9HUkFNXzEwOSIgVmFsdWU9IjEwOSIvPgogIDxvcGM6R
-        W51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9IWURSQVVMSUNfVEVNUEVSQVRVUkVfQ09OVFJPT
-        F8xMTAiIFZhbHVlPSIxMTAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fQ
-        1lMSU5ERVJfVEVNUEVSQVRVUkVfQ09OVFJPTF8xMTEiIFZhbHVlPSIxMTEiLz4KICA8b3BjO
-        kVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fTU9VTERfVEVNUEVSQVRVUkVfQ09OVFJPTF8xM
-        TIiIFZhbHVlPSIxMTIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fSE9UX
-        1JVTk5FUl8xMTMiIFZhbHVlPSIxMTMiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
-        SJJTU1fSU5URVJGQUNFU18xMTQiIFZhbHVlPSIxMTQiLz4KICA8b3BjOkVudW1lcmF0ZWRWY
-        Wx1ZSBOYW1lPSJJTU1fTUVBU1VSSU5HX1NZU1RFTV8xMTUiIFZhbHVlPSIxMTUiLz4KICA8b
-        3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fUk9CT1RJQ19TWVNURU1fSU5URVJGQUNFX
-        zExNiIgVmFsdWU9IjExNiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9TU
-        EVDSUFMX1BVUlBPU0VfU0lHTkFMU18xMTciIFZhbHVlPSIxMTciLz4KICA8b3BjOkVudW1lc
-        mF0ZWRWYWx1ZSBOYW1lPSJJTU1fUkVBTF9USU1FX0VUSEVSTkVUX1NZU1RFTV8xMTgiIFZhb
-        HVlPSIxMTgiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fTUFDSElORV9DT
-        05UUk9MTEVSXzExOSIgVmFsdWU9IjExOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hb
-        WU9IklNTV9TT0ZUV0FSRV9NT05JVE9SSU5HXzEyMCIgVmFsdWU9IjEyMCIvPgogIDxvcGM6R
-        W51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfRVhURVJOQUxfREVWSUNFX0lOVEVSR
-        kFDRV8yMDAiIFZhbHVlPSIyMDAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQR
-        VJJUEhFUkFMX1RFTVBFUkFUVVJFX0NPTlRST0xfVU5JVF8yMDEiIFZhbHVlPSIyMDEiLz4KI
-        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQRVJJUEhFUkFMX1JPQk9USUNTX1NZU1RFT
-        V8yMDIiIFZhbHVlPSIyMDIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQRVJJU
-        EhFUkFMX0xTUl8yMDMiIFZhbHVlPSIyMDMiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOY
-        W1lPSJQRVJJUEhFUkFMX1NUUklQUEVSX1VOSVRfMjA0IiBWYWx1ZT0iMjA0Ii8+CiAgPG9wY
-        zpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUEVSSVBIRVJBTF9EUllFUl8yMDUiIFZhbHVlPSIyM
-        DUiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQRVJJUEhFUkFMX0NPTlZFWU9SX
-        0JFTFRfMjA2IiBWYWx1ZT0iMjA2Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iU
-        EVSSVBIRVJBTF9TT1JURVJfVU5JVF8yMDciIFZhbHVlPSIyMDciLz4KICA8b3BjOkVudW1lc
-        mF0ZWRWYWx1ZSBOYW1lPSJQRVJJUEhFUkFMX0NPTE9VUklOR19VTklUXzIwOCIgVmFsdWU9I
-        jIwOCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfSU5KRVNUR
-        VJfVU5JVF8yMDkiIFZhbHVlPSIyMDkiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
-        SJQRVJJUEhFUkFMX0VYVEVSTkFMX0FMQVJNU18yMTAiIFZhbHVlPSIyMTAiLz4KICA8b3BjO
-        kVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQRVJJUEhFUkFMX1ZBQ1VVTV9DT05UUk9MXzIxMSIgV
-        mFsdWU9IjIxMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfU
-        FJJTlRFUl9JTlRFUkZBQ0VfMjEyIiBWYWx1ZT0iMjEyIi8+CiAgPG9wYzpFbnVtZXJhdGVkV
-        mFsdWUgTmFtZT0iT1BFUkFUSU9OX1FVQUxJVFlfTU9OSVRPUklOR18zMDAiIFZhbHVlPSIzM
-        DAiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJPUEVSQVRJT05fTUFOVUFMX09QR
-        VJBVElPTl8zMDEiIFZhbHVlPSIzMDEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
-        SJPUEVSQVRJT05fRU1FUkdFTkNZX1NUT1BfMzAyIiBWYWx1ZT0iMzAyIi8+CiAgPG9wYzpFb
-        nVtZXJhdGVkVmFsdWUgTmFtZT0iT1BFUkFUSU9OX1BST0RVQ1RJT05fU1RBVFVTXzMwMyIgV
-        mFsdWU9IjMwMyIvPgogPC9vcGM6RW51bWVyYXRlZFR5cGU+Cjwvb3BjOlR5cGVEaWN0aW9uY
-        XJ5Pgo=</uax:ByteString>
+        3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJPVEhFUiIgVmFsdWU9IjAiLz4KICA8b3BjOkVud
+        W1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fSU5KRUNUSU9OX1VOSVQiIFZhbHVlPSIxMDAiLz4KI
+        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fQ0xBTVBJTkdfVU5JVCIgVmFsdWU9I
+        jEwMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9IQVJEV0FSRSIgVmFsd
+        WU9IjEwMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9DT01QUkVTU0VEX
+        0FJUl9DT05UUk9MXzEwMyIgVmFsdWU9IjEwMyIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9IklNTV9NQUNISU5FX01PTklUT1JJTkdfMTA0IiBWYWx1ZT0iMTA0Ii8+CiAgPG9wY
+        zpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX01PVUxEIiBWYWx1ZT0iMTA1Ii8+CiAgPG9wY
+        zpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0VKRUNUT1IiIFZhbHVlPSIxMDYiLz4KICA8b
+        3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fQ09SRV9QVUxMIiBWYWx1ZT0iMTA3Ii8+C
+        iAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX1RBQkxFIiBWYWx1ZT0iMTA4Ii8+C
+        iAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0lOSkVDVElPTl9QUk9HUkFNIiBWY
+        Wx1ZT0iMTA5Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iSU1NX0hZRFJBVUxJQ
+        19URU1QRVJBVFVSRV9DT05UUk9MIiBWYWx1ZT0iMTEwIi8+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0iSU1NX0NZTElOREVSX1RFTVBFUkFUVVJFX0NPTlRST0wiIFZhbHVlPSIxM
+        TEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fTU9VTERfVEVNUEVSQVRVU
+        kVfQ09OVFJPTCIgVmFsdWU9IjExMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
+        klNTV9IT1RfUlVOTkVSIiBWYWx1ZT0iMTEzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgT
+        mFtZT0iSU1NX0lOVEVSRkFDRVMiIFZhbHVlPSIxMTQiLz4KICA8b3BjOkVudW1lcmF0ZWRWY
+        Wx1ZSBOYW1lPSJJTU1fTUVBU1VSSU5HX1NZU1RFTSIgVmFsdWU9IjExNSIvPgogIDxvcGM6R
+        W51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9ST0JPVElDX1NZU1RFTV9JTlRFUkZBQ0UiIFZhb
+        HVlPSIxMTYiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fU1BFQ0lBTF9QV
+        VJQT1NFX1NJR05BTFMiIFZhbHVlPSIxMTciLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOY
+        W1lPSJJTU1fUkVBTF9USU1FX0VUSEVSTkVUX1NZU1RFTSIgVmFsdWU9IjExOCIvPgogIDxvc
+        GM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IklNTV9NQUNISU5FX0NPTlRST0xMRVIiIFZhbHVlP
+        SIxMTkiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJJTU1fU09GVFdBUkVfTU9OS
+        VRPUklORyIgVmFsdWU9IjEyMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFU
+        klQSEVSQUxfRVhURVJOQUxfREVWSUNFX0lOVEVSRkFDRSIgVmFsdWU9IjIwMCIvPgogIDxvc
+        GM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfVEVNUEVSQVRVUkVfQ09OVFJPT
+        F9VTklUIiBWYWx1ZT0iMjAxIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iUEVSS
+        VBIRVJBTF9ST0JPVElDU19TWVNURU0iIFZhbHVlPSIyMDIiLz4KICA8b3BjOkVudW1lcmF0Z
+        WRWYWx1ZSBOYW1lPSJQRVJJUEhFUkFMX0xTUiIgVmFsdWU9IjIwMyIvPgogIDxvcGM6RW51b
+        WVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfU1RSSVBQRVJfVU5JVCIgVmFsdWU9IjIwN
+        CIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfRFJZRVIiIFZhb
+        HVlPSIyMDUiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJQRVJJUEhFUkFMX0NPT
+        lZFWU9SX0JFTFQiIFZhbHVlPSIyMDYiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lP
+        SJQRVJJUEhFUkFMX1NPUlRFUl9VTklUIiBWYWx1ZT0iMjA3Ii8+CiAgPG9wYzpFbnVtZXJhd
+        GVkVmFsdWUgTmFtZT0iUEVSSVBIRVJBTF9DT0xPVVJJTkdfVU5JVCIgVmFsdWU9IjIwOCIvP
+        gogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfSU5KRVNURVJfVU5JV
+        CIgVmFsdWU9IjIwOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQ
+        UxfRVhURVJOQUxfQUxBUk1TIiBWYWx1ZT0iMjEwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsd
+        WUgTmFtZT0iUEVSSVBIRVJBTF9WQUNVVU1fQ09OVFJPTCIgVmFsdWU9IjIxMSIvPgogIDxvc
+        GM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IlBFUklQSEVSQUxfUFJJTlRFUl9JTlRFUkZBQ0UiI
+        FZhbHVlPSIyMTIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJPUEVSQVRJT05fU
+        VVBTElUWV9NT05JVE9SSU5HIiBWYWx1ZT0iMzAwIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsd
+        WUgTmFtZT0iT1BFUkFUSU9OX01BTlVBTF9PUEVSQVRJT04iIFZhbHVlPSIzMDEiLz4KICA8b
+        3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJPUEVSQVRJT05fRU1FUkdFTkNZX1NUT1AiIFZhb
+        HVlPSIzMDIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJPUEVSQVRJT05fUFJPR
+        FVDVElPTl9TVEFUVVMiIFZhbHVlPSIzMDMiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgo8L
+        29wYzpUeXBlRGljdGlvbmFyeT4K</uax:ByteString>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6012" NodeId="ns=1;i=6013" BrowseName="NamespaceUri">
@@ -754,60 +751,57 @@
         3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzLnhzZCIvP
         gogPHhzOnNpbXBsZVR5cGUgbmFtZT0iSU1NTWVzc2FnZUNsYXNzaWZpY2F0aW9uRW51bWVyY
         XRpb24iPgogIDx4czpyZXN0cmljdGlvbiBiYXNlPSJ4czpzdHJpbmciPgogICA8eHM6ZW51b
-        WVyYXRpb24gdmFsdWU9Ik9USEVSXzBfMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9I
-        klNTV9JTkpFQ1RJT05fVU5JVF8xMDBfMTAwIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1Z
-        T0iSU1NX0NMQU1QSU5HX1VOSVRfMTAxXzEwMSIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsd
-        WU9IklNTV9IQVJEV0FSRV8xMDJfMTAyIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iS
-        U1NX0NPTVBSRVNTRURfQUlSX0NPTlRST0xfMTAzXzEwMyIvPgogICA8eHM6ZW51bWVyYXRpb
-        24gdmFsdWU9IklNTV9NQUNISU5FX01PTklUT1JJTkdfMTA0XzEwNCIvPgogICA8eHM6ZW51b
-        WVyYXRpb24gdmFsdWU9IklNTV9NT1VMRF8xMDVfMTA1Ii8+CiAgIDx4czplbnVtZXJhdGlvb
-        iB2YWx1ZT0iSU1NX0VKRUNUT1JfMTA2XzEwNiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsd
-        WU9IklNTV9DT1JFX1BVTExfMTA3XzEwNyIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9I
-        klNTV9UQUJMRV8xMDhfMTA4Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU1NX0lOS
-        kVDVElPTl9QUk9HUkFNXzEwOV8xMDkiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJT
-        U1fSFlEUkFVTElDX1RFTVBFUkFUVVJFX0NPTlRST0xfMTEwXzExMCIvPgogICA8eHM6ZW51b
-        WVyYXRpb24gdmFsdWU9IklNTV9DWUxJTkRFUl9URU1QRVJBVFVSRV9DT05UUk9MXzExMV8xM
-        TEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTU1fTU9VTERfVEVNUEVSQVRVUkVfQ
-        09OVFJPTF8xMTJfMTEyIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU1NX0hPVF9SV
-        U5ORVJfMTEzXzExMyIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IklNTV9JTlRFUkZBQ
-        0VTXzExNF8xMTQiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTU1fTUVBU1VSSU5HX
-        1NZU1RFTV8xMTVfMTE1Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU1NX1JPQk9US
-        UNfU1lTVEVNX0lOVEVSRkFDRV8xMTZfMTE2Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1Z
-        T0iSU1NX1NQRUNJQUxfUFVSUE9TRV9TSUdOQUxTXzExN18xMTciLz4KICAgPHhzOmVudW1lc
-        mF0aW9uIHZhbHVlPSJJTU1fUkVBTF9USU1FX0VUSEVSTkVUX1NZU1RFTV8xMThfMTE4Ii8+C
-        iAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU1NX01BQ0hJTkVfQ09OVFJPTExFUl8xMTlfM
-        TE5Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU1NX1NPRlRXQVJFX01PTklUT1JJT
-        kdfMTIwXzEyMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlBFUklQSEVSQUxfRVhUR
-        VJOQUxfREVWSUNFX0lOVEVSRkFDRV8yMDBfMjAwIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2Y
-        Wx1ZT0iUEVSSVBIRVJBTF9URU1QRVJBVFVSRV9DT05UUk9MX1VOSVRfMjAxXzIwMSIvPgogI
-        CA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlBFUklQSEVSQUxfUk9CT1RJQ1NfU1lTVEVNXzIwM
-        l8yMDIiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQRVJJUEhFUkFMX0xTUl8yMDNfM
-        jAzIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iUEVSSVBIRVJBTF9TVFJJUFBFUl9VT
-        klUXzIwNF8yMDQiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQRVJJUEhFUkFMX0RSW
-        UVSXzIwNV8yMDUiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQRVJJUEhFUkFMX0NPT
-        lZFWU9SX0JFTFRfMjA2XzIwNiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlBFUklQS
-        EVSQUxfU09SVEVSX1VOSVRfMjA3XzIwNyIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9I
-        lBFUklQSEVSQUxfQ09MT1VSSU5HX1VOSVRfMjA4XzIwOCIvPgogICA8eHM6ZW51bWVyYXRpb
-        24gdmFsdWU9IlBFUklQSEVSQUxfSU5KRVNURVJfVU5JVF8yMDlfMjA5Ii8+CiAgIDx4czplb
-        nVtZXJhdGlvbiB2YWx1ZT0iUEVSSVBIRVJBTF9FWFRFUk5BTF9BTEFSTVNfMjEwXzIxMCIvP
-        gogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlBFUklQSEVSQUxfVkFDVVVNX0NPTlRST0xfM
-        jExXzIxMSIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IlBFUklQSEVSQUxfUFJJTlRFU
-        l9JTlRFUkZBQ0VfMjEyXzIxMiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik9QRVJBV
-        ElPTl9RVUFMSVRZX01PTklUT1JJTkdfMzAwXzMwMCIvPgogICA8eHM6ZW51bWVyYXRpb24gd
-        mFsdWU9Ik9QRVJBVElPTl9NQU5VQUxfT1BFUkFUSU9OXzMwMV8zMDEiLz4KICAgPHhzOmVud
-        W1lcmF0aW9uIHZhbHVlPSJPUEVSQVRJT05fRU1FUkdFTkNZX1NUT1BfMzAyXzMwMiIvPgogI
-        CA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik9QRVJBVElPTl9QUk9EVUNUSU9OX1NUQVRVU18zM
-        DNfMzAzIi8+CiAgPC94czpyZXN0cmljdGlvbj4KIDwveHM6c2ltcGxlVHlwZT4KIDx4czplb
-        GVtZW50IHR5cGU9InRuczpJTU1NZXNzYWdlQ2xhc3NpZmljYXRpb25FbnVtZXJhdGlvbiIgb
-        mFtZT0iSU1NTWVzc2FnZUNsYXNzaWZpY2F0aW9uRW51bWVyYXRpb24iLz4KIDx4czpjb21wb
-        GV4VHlwZSBuYW1lPSJMaXN0T2ZJTU1NZXNzYWdlQ2xhc3NpZmljYXRpb25FbnVtZXJhdGlvb
-        iI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY
-        3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6SU1NTWVzc2FnZUNsYXNzaWZpY2F0aW9uRW51b
-        WVyYXRpb24iIG5hbWU9IklNTU1lc3NhZ2VDbGFzc2lmaWNhdGlvbkVudW1lcmF0aW9uIiBua
-        WxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogP
-        HhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZklNTU1lc3NhZ2VDbGFzc2lmaWNhdGlvbkVud
-        W1lcmF0aW9uIiBuYW1lPSJMaXN0T2ZJTU1NZXNzYWdlQ2xhc3NpZmljYXRpb25FbnVtZXJhd
-        GlvbiIgbmlsbGFibGU9InRydWUiLz4KPC94czpzY2hlbWE+Cg==</uax:ByteString>
+        WVyYXRpb24gdmFsdWU9Ik9USEVSXzAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJT
+        U1fSU5KRUNUSU9OX1VOSVRfMTAwIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU1NX
+        0NMQU1QSU5HX1VOSVRfMTAxIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU1NX0hBU
+        kRXQVJFXzEwMiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IklNTV9DT01QUkVTU0VEX
+        0FJUl9DT05UUk9MXzEwM18xMDMiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTU1fT
+        UFDSElORV9NT05JVE9SSU5HXzEwNF8xMDQiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlP
+        SJJTU1fTU9VTERfMTA1Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU1NX0VKRUNUT
+        1JfMTA2Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iSU1NX0NPUkVfUFVMTF8xMDciL
+        z4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTU1fVEFCTEVfMTA4Ii8+CiAgIDx4czplb
+        nVtZXJhdGlvbiB2YWx1ZT0iSU1NX0lOSkVDVElPTl9QUk9HUkFNXzEwOSIvPgogICA8eHM6Z
+        W51bWVyYXRpb24gdmFsdWU9IklNTV9IWURSQVVMSUNfVEVNUEVSQVRVUkVfQ09OVFJPTF8xM
+        TAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTU1fQ1lMSU5ERVJfVEVNUEVSQVRVU
+        kVfQ09OVFJPTF8xMTEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTU1fTU9VTERfV
+        EVNUEVSQVRVUkVfQ09OVFJPTF8xMTIiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJT
+        U1fSE9UX1JVTk5FUl8xMTMiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTU1fSU5UR
+        VJGQUNFU18xMTQiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTU1fTUVBU1VSSU5HX
+        1NZU1RFTV8xMTUiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTU1fUk9CT1RJQ19TW
+        VNURU1fSU5URVJGQUNFXzExNiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IklNTV9TU
+        EVDSUFMX1BVUlBPU0VfU0lHTkFMU18xMTciLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlP
+        SJJTU1fUkVBTF9USU1FX0VUSEVSTkVUX1NZU1RFTV8xMTgiLz4KICAgPHhzOmVudW1lcmF0a
+        W9uIHZhbHVlPSJJTU1fTUFDSElORV9DT05UUk9MTEVSXzExOSIvPgogICA8eHM6ZW51bWVyY
+        XRpb24gdmFsdWU9IklNTV9TT0ZUV0FSRV9NT05JVE9SSU5HXzEyMCIvPgogICA8eHM6ZW51b
+        WVyYXRpb24gdmFsdWU9IlBFUklQSEVSQUxfRVhURVJOQUxfREVWSUNFX0lOVEVSRkFDRV8yM
+        DAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQRVJJUEhFUkFMX1RFTVBFUkFUVVJFX
+        0NPTlRST0xfVU5JVF8yMDEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQRVJJUEhFU
+        kFMX1JPQk9USUNTX1NZU1RFTV8yMDIiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQR
+        VJJUEhFUkFMX0xTUl8yMDMiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQRVJJUEhFU
+        kFMX1NUUklQUEVSX1VOSVRfMjA0Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iUEVSS
+        VBIRVJBTF9EUllFUl8yMDUiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQRVJJUEhFU
+        kFMX0NPTlZFWU9SX0JFTFRfMjA2Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iUEVSS
+        VBIRVJBTF9TT1JURVJfVU5JVF8yMDciLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJQR
+        VJJUEhFUkFMX0NPTE9VUklOR19VTklUXzIwOCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsd
+        WU9IlBFUklQSEVSQUxfSU5KRVNURVJfVU5JVF8yMDkiLz4KICAgPHhzOmVudW1lcmF0aW9uI
+        HZhbHVlPSJQRVJJUEhFUkFMX0VYVEVSTkFMX0FMQVJNU18yMTAiLz4KICAgPHhzOmVudW1lc
+        mF0aW9uIHZhbHVlPSJQRVJJUEhFUkFMX1ZBQ1VVTV9DT05UUk9MXzIxMSIvPgogICA8eHM6Z
+        W51bWVyYXRpb24gdmFsdWU9IlBFUklQSEVSQUxfUFJJTlRFUl9JTlRFUkZBQ0VfMjEyIi8+C
+        iAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iT1BFUkFUSU9OX1FVQUxJVFlfTU9OSVRPUklOR
+        18zMDAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJPUEVSQVRJT05fTUFOVUFMX09QR
+        VJBVElPTl8zMDEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJPUEVSQVRJT05fRU1FU
+        kdFTkNZX1NUT1BfMzAyIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iT1BFUkFUSU9OX
+        1BST0RVQ1RJT05fU1RBVFVTXzMwMyIvPgogIDwveHM6cmVzdHJpY3Rpb24+CiA8L3hzOnNpb
+        XBsZVR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6SU1NTWVzc2FnZUNsYXNzaWZpY2F0a
+        W9uRW51bWVyYXRpb24iIG5hbWU9IklNTU1lc3NhZ2VDbGFzc2lmaWNhdGlvbkVudW1lcmF0a
+        W9uIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mSU1NTWVzc2FnZUNsYXNzaWZpY
+        2F0aW9uRW51bWVyYXRpb24iPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT
+        2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOklNTU1lc3NhZ2VDb
+        GFzc2lmaWNhdGlvbkVudW1lcmF0aW9uIiBuYW1lPSJJTU1NZXNzYWdlQ2xhc3NpZmljYXRpb
+        25FbnVtZXJhdGlvbiIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94c
+        zpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMaXN0T2ZJTU1NZXNzYWdlQ
+        2xhc3NpZmljYXRpb25FbnVtZXJhdGlvbiIgbmFtZT0iTGlzdE9mSU1NTWVzc2FnZUNsYXNza
+        WZpY2F0aW9uRW51bWVyYXRpb24iIG5pbGxhYmxlPSJ0cnVlIi8+CjwveHM6c2NoZW1hPgo=</uax:ByteString>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6050" NodeId="ns=1;i=6051" BrowseName="NamespaceUri">
@@ -4321,7 +4315,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
-            <uax:DateTime>2017-08-14T13:39:50Z</uax:DateTime>
+            <uax:DateTime>2017-08-16T12:48:12Z</uax:DateTime>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5020" NodeId="ns=1;i=6075" BrowseName="NamespaceUri">
