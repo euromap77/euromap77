@@ -39,6 +39,6 @@
         <opc:EnumeratedValue Name="OPERATION_QUALITY_MONITORING" Value="300"/>
         <opc:EnumeratedValue Name="OPERATION_MANUAL_OPERATION" Value="301"/>
         <opc:EnumeratedValue Name="OPERATION_EMERGENCY_STOP" Value="302"/>
-        <opc:EnumeratedValue Name="OPERATION_PRODUCTION_STATUS" Value="303"/>
+        <opc:EnumeratedValue Name="OPERATION_JOB_STATUS" Value="303"/>
     </opc:EnumeratedType>
 </opc:TypeDictionary>

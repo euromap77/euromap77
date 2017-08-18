@@ -40,7 +40,7 @@
             <xs:enumeration value="OPERATION_QUALITY_MONITORING_300"/>
             <xs:enumeration value="OPERATION_MANUAL_OPERATION_301"/>
             <xs:enumeration value="OPERATION_EMERGENCY_STOP_302"/>
-            <xs:enumeration value="OPERATION_PRODUCTION_STATUS_303"/>
+            <xs:enumeration value="OPERATION_JOB_STATUS_303"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:element type="tns:IMMMessageClassificationEnumeration" name="IMMMessageClassificationEnumeration"/>
