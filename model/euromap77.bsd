@@ -5,8 +5,8 @@
         <opc:EnumeratedValue Name="IMM_INJECTION_UNIT" Value="100"/>
         <opc:EnumeratedValue Name="IMM_CLAMPING_UNIT" Value="101"/>
         <opc:EnumeratedValue Name="IMM_HARDWARE" Value="102"/>
-        <opc:EnumeratedValue Name="IMM_COMPRESSED_AIR_CONTROL_103" Value="103"/>
-        <opc:EnumeratedValue Name="IMM_MACHINE_MONITORING_104" Value="104"/>
+        <opc:EnumeratedValue Name="IMM_COMPRESSED_AIR_CONTROL" Value="103"/>
+        <opc:EnumeratedValue Name="IMM_MACHINE_MONITORING" Value="104"/>
         <opc:EnumeratedValue Name="IMM_MOULD" Value="105"/>
         <opc:EnumeratedValue Name="IMM_EJECTOR" Value="106"/>
         <opc:EnumeratedValue Name="IMM_CORE_PULL" Value="107"/>

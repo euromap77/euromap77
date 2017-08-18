@@ -6,8 +6,8 @@
             <xs:enumeration value="IMM_INJECTION_UNIT_100"/>
             <xs:enumeration value="IMM_CLAMPING_UNIT_101"/>
             <xs:enumeration value="IMM_HARDWARE_102"/>
-            <xs:enumeration value="IMM_COMPRESSED_AIR_CONTROL_103_103"/>
-            <xs:enumeration value="IMM_MACHINE_MONITORING_104_104"/>
+            <xs:enumeration value="IMM_COMPRESSED_AIR_CONTROL_103"/>
+            <xs:enumeration value="IMM_MACHINE_MONITORING_104"/>
             <xs:enumeration value="IMM_MOULD_105"/>
             <xs:enumeration value="IMM_EJECTOR_106"/>
             <xs:enumeration value="IMM_CORE_PULL_107"/>
