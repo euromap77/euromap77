@@ -6,10 +6,10 @@
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="http://www.euromap.org/euromap77/" PublicationDate="2017-08-18T13:28:00Z" Version="RC 2.00">
+        <Model ModelUri="http://www.euromap.org/euromap77/" PublicationDate="2017-08-29T10:01:52Z" Version="RC 2.00">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2013-12-02T00:00:00Z" Version="1.03"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2013-12-02T00:00:00Z" Version="1.01"/>
-            <RequiredModel ModelUri="http://www.euromap.org/euromap83/" PublicationDate="2017-08-18T13:27:17Z" Version="RC 1.00"/>
+            <RequiredModel ModelUri="http://www.euromap.org/euromap83/" PublicationDate="2017-08-29T09:13:02Z" Version="RC 1.00"/>
         </Model>
     </Models>
     <Aliases>
@@ -47,7 +47,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="g0mr2QR4GtQYOYNfwBQyKA==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="6ehyfmvweHJtpeHaDHFnGw==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3004" BrowseName="1:IMMMessageClassificationEnumeration">
@@ -3925,7 +3925,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6457</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6153</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1039</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
         <Value>
             <uax:Double>0</uax:Double>
@@ -5179,89 +5179,6 @@
             <uax:String></uax:String>
         </Value>
     </UAVariable>
-    <UAObject SymbolicName="http___www_euromap_org_euromap77_" NodeId="ns=1;i=5013" BrowseName="1:http://www.euromap.org/euromap77/">
-        <DisplayName>http://www.euromap.org/euromap77/</DisplayName>
-        <Description>Provides the metadata for a namespace used by the server.</Description>
-        <References>
-            <Reference ReferenceType="HasProperty">ns=1;i=6192</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6193</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6196</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6203</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6204</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6205</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6207</Reference>
-        </References>
-    </UAObject>
-    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6192" BrowseName="IsNamespaceSubset">
-        <DisplayName>IsNamespaceSubset</DisplayName>
-        <Description>If TRUE then the server only supports a subset of the namespace.</Description>
-        <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-        </References>
-        <Value>
-            <uax:Boolean>false</uax:Boolean>
-        </Value>
-    </UAVariable>
-    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6193" BrowseName="NamespacePublicationDate">
-        <DisplayName>NamespacePublicationDate</DisplayName>
-        <Description>The publication date for the namespace.</Description>
-        <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-        </References>
-        <Value>
-            <uax:DateTime>2017-08-18T13:28:00Z</uax:DateTime>
-        </Value>
-    </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6196" BrowseName="NamespaceUri">
-        <DisplayName>NamespaceUri</DisplayName>
-        <Description>The URI of the namespace.</Description>
-        <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-        </References>
-        <Value>
-            <uax:String>http://www.euromap.org/euromap77/</uax:String>
-        </Value>
-    </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6203" BrowseName="NamespaceVersion">
-        <DisplayName>NamespaceVersion</DisplayName>
-        <Description>The human readable string representing version of the namespace.</Description>
-        <References>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-        </References>
-        <Value>
-            <uax:String>RC 2.00</uax:String>
-        </Value>
-    </UAVariable>
-    <UAVariable DataType="IdType" ParentNodeId="ns=1;i=5013" ValueRank="1" NodeId="ns=1;i=6204" BrowseName="StaticNodeIdTypes">
-        <DisplayName>StaticNodeIdTypes</DisplayName>
-        <Description>A list of IdTypes for nodes which are the same in every server that exposes them.</Description>
-        <References>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="NumericRange" ParentNodeId="ns=1;i=5013" ValueRank="1" NodeId="ns=1;i=6205" BrowseName="StaticNumericNodeIdRange">
-        <DisplayName>StaticNumericNodeIdRange</DisplayName>
-        <Description>A list of ranges for numeric node ids which are the same in every server that exposes them.</Description>
-        <References>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
-        </References>
-    </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6207" BrowseName="StaticStringNodeIdPattern">
-        <DisplayName>StaticStringNodeIdPattern</DisplayName>
-        <Description>A regular expression which matches string node ids are the same in every server that exposes them.</Description>
-        <References>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
-        </References>
-    </UAVariable>
     <UAObject SymbolicName="S__www_euromap_org_euromap77_" NodeId="ns=1;i=5020" BrowseName="1://www.euromap.org/euromap77/">
         <DisplayName>//www.euromap.org/euromap77/</DisplayName>
         <Description>Provides the metadata for a namespace used by the server.</Description>
@@ -5331,6 +5248,89 @@
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5020</Reference>
+        </References>
+    </UAVariable>
+    <UAObject SymbolicName="http___www_euromap_org_euromap77_" NodeId="ns=1;i=5013" BrowseName="1:http://www.euromap.org/euromap77/">
+        <DisplayName>http://www.euromap.org/euromap77/</DisplayName>
+        <Description>Provides the metadata for a namespace used by the server.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6192</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6193</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6196</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6203</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6204</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6205</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6207</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6192" BrowseName="IsNamespaceSubset">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <Description>If TRUE then the server only supports a subset of the namespace.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>false</uax:Boolean>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6193" BrowseName="NamespacePublicationDate">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <Description>The publication date for the namespace.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2017-08-29T10:01:52Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6196" BrowseName="NamespaceUri">
+        <DisplayName>NamespaceUri</DisplayName>
+        <Description>The URI of the namespace.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://www.euromap.org/euromap77/</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6203" BrowseName="NamespaceVersion">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <Description>The human readable string representing version of the namespace.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>RC 2.00</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="IdType" ParentNodeId="ns=1;i=5013" ValueRank="1" NodeId="ns=1;i=6204" BrowseName="StaticNodeIdTypes">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <Description>A list of IdTypes for nodes which are the same in every server that exposes them.</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="NumericRange" ParentNodeId="ns=1;i=5013" ValueRank="1" NodeId="ns=1;i=6205" BrowseName="StaticNumericNodeIdRange">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <Description>A list of ranges for numeric node ids which are the same in every server that exposes them.</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6207" BrowseName="StaticStringNodeIdPattern">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <Description>A regular expression which matches string node ids are the same in every server that exposes them.</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5013</Reference>
         </References>
     </UAVariable>
 </UANodeSet>
