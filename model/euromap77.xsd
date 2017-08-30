@@ -33,7 +33,7 @@
             <xs:enumeration value="PERIPHERAL_CONVEYOR_BELT_206"/>
             <xs:enumeration value="PERIPHERAL_SORTER_UNIT_207"/>
             <xs:enumeration value="PERIPHERAL_COLOURING_UNIT_208"/>
-            <xs:enumeration value="PERIPHERAL_INJESTER_UNIT_209"/>
+            <xs:enumeration value="PERIPHERAL_FEEDING_209"/>
             <xs:enumeration value="PERIPHERAL_EXTERNAL_ALARMS_210"/>
             <xs:enumeration value="PERIPHERAL_VACUUM_CONTROL_211"/>
             <xs:enumeration value="PERIPHERAL_PRINTER_INTERFACE_212"/>

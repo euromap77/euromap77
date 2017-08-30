@@ -32,7 +32,7 @@
         <opc:EnumeratedValue Name="PERIPHERAL_CONVEYOR_BELT" Value="206"/>
         <opc:EnumeratedValue Name="PERIPHERAL_SORTER_UNIT" Value="207"/>
         <opc:EnumeratedValue Name="PERIPHERAL_COLOURING_UNIT" Value="208"/>
-        <opc:EnumeratedValue Name="PERIPHERAL_INJESTER_UNIT" Value="209"/>
+        <opc:EnumeratedValue Name="PERIPHERAL_FEEDING" Value="209"/>
         <opc:EnumeratedValue Name="PERIPHERAL_EXTERNAL_ALARMS" Value="210"/>
         <opc:EnumeratedValue Name="PERIPHERAL_VACUUM_CONTROL" Value="211"/>
         <opc:EnumeratedValue Name="PERIPHERAL_PRINTER_INTERFACE" Value="212"/>
