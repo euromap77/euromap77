@@ -47,7 +47,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="vVquSkZgECwDxubdnmJxmQ==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="EVVoT7Pqzr0W+I5VZCl8CA==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3004" BrowseName="1:IMMMessageClassificationEnumeration">
@@ -862,6 +862,7 @@
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=1032</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7018</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7023</Reference>
         </References>
     </UAObject>
@@ -871,13 +872,13 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6089</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=1024</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6109</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6111</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6090</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6091</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6092</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6110</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6111</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6123</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6087</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6112</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6093</Reference>
@@ -896,7 +897,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Duration" ParentNodeId="ns=1;i=5031" NodeId="ns=1;i=6109" BrowseName="2:ExpectedCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Duration" ParentNodeId="ns=1;i=5031" NodeId="ns=1;i=6111" BrowseName="2:ExpectedCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>ExpectedCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5031</Reference>
@@ -942,7 +943,7 @@
             <uax:String></uax:String>
         </Value>
     </UAVariable>
-    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5031" NodeId="ns=1;i=6111" BrowseName="2:NominalBoxParts" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5031" NodeId="ns=1;i=6123" BrowseName="2:NominalBoxParts" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>NominalBoxParts</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5031</Reference>
@@ -1423,14 +1424,14 @@
         <DisplayName>ActiveJobValues</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=1031</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6123</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6124</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6035</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6171</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6172</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6173</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6125</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6143</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6145</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6159</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6158</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6174</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6171</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6121</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6039</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6113</Reference>
@@ -1441,19 +1442,19 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6122</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6190</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6114</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6124</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6125</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6172</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6173</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6115</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=7018</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7019</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7022</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7016</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7017</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6116</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
         </References>
     </UAObject>
-    <UAVariable DataType="Duration" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6123" BrowseName="2:AverageCycleTime">
+    <UAVariable DataType="Duration" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6124" BrowseName="2:AverageCycleTime">
         <DisplayName>AverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
@@ -1469,7 +1470,7 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6171" BrowseName="2:BoxBadPartsCounter">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6125" BrowseName="2:BoxBadPartsCounter">
         <DisplayName>BoxBadPartsCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -1480,7 +1481,7 @@
             <uax:UInt64>0</uax:UInt64>
         </Value>
     </UAVariable>
-    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6172" BrowseName="2:BoxCycleCounter">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6143" BrowseName="2:BoxCycleCounter">
         <DisplayName>BoxCycleCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -1488,7 +1489,7 @@
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6173" BrowseName="2:BoxGoodPartsCounter">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6145" BrowseName="2:BoxGoodPartsCounter">
         <DisplayName>BoxGoodPartsCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -1512,7 +1513,7 @@
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6174" BrowseName="2:BoxTestSamplesCounter">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6171" BrowseName="2:BoxTestSamplesCounter">
         <DisplayName>BoxTestSamplesCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -1600,7 +1601,7 @@
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" ParentNodeId="ns=1;i=5002" ValueRank="1" NodeId="ns=1;i=6124" BrowseName="2:LastPartId">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5002" ValueRank="1" NodeId="ns=1;i=6172" ArrayDimensions="1" BrowseName="2:LastPartId">
         <DisplayName>LastPartId</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -1613,7 +1614,7 @@
             </uax:ListOfString>
         </Value>
     </UAVariable>
-    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6125" BrowseName="2:MachineCycleCounter">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6173" BrowseName="2:MachineCycleCounter">
         <DisplayName>MachineCycleCounter</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -1629,14 +1630,14 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
         </References>
     </UAVariable>
-    <UAMethod ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=7018" BrowseName="2:ResetAverageCycleTime" MethodDeclarationId="ns=2;i=7042">
+    <UAMethod ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=7019" BrowseName="2:ResetAverageCycleTime" MethodDeclarationId="ns=2;i=7042">
         <DisplayName>ResetAverageCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
         </References>
     </UAMethod>
-    <UAMethod ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=7019" BrowseName="2:ResetBoxCounters" MethodDeclarationId="ns=2;i=7041">
+    <UAMethod ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=7022" BrowseName="2:ResetBoxCounters" MethodDeclarationId="ns=2;i=7041">
         <DisplayName>ResetBoxCounters</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -1670,14 +1671,14 @@
         <References>
             <Reference ReferenceType="HasProperty">ns=1;i=6133</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=1024</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6143</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6174</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6134</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6135</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6137</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6144</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6145</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6209</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6126</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6154</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6138</Reference>
@@ -1696,7 +1697,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Duration" ParentNodeId="ns=1;i=5037" NodeId="ns=1;i=6143" BrowseName="2:ExpectedCycleTime" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="Duration" ParentNodeId="ns=1;i=5037" NodeId="ns=1;i=6174" BrowseName="2:ExpectedCycleTime" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>ExpectedCycleTime</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5037</Reference>
@@ -1742,7 +1743,7 @@
             <uax:String></uax:String>
         </Value>
     </UAVariable>
-    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5037" NodeId="ns=1;i=6145" BrowseName="2:NominalBoxParts" UserAccessLevel="3" AccessLevel="3">
+    <UAVariable DataType="UInt64" ParentNodeId="ns=1;i=5037" NodeId="ns=1;i=6209" BrowseName="2:NominalBoxParts" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>NominalBoxParts</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5037</Reference>
@@ -2228,6 +2229,42 @@
         </References>
         <Value>
             <uax:String></uax:String>
+        </Value>
+    </UAVariable>
+    <UAMethod ParentNodeId="ns=1;i=5004" NodeId="ns=1;i=7018" BrowseName="2:SendCyclicJobList" MethodDeclarationId="ns=2;i=7040">
+        <DisplayName>SendCyclicJobList</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6109</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable DataType="Argument" ParentNodeId="ns=1;i=7018" ValueRank="1" NodeId="ns=1;i=6109" ArrayDimensions="1" BrowseName="InputArguments">
+        <DisplayName>InputArguments</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7018</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>JobList</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>ns=2;i=3022</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
         </Value>
     </UAVariable>
     <UAMethod ParentNodeId="ns=1;i=5004" NodeId="ns=1;i=7023" BrowseName="2:SendJobList" MethodDeclarationId="ns=2;i=7036">
