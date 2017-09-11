@@ -5,7 +5,7 @@
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="http://www.euromap.org/euromap83/" PublicationDate="2017-08-29T09:13:02Z" Version="RC 1.00">
+        <Model ModelUri="http://www.euromap.org/euromap83/" PublicationDate="2017-09-11T09:00:00Z" Version="RC 1.00">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2013-12-02T00:00:00Z" Version="1.03"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2013-12-02T00:00:00Z" Version="1.01"/>
         </Model>
@@ -55,7 +55,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="eZ1aBhEo4X8AYxlaWsoQVw==" Version="1.5.1"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="RCs4/7vrPBlZ6AlhOiiO8Q==" Version="1.5.1"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3020" BrowseName="1:CavityCycleQualityEnumeration">
@@ -783,8 +783,8 @@
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
             <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5002</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6004</Reference>
             <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5043</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6004</Reference>
         </References>
         <Value>
             <uax:String>//xs:element[@name='ProductionDatasetInformationType']</uax:String>
@@ -1944,7 +1944,6 @@
     <UAObject ParentNodeId="ns=1;i=1011" NodeId="ns=1;i=5023" BrowseName="1:User">
         <DisplayName>User</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1045</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6158</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6159</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6160</Reference>
@@ -1954,6 +1953,7 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1011</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6163</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6164</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1045</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5023" NodeId="ns=1;i=6158" BrowseName="1:CardUid">
@@ -2103,8 +2103,8 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6177</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6167</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6178</Reference>
-            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1011</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6168</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1011</Reference>
         </References>
     </UAObjectType>
     <UAVariable ParentNodeId="ns=1;i=1010" NodeId="ns=1;i=6166" BrowseName="1:NewValue">
@@ -2704,11 +2704,11 @@
     <UAObjectType NodeId="ns=1;i=1024" BrowseName="1:CyclicJobInformationType">
         <DisplayName>CyclicJobInformationType</DisplayName>
         <References>
-            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1037</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6267</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6266</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6265</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7025</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1037</Reference>
         </References>
     </UAObjectType>
     <UAVariable DataType="Duration" ParentNodeId="ns=1;i=1024" NodeId="ns=1;i=6267" BrowseName="1:ExpectedCycleTime" UserAccessLevel="3" AccessLevel="3">
@@ -3971,10 +3971,10 @@
     <UAObject ParentNodeId="ns=1;i=1020" NodeId="ns=1;i=5029" BrowseName="1:MESMessage">
         <DisplayName>MESMessage</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1051</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6224</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1020</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1051</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6225</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6226</Reference>
         </References>
@@ -4015,12 +4015,12 @@
     <UAObject ParentNodeId="ns=1;i=1020" NodeId="ns=1;i=5030" BrowseName="1:ProductionControl">
         <DisplayName>ProductionControl</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1017</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6227</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7033</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7035</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1020</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1017</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6229</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6230</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7037</Reference>
@@ -4179,13 +4179,13 @@
     <UAObject ParentNodeId="ns=1;i=1020" NodeId="ns=1;i=5031" BrowseName="1:StandstillMessage">
         <DisplayName>StandstillMessage</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1026</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6233</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6234</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6236</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6235</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1020</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1026</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="Enumeration" ParentNodeId="ns=1;i=5031" NodeId="ns=1;i=6233" BrowseName="1:Classification">
@@ -4281,10 +4281,10 @@
     <UAObject ParentNodeId="ns=1;i=1019" NodeId="ns=1;i=5028" BrowseName="1:Users">
         <DisplayName>Users</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1048</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6204</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1019</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1048</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5028" NodeId="ns=1;i=6204" BrowseName="NodeVersion">
@@ -4366,12 +4366,12 @@
     <UAObject SymbolicName="Mould__Nr_" ParentNodeId="ns=1;i=1050" NodeId="ns=1;i=5020" BrowseName="1:Mould_&lt;Nr>">
         <DisplayName>Mould_&lt;Nr></DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1029</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6131</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6129</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1050</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6132</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6130</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1029</Reference>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=5021</Reference>
         </References>
@@ -4414,10 +4414,10 @@
     <UAObject ParentNodeId="ns=1;i=5020" NodeId="ns=1;i=5021" BrowseName="1:TemperatureZones">
         <DisplayName>TemperatureZones</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1055</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6133</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5020</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1055</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5021" NodeId="ns=1;i=6133" BrowseName="NodeVersion">
@@ -4491,10 +4491,10 @@
     <UAObject ParentNodeId="ns=1;i=1029" NodeId="ns=1;i=5019" BrowseName="1:TemperatureZones">
         <DisplayName>TemperatureZones</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1055</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6128</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1029</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1055</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5019" NodeId="ns=1;i=6128" BrowseName="NodeVersion">
@@ -4530,13 +4530,13 @@
     <UAObject SymbolicName="PowerUnit__Nr_" ParentNodeId="ns=1;i=1049" NodeId="ns=1;i=5022" BrowseName="1:PowerUnit_&lt;Nr>">
         <DisplayName>PowerUnit_&lt;Nr></DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1033</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6144</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6145</Reference>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6146</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1049</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6147</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1033</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5022" NodeId="ns=1;i=6144" BrowseName="1:Index">
@@ -5081,12 +5081,12 @@
     <UAObject ParentNodeId="ns=1;i=1008" NodeId="ns=1;i=5032" BrowseName="1:ProductionDatasetStatus">
         <DisplayName>ProductionDatasetStatus</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1039</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6276</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=7044</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6278</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1008</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1039</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5032" NodeId="ns=1;i=6276" BrowseName="1:Description">
@@ -5630,7 +5630,6 @@
     <UAObject SymbolicName="TemperatureZone__Nr_" ParentNodeId="ns=1;i=1055" NodeId="ns=1;i=5018" BrowseName="1:TemperatureZone_&lt;Nr>">
         <DisplayName>TemperatureZone_&lt;Nr></DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1030</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6111</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6153</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6154</Reference>
@@ -5640,6 +5639,7 @@
             <Reference ReferenceType="HasComponent">ns=1;i=6120</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6155</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1055</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1030</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="Double" ParentNodeId="ns=1;i=5018" NodeId="ns=1;i=6111" BrowseName="1:ActualTemperature">
@@ -6106,8 +6106,8 @@
     <UAObjectType NodeId="ns=1;i=1001" BrowseName="1:BarrelTemperatureZoneType">
         <DisplayName>BarrelTemperatureZoneType</DisplayName>
         <References>
-            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1030</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6095</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1030</Reference>
         </References>
     </UAObjectType>
     <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1001" NodeId="ns=1;i=6095" BrowseName="1:Position">
@@ -6191,7 +6191,6 @@
     <UAObject SymbolicName="User__Nr_" ParentNodeId="ns=1;i=1048" NodeId="ns=1;i=5016" BrowseName="1:User_&lt;Nr>">
         <DisplayName>User_&lt;Nr></DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1045</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6064</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6065</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6157</Reference>
@@ -6201,6 +6200,7 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1048</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6068</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6069</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1045</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5016" NodeId="ns=1;i=6064" BrowseName="1:CardUid">
@@ -6370,8 +6370,8 @@
             <uax:String></uax:String>
         </Value>
     </UAVariable>
-    <UAObject SymbolicName="S__www_euromap_org_euromap83_" NodeId="ns=1;i=5003" BrowseName="1://www.euromap.org/euromap83/">
-        <DisplayName>//www.euromap.org/euromap83/</DisplayName>
+    <UAObject NodeId="ns=1;i=5003" BrowseName="1:Euromap83_NamespaceMetadata">
+        <DisplayName>Euromap83_NamespaceMetadata</DisplayName>
         <Description>Provides the metadata for a namespace used by the server.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
@@ -6404,7 +6404,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
-            <uax:DateTime>2017-08-29T09:13:02Z</uax:DateTime>
+            <uax:DateTime>2017-09-11T09:00:00Z</uax:DateTime>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6096" BrowseName="NamespaceUri">
