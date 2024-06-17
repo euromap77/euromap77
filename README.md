@@ -14,6 +14,7 @@ and exchange data.
 * [Netstal-Maschinen AG](http://www.netstal.com), Switzerland 
 * [Sumitomo (SHI) Demag Plastics Machinery GmbH](http://www.sumitomo-shi-demag.eu), Germany
 * [WITTMANN BATTENFELD GmbH](http://www.wittmann-group.com/), Austria
+* [BILLION SAS](https://www.billion.fr/), France
 
 ## Used Technology
 Euromap 77 is based on [OPC/UA](https://opcfoundation.org/).
